@@ -1,59 +1,89 @@
 <!DOCTYPE html>
 <style>
-
-    .top-separator{
+    
+    .top-container{
+        margin: -10px -10px 5px;
         background-color: #646CDF;
         color: white;
         font-weight: bold;
     }
-    .top-menu{
+    .top-user-menu{
         display: flex;
         margin-left: auto;       
     }
-    .top-menu > div{
-        width: 100px;
+    .top-user-menu > div{
+        width: 12%;
         
     }
-    .top-menu a{
+    .top-user-menu a{
+        text-indent: 10px;
         text-decoration: none;
         color: white;
-        display: flex;
-        align-items: center;
         padding: 3px;
         justify-content: center;
     }
-    .top-menu a:hover{
+    .top-user-menu a:hover{
         background-color: #535253a9 ;
-        /*color: #535253;*/
     }
+
+    .top-menu{
+        margin: auto 5% auto;
+        display: flex;
+
+    }
+
+    .flex-center{
+        display: flex;
+        align-items: center;
+    }
+
 </style>
 <html>
-    <body> <!-- style="margin: 0px;" -->
+    <body>
         <header>
-            <div class="top-separator">
-                <div class="top-menu">
+            <div class="top-container">
+                <div class="top-user-menu">
                     <div class="usuario" style="margin-left: auto;">
-                        <a href="" >
-                            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/user--v1.png"/>
+                        <a class="flex-center" href="" >
+                            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/user--v1.png" alt="user-icon"/>
                             <span>Cuenta</span>
                         </a>
                     </div>
                     <div class="carrito">
-                        <a href="">
-                            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/shopping-cart-loaded.png"/> 
+                        <a class="flex-center" href="">
+                            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/shopping-cart-loaded.png" alt="carrito-icon"/> 
                             <span>Carrito</span>
                         </a>
                     </div>       
                 </div>
             </div>
-            <div class="nav" style="display: table;">
-                <div class="logo" style="display: table-cell; width: 50%;">
-                    <img src="LogoMenu-ConfID.png" style="width: 175px;"> 
+            <div class="top-menu flex-center">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/LogoMenu-CONFID.png" alt="" width="175">
+                    </a>
                 </div>
-                <div class="menu" style="display: table-cell; width: 50%;">
-                    
-                </div>
+                <nav class="top-nav">
+                    <div class="top-nav-menu">
+                        <div class="navmenu">
+                            <ul class="">
+                                <li class="">
+                                    <a class="" aria-current="page" href="index.html">Active</a>
+                                </li>
+                                <li class="">
+                                    <a class="" href="#">Link</a>
+                                </li>
+                                <li class="">
+                                    <a class="" href="#">Link</a>
+                                </li>
+                                <li class="">
+                                    <a class="">disad</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </nav>
             </div>
         </header>
-</body>
+    </body>
 </html>
