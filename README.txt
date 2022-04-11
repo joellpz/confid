@@ -29,3 +29,6 @@ Servicio + Implementación sistema:
 - Host: 
 - SpaceShip: 
 - Office: 
+
+Los mas recomendados (categorias) --> otra pagina que explique cada producto
+
