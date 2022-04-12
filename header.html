@@ -9,7 +9,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
 </head>
 <style>
-    .flex-center{
+
+    /*..flex-center{
             display: flex;
             align-items: center;
         }
@@ -45,7 +46,7 @@
         text-align: center;
     }
 
-    /*.nav-list{
+    nav-list{
         list-style-type: none;
         margin: auto;
         width: auto;
@@ -54,14 +55,47 @@
     .nav-link > a{
         text-decoration: none;
         border: #646CDF solid;
-    }*/
-
-    
+    }*/    
 </style>
 <html>
     <body>
-        <header>   
-            <div class="top-container row">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+            <!--<div class="top-container row">
                 <div class="top-user-menu flex-center">
                     <div class="usuario" style="margin-left: auto;">
                         <a class="flex-center nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
@@ -109,7 +143,7 @@
                         <a class="flex-sm-fill text-sm-center nav-link">Disabled</a>
                       </nav>
                       
-                    <!--<nav class="top-nav">
+                    <nav class="top-nav">
                         <ul class="nav-list">
                             <li class="nav-link">
                                 <a class="" aria-current="page" href="index.html">Active</a>
@@ -124,9 +158,9 @@
                                 <a class="">disad</a>
                             </li>
                         </ul>
-                    </nav>-->
+                    </nav>
                 </div>
-            </div>
+            </div>-->
         </header>
     </body>
 </html>
