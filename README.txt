@@ -39,3 +39,8 @@ Los más recomendados (categorías) --> otra página que explique cada producto
 
 PA saber como funcionan las sesiones:
 	https://code.tutsplus.com/es/tutorials/how-to-use-sessions-and-session-variables-in-php--cms-31839
+
+Si quereis algun icono: -> Cogeis el appartado font y copiais eso.
+https://boxicons.com/
+
+
