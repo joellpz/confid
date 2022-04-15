@@ -96,6 +96,7 @@
 }
 
 .nav_logo {
+    text-decoration: none;
     padding: .5rem 0 .5rem 1rem;
     margin-bottom: 1rem
 }
