@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
     $contra = $_POST['login_pass'];
 
     echo "$email, $contra";
-    $consulta = "SELECT email, passwd FROM usuarios WHERE email = '$email' AND passwd = '$contra'";
+    $consulta = "SELECT * FROM usuarios WHERE email = '$email' AND passwd = '$contra'";
     $result = mysqli_query($conn, $consulta);
     $row = mysqli_fetch_array($result);
     if ($result) {
@@ -20,6 +20,8 @@ if (isset($_POST['login'])) {
         $_SESSION['user_passwd'] = $row['passwd'];
         $_SESSION['user_name'] = $row['nombre'];
         $_SESSION['user_email'] = $row['email'];
+
+        header('Location: ../index.php');
     }
 }
 ?>

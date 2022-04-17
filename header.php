@@ -1,5 +1,8 @@
 <head>
-	<link href="/style/style.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="img/logo/icon-logo-CONFID.png" sizes="64x64"/>
+	
+    <link rel ="stylesheet" href="style/style.css"/>
 	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
 
@@ -34,11 +37,24 @@
     </div>    
 </header>
 -->
-<header>
-    <?php
-    session_start();
+<?php session_start(); ?>
+<style>
+    
+    .in-se{
+    width: 500px;
+    }
 
-    if (!isset($_SESSION['user_id'])) { ?>
+    .btn-primary{
+        background-color: var(--first-color);
+    }
+
+    .btn-primary:hover{
+        background-color:  #535253a9;
+    }
+
+</style>
+<header>
+    <?php if (!isset($_SESSION['user_id'])) { ?>
         <div class="flex-row navbar-nav ms-auto justify-content-end top-container">
             <div class="dropdown">
                 <a class=" link px-3 d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
@@ -74,7 +90,25 @@
                 <span class="d-none d-md-inline-block">Carrito</span>
             </a>
         </div>    
-    <?php } else {}
-    ?>
+    <?php } else { ?>
+            <div class="flex-row navbar-nav ms-auto justify-content-end top-container">
+                <div class="dropdown">
+                    <a class=" link px-3 d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
+                        <i class='bx bx-user px-1'></i> 
+                        <span class="d-none d-md-inline-block"><?php echo $_SESSION['user_name']; ?></span> 
+                    </a>
+                    <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/php/signout.php">Cerrar Sesión</a>
+    </div>
+    </div>    
+                <a class=" link px-3 d-flex align-items-center" href="#">
+                    <i class="bx bx-cart-alt px-1"></i>
+                    <span class="d-none d-md-inline-block">Carrito</span>
+                </a>
+            </div>    
+    <?php } ?>
     
 </header>

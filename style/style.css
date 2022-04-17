@@ -208,12 +208,12 @@
 
 
 .flex-center{
-        display: flex;
-        align-items: center;
-    }
+    display: flex;
+    align-items: center;
+}
 
 .in-se{
-  width: 500;
+  width: 500px;
 }
 
 .btn-primary{
