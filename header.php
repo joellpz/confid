@@ -35,39 +35,46 @@
 </header>
 -->
 <header>
-    <div class="flex-row navbar-nav ms-auto justify-content-end top-container">
-        <div class="dropdown">
-            <a class=" link px-3 d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
-                <i class='bx bx-user px-1'></i> 
-                <span class="d-none d-md-inline-block">Usuario</span> 
-            </a>
-            <div class="dropdown-menu in-se">
-                <form  action="/confid/php/login.php" method="POST" class="px-4">
-                  	<div class="d-flex">
-                  	<!-- Email input -->
-						<div class="form-outline mx-2">
-							<label class="form-label" for="form1Example1">Email:</label>
-							<input type="text" id="form1Example1" class="form-control" />
-						</div>
-					
-						<!-- Password input -->
-						<div class="form-outline mx-2 mb-4">
-							<label class="form-label" for="form1Example2">Contraseña:</label>
-							<input type="password" id="form1Example2" class="form-control" />
-						</div>
-					</div>
-					<div class="dropdown-divider"></div>
-					<div class="d-flex">
-						<a class="dropdown-item col mx-2" href="#">Eres nuevo? Regístrate!</a>
-						<input type="submit" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block"/>
-					</div>
-              </div>
-			</form>
-        </div>
+    <?php
+    session_start();
+
+    if (!isset($_SESSION['user_id'])) { ?>
+        <div class="flex-row navbar-nav ms-auto justify-content-end top-container">
+            <div class="dropdown">
+                <a class=" link px-3 d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
+                    <i class='bx bx-user px-1'></i> 
+                    <span class="d-none d-md-inline-block">Usuario</span> 
+                </a>
+                <div class="dropdown-menu in-se">
+                    <form  action="/php/login.php" method="POST" class="px-4">
+                        <div class="d-flex">
+                        <!-- Email input -->
+                            <div class="form-outline mx-2">
+                                <label class="form-label" for="login_email">Email:</label>
+                                <input type="text" name="login_email" id="login_email" class="form-control" />
+                            </div>
+                        
+                            <!-- Password input -->
+                            <div class="form-outline mx-2 mb-4">
+                                <label class="form-label" for="login_pass">Contraseña:</label>
+                                <input type="password" name="login_pass" id="login_pass" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="d-flex">
+                            <a class="dropdown-item col mx-2" href="#">Eres nuevo? Regístrate!</a>
+                            <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
         
-        <a class=" link px-3 d-flex align-items-center" href="#">
+            <a class=" link px-3 d-flex align-items-center" href="#">
                 <i class="bx bx-cart-alt px-1"></i>
                 <span class="d-none d-md-inline-block">Carrito</span>
-        </a>
-    </div>    
+            </a>
+        </div>    
+    <?php } else {}
+    ?>
+    
 </header>
