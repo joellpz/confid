@@ -27,6 +27,7 @@
     </style>
     <body>
         <?php include_once 'header.php'; ?>
+        <div class="height-100 bg-light">
         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"> <!-- Las imagenes deberian tener el mismo tamaño o proporción. Tener en cuenta al escoger las imagenes el color del carousel-->
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -132,6 +133,7 @@
                 </div>
             </div>
             </div>
+        </div>
         </div>
         </div>
     </body>
