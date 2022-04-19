@@ -46,6 +46,5 @@ PA saber como funcionan las sesiones:
 	https://code.tutsplus.com/es/tutorials/how-to-use-sessions-and-session-variables-in-php--cms-31839
 
 Si quereis algun icono: -> Cogeis el appartado font y copiais eso.
-https://boxicons.com/
-
-
+https://boxicons.com/ Añadir la etiqueta <i> junto con este link en el head:
+<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"> 
