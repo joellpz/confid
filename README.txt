@@ -15,7 +15,7 @@ Login:
 	Admin 
 			-->Consultar tablas usuarios / clientes
 			-->Mostrar todos los pedidos hechos  productos del pedido como en (SH)
-			-->Pedido cliente precio nif boton(ver pedido)
+			-->Pedido cliente precio nif boton(ver pedido).
 
 
 PAGINAS 
