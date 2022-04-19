@@ -16,7 +16,7 @@ Login:
 			-->Consultar tablas usuarios / clientes
 			-->Mostrar todos los pedidos hechos  productos del pedido como en (SH)
 			-->Pedido cliente precio nif boton(ver pedido).
-
+			--> Crear nuevos trabajadores
 
 
 PAGINAS 
