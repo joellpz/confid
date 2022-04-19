@@ -16,27 +16,6 @@
 
 </head>
 
-<!--<header>
-    <div class="flex-row navbar-nav ms-auto justify-content-end top-container">
-        <div class="dropdown">
-            <a class="link px-3 d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
-                <i class='bx bx-user px-1'></i> 
-                <span class="d-none d-md-inline-block">Usuario</span> 
-            </a>
-                
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
-        <a class=" link px-3 d-flex align-items-center" href="#">
-                <i class="bx bx-cart-alt px-1"></i>
-                <span class="d-none d-md-inline-block">Carrito</span>
-        </a>
-    </div>    
-</header>
--->
 <?php 
     session_start();
     $trabajador = false;
@@ -47,7 +26,6 @@
         $consulta_trabajadores = "SELECT idUsuario FROM trabajadores WHERE idUsuario = '$_SESSION[user_id]'"; 
         $trabajadores = mysqli_query($conn, $consulta_trabajadores);
         $row_trab = mysqli_fetch_array($trabajadores);
-        echo "trabja";
         if($row_trab){
             $trabajador = true;
             $cliente = false;
@@ -55,10 +33,8 @@
             $consulta_clientes = "SELECT idUsuario FROM clientes WHERE idUsuario = '$_SESSION[user_id]'"; 
             $clientes = mysqli_query($conn, $consulta_clientes);
             $row_cli = mysqli_fetch_array($clientes);
-            echo "cli";
             if ($row_cli){
                 $cliente = true;
-                echo "trabjacliente";
                 $trabajador = false;
             }
         }
@@ -154,9 +130,6 @@
                     </a>
                 </nav>
             </div>
-            <div class="height-100 bg-light">
-            <h4>Main Components</h4>
-        </div>
         </section>
     <?php 
         } else { 

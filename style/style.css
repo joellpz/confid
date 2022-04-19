@@ -180,7 +180,7 @@
         width: calc(var(--nav-width) + 156px)
     }
 
-    .admin_body {
+    .body-pd {
         padding-left: calc(var(--nav-width) + 188px)
     }
 }
