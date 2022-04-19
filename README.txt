@@ -12,6 +12,11 @@ Login:
 			--> Registro si: Opciones 
 			--> User_admin: menu 1
 			--> cliente: menu 2
+	Admin 
+			-->Consultar tablas usuarios / clientes
+			-->Mostrar todos los pedidos hechos  productos del pedido como en (SH)
+			-->Pedido cliente precio nif boton(ver pedido).
+
 
 PAGINAS 
 	1. Index (Principal) 
