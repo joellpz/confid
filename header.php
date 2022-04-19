@@ -47,6 +47,7 @@
         $consulta_trabajadores = "SELECT idUsuario FROM trabajadores WHERE idUsuario = '$_SESSION[user_id]'"; 
         $trabajadores = mysqli_query($conn, $consulta_trabajadores);
         $row_trab = mysqli_fetch_array($trabajadores);
+        echo "trabja";
         if($row_trab){
             $trabajador = true;
             $cliente = false;
@@ -54,8 +55,10 @@
             $consulta_clientes = "SELECT idUsuario FROM clientes WHERE idUsuario = '$_SESSION[user_id]'"; 
             $clientes = mysqli_query($conn, $consulta_clientes);
             $row_cli = mysqli_fetch_array($clientes);
+            echo "cli";
             if ($row_cli){
                 $cliente = true;
+                echo "trabjacliente";
                 $trabajador = false;
             }
         }
@@ -151,6 +154,9 @@
                     </a>
                 </nav>
             </div>
+            <div class="height-100 bg-light">
+            <h4>Main Components</h4>
+        </div>
         </section>
     <?php 
         } else { 

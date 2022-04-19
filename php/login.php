@@ -16,12 +16,13 @@ if (isset($_POST['login'])) {
     $result = mysqli_query($conn, $consulta);
 
     if ($row = mysqli_fetch_array($result)) {
-        $_SESSION['user_id'] = $row['idUsuario'];
+        $_SESSION['user_id'] = $row['idUsuarios'];
         $_SESSION['user_passwd'] = $row['passwd'];
         $_SESSION['user_name'] = $row['nombre'];
         $_SESSION['user_email'] = $row['email'];
+        header('Location: ../index.php');
     }
-    header('Location: ../index.php');
+    
     
 }
 ?>
