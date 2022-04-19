@@ -58,5 +58,5 @@ TAREAS:
 - Definir productos en la BBDD, asignar fotos por ID en el nombre.
 - Posteriormente carrito.
 - Aplicar include de los headers a todas las páginas.
-- Crear un único Head para todas las páginas.
+// - Crear un único Head para todas las páginas.
 - Login en el que se introduzca o el Email o el nombre de usuario(Específicamente para los administradores).
