@@ -12,12 +12,12 @@ Login:
 			--> Registro si: Opciones 
 			--> User_admin: menu 1
 			--> cliente: menu 2
-	(moi)
 	Admin 
 			-->Consultar tablas usuarios / clientes
-			-->Mostrar todos los pedidos hechos --> productos del pedido como en (SH)
+			-->Mostrar todos los pedidos hechos  productos del pedido como en (SH)
 			-->Pedido cliente precio nif boton(ver pedido).
-			--> Crear otros trabajadores
+
+
 
 PAGINAS 
 	1. Index (Principal) 
@@ -49,3 +49,14 @@ PA saber como funcionan las sesiones:
 Si quereis algun icono: -> Cogeis el appartado font y copiais eso.
 https://boxicons.com/ Añadir la etiqueta <i> junto con este link en el head:
 <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"> 
+
+
+
+TAREAS:
+
+- Formulario de registro de usuarios
+- Definir productos en la BBDD, asignar fotos por ID en el nombre.
+- Posteriormente carrito.
+- Aplicar include de los headers a todas las páginas.
+- Crear un único Head para todas las páginas.
+- Login en el que se introduzca o el Email o el nombre de usuario(Específicamente para los administradores).
