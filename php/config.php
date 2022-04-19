@@ -1,6 +1,6 @@
 <?php
 $servername = 'localhost';
-$database = 'BBDD_ConfID';
+$database = 'confid';
 $username = 'root';
 $password = '';
 /*$username = 'pi';
