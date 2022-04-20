@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <?php include 'content/head.php';?>  
+    <?php 
+        $file="Inicio";
+        include 'content/head.php';
+    ?>  
 
     <style>
         .card{
