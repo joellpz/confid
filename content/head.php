@@ -6,7 +6,7 @@
         <meta name="keywords" content="seguridad, videovigilancia, confid, camaras, servicios"/>
         <meta name="robots" content="noindex"/>
         
-        <title><?php echo $file; ?> | ConfID</title>
+        <title><?php echo ucwords($file); ?> | ConfID</title>
 
         <link rel="shortcut icon" href="img/logo/icon-logo-CONFID.png" sizes="64x64"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">

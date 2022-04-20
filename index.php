@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <?php 
-        $file="Inicio";
+        $file="inicio";
         include 'content/head.php';
     ?>  
 
