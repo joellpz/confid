@@ -54,15 +54,15 @@
                         </a>
                         <div class="nav_list"> 
                             <a href="index.php" class="nav_link active"> 
-                                <i class='bx bx-grid-alt nav_icon'></i> 
+                                <i class='bx bx-grid-alt nav_icon nav_icon'></i> 
                                 <span class="nav_name">Página Principal</span> 
                             </a> 
                             <a href="consulta_clientes.php" class="nav_link">  
-                                <i class='bx bxs-contact' ></i> 
+                                <i class='bx bxs-contact nav_icon' ></i> 
                                 <span class="nav_name">Clientes</span> 
                             </a> 
                             <a href="consulta_pedidos.php" class="nav_link"> 
-                                <i class='bx bx-clipboard bx-flip-horizontal'></i>
+                                <i class='bx bx-clipboard bx-flip-horizontal nav_icon'></i>
                                 <span class="nav_name">Consulta Pedidos</span> 
                             </a> 
                             <a href="consulta_detalles_pedidos.php" class="nav_link"> 
@@ -70,7 +70,7 @@
                                 <span class="nav_name">Facturación</span> 
                             </a>
                             <a href="#" class="nav_link"> 
-                                <i class='bx bxs-user-plus'></i>
+                                <i class='bx bxs-user-plus nav_icon'></i>
                                 <span class="nav_name">Gestión de Usuarios</span> 
                             </a> 
                             <!--<a href="#" class="nav_link"> 
