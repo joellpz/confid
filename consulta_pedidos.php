@@ -1,5 +1,5 @@
 <?php
-    
+
     $file="inicio";
     include 'head.php';
   
