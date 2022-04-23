@@ -55,9 +55,9 @@
                         <div class="nav_list"> 
                             <a href="#" class="nav_link active"> 
                                 <i class='bx bx-grid-alt nav_icon'></i> 
-                                <span class="nav_name">Pagina Principal</span> 
+                                <span class="nav_name">Página Principal</span> 
                             </a> 
-                            <a href="#" class="nav_link">  
+                            <a href="consulta_clientes.php" class="nav_link">  
                                 <i class='bx bx-user nav_icon'></i> 
                                 <span class="nav_name">Clientes</span> 
                             </a> 
@@ -67,16 +67,16 @@
                             </a> 
                             <a href="consulta_detalles_pedidos.php" class="nav_link"> 
                                 <i class='bx bx-bookmark nav_icon'></i> 
-                                <span class="nav_name">Facturacion</span> 
+                                <span class="nav_name">Facturación</span> 
                             </a>
                             <a href="#" class="nav_link"> 
                                 <i class='bx bx-folder nav_icon'></i>
-                                <span class="nav_name">Modificacion de Usuarios</span> 
+                                <span class="nav_name">Gestión de Usuarios</span> 
                             </a> 
-                            <a href="#" class="nav_link"> 
+                            <!--<a href="#" class="nav_link"> 
                                 <i class='bx bx-bar-chart-alt-2 nav_icon'></i> 
                                 <span class="nav_name">Stats</span> 
-                            </a>
+                            </a>-->
                         </div>
                     </div>
                     <div class="nav_list">

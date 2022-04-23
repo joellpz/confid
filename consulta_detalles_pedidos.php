@@ -1,13 +1,13 @@
 <?php
-    $file="C. Panel";
+    $file="Control Panel";
     include 'head.php';
 ?>
 
 <!DOCTYPE html>
 <html>
-    <body>
+    <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <?php include_once 'header.php'; ?>
-        <h2>Consulta y Gestión de Pedidos</h2>
+        <h2>Facturación</h2>
         <table border= "1" style="width: 80%;">
             <thead>
                 <tr style="background-color: #646CDF;">
