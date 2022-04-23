@@ -1,8 +1,7 @@
 <?php
     session_start();
-    require 'php/config.php';
+    require '../php/config.php';
     // Check connection
-    
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +13,9 @@
                 <tr style="background-color:rgb(123, 204, 123);">
                     <th>ID Pedido</th>
                     <th>ID Producto</th>
+                    <th>Fecha</th>
+                    <th>Precio Total</th>
+                    <th>Transportista</th>
                     <th>Cantidad</th>
                 </tr>
             </thead>
