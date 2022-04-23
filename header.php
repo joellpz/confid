@@ -107,15 +107,14 @@
                                 <span class="nav_name">Stats</span> 
                             </a>
                         </div>
-                    </div> 
-                    <a href="php/signout.php" class="nav_link"> 
-                        <i class='bx bx-log-out nav_icon'></i>
-                        <span class="nav_name">SignOut</span> 
-                    </a>
+                    </div>
+                    <div class="nav_list">
+                        <a href="php/signout.php" class="nav_link"> 
+                            <i class='bx bx-log-out nav_icon'></i>
+                            <span class="nav_name">SignOut</span> 
+                        </a>
+                    </div>
                 </nav>
-            </div>
-            <div class="height-100 bg-light">
-                Menu Principal
             </div>
         </section>
     <?php 
