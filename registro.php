@@ -9,17 +9,9 @@
         var name = document.getElementById(name);
         var alias = document.getElementById(alias); 
 
-<<<<<<< HEAD
-            name.addEventListener("write", )
-
-            alias.innerText = 'si';
-        }
-        name.addEventListener('keypress', write, false);
-=======
         name.addEventListener('keypress', k =>{
             console.log(k.keyCode);
         }       
->>>>>>> 950d99b5ba3940c5340f149535c58f27c94a0c56
         
         function autonomo(){
             var check = document.getElementById("auto");
