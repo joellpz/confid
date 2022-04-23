@@ -1,18 +1,17 @@
 <?php
-
+    
     $file="inicio";
     include 'head.php';
-
+  
     
-    session_start();
-    require '../php/config.php';
+    require 'php/config.php';
     // Check connection
 ?>
 
 <!DOCTYPE html>
 <html>
     <body>
-        <?php include_once 'content/header.php'; ?>
+        <?php include_once 'header.php'; ?>
         <h2>Tabla 'detalles_pedidos'</h2>
         <table border= "1" style="width: 80%;">
             <thead>
