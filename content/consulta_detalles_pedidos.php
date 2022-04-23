@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-    
+        <?php include_once 'content/header.php'; ?>
         <h2>Tabla 'detalles_pedidos'</h2>
         <table border= "1" style="width: 80%;">
             <thead>
