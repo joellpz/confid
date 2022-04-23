@@ -66,7 +66,7 @@
                                 <span class="nav_name">Consulta Pedidos</span> 
                             </a> 
                             <a href="consulta_detalles_pedidos.php" class="nav_link"> 
-                                <i class='bx bx-bookmark nav_icon'></i> 
+                                <i class='bx bxs-report nav_icon'></i> 
                                 <span class="nav_name">Facturación</span> 
                             </a>
                             <a href="#" class="nav_link"> 
