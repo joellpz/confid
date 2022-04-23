@@ -56,7 +56,7 @@
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="../php/signout.php">Cerrar Sesión</a>
+                    <a class="dropdown-item" href="php/signout.php">Cerrar Sesión</a>
                 </div>
             </div>    
             <a class=" link px-3 d-flex align-items-center" href="#">
@@ -69,7 +69,7 @@
         } else if ($trabajador) { 
     ?>
         <section class="admin_body" id="body-pd">
-            <script src="../js/header_show.js"></script>
+            <script src="js/header_show.js"></script>
             <header class="header" id="header">
                 <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
                 <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
@@ -78,7 +78,7 @@
                 <nav class="nav">
                     <div> 
                         <a href="#" class="nav_logo">
-                            <img src="../img/logo/white-icono-logo-CONFID.png" width="35px"> 
+                            <img src="img/logo/white-icono-logo-CONFID.png" width="35px"> 
                             <span class="nav_logo-name">C O N F I D</span> 
                         </a>
                         <div class="nav_list"> 
@@ -108,7 +108,7 @@
                             </a>
                         </div>
                     </div> 
-                    <a href="..php/signout.php" class="nav_link"> 
+                    <a href="php/signout.php" class="nav_link"> 
                         <i class='bx bx-log-out nav_icon'></i>
                         <span class="nav_name">SignOut</span> 
                     </a>
@@ -125,7 +125,7 @@
                     <span class="d-none d-md-inline-block">Usuario</span> 
                 </a>
                 <div class="dropdown-menu in-se">
-                    <form  action="../php/login.php" method="POST" class="px-4">
+                    <form  action="php/login.php" method="POST" class="px-4">
                         <div class="d-flex">
                         <!-- Email input -->
                             <div class="form-outline mx-2">
@@ -141,7 +141,7 @@
                         </div>
                         <div class="dropdown-divider"></div>
                         <div class="d-flex">
-                            <a class="dropdown-item col mx-2" href="..content/registro.html">Eres nuevo? Regístrate!</a>
+                            <a class="dropdown-item col mx-2" href="content/registro.html">Eres nuevo? Regístrate!</a>
                             <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block"/>
                         </div>
                     </div>
