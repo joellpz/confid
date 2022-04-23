@@ -12,10 +12,10 @@
 <html>
     <body>
         <?php include_once 'header.php'; ?>
-        <h2>Tabla 'pedidos'</h2>
+        <h2>Consulta y Gestión de Pedidos</h2>
         <table border= "1" style="width: 80%;">
             <thead>
-                <tr style="background-color:rgb(123, 204, 123);">
+            <tr style="background-color: #646CDF;">
                     <th>Nº Pedido</th>
                     <th>Precio Total</th>
                     <th>idUsuario</th>

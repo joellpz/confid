@@ -12,10 +12,10 @@
 <html>
     <body>
         <?php include_once 'header.php'; ?>
-        <h2>Tabla 'detalles_pedidos'</h2>
+        <h2>Consulta y Gestión de Pedidos</h2>
         <table border= "1" style="width: 80%;">
             <thead>
-                <tr style="background-color:rgb(123, 204, 123);">
+                <tr style="background-color: #646CDF;">
                     <th>ID Pedido</th>
                     <th>ID Producto</th>
                     <th>Fecha</th>
@@ -26,7 +26,7 @@
             </thead>
             <tbody>
                 <?php
-                    $consulta = "SELECT * FROM detalles_pedidos";
+                    $consulta = "SELECT * FROM detallespedidos";
                     $res = mysqli_query($conn, $consulta);
 
                     while ($row = mysqli_fetch_array($res)) {
