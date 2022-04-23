@@ -5,17 +5,13 @@
         include 'head.php'; //CAMBIAR RUTA SEGUN UBI
     ?>  
 
-    <script>  
-        function write(){
-            var name = document.getElementById('name');
-            var alias = document.getElementById("alias");
+    <script> 
+        var name = document.getElementById(name);
+        var alias = document.getElementById(alias); 
 
-            name.addEventListener("write", )
-
-            alias.innerText = 'si';
-        } 
-        
-        name.addEventListener('keypress', write, false);
+        name.addEventListener('keypress', k =>{
+            console.log(k.keyCode);
+        }       
         
         function autonomo(){
             var check = document.getElementById("auto");
