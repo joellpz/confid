@@ -13,8 +13,7 @@
             name.addEventListener("write", )
 
             alias.innerText = 'si';
-        } 
-        
+        }
         name.addEventListener('keypress', write, false);
         
         function autonomo(){
