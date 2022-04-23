@@ -88,19 +88,19 @@
                             </a> 
                             <a href="#" class="nav_link">  
                                 <i class='bx bx-user nav_icon'></i> 
-                                <span class="nav_name">Usuarios</span> 
+                                <span class="nav_name">Clientes</span> 
                             </a> 
-                            <a href="#" class="nav_link"> 
+                            <a href="consulta_pedidos.php" class="nav_link"> 
                                 <i class='bx bx-message-square-detail nav_icon'></i> 
-                                <span class="nav_name">Messages</span> 
+                                <span class="nav_name">Consulta Pedidos</span> 
                             </a> 
-                            <a href="#" class="nav_link"> 
+                            <a href="consulta_detalles_pedidos.php" class="nav_link"> 
                                 <i class='bx bx-bookmark nav_icon'></i> 
-                                <span class="nav_name">Bookmark</span> 
+                                <span class="nav_name">Facturacion</span> 
                             </a>
                             <a href="#" class="nav_link"> 
                                 <i class='bx bx-folder nav_icon'></i>
-                                <span class="nav_name">Pedidos</span> 
+                                <span class="nav_name">Modificacion de Usuarios</span> 
                             </a> 
                             <a href="#" class="nav_link"> 
                                 <i class='bx bx-bar-chart-alt-2 nav_icon'></i> 
