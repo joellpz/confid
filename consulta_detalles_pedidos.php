@@ -1,11 +1,6 @@
 <?php
-    session_start();
-    $file="inicio";
+    $file="C. Panel";
     include 'head.php';
-  
-    
-    require 'php/config.php';
-    // Check connection
 ?>
 
 <!DOCTYPE html>
