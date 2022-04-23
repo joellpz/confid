@@ -69,14 +69,15 @@
                                 <i class='bx bxs-report nav_icon'></i> 
                                 <span class="nav_name">Facturación</span> 
                             </a>
+                            <a href="#" class="nav_link"> 
+                                <i class='bx bx-user nav_icon'></i> 
+                                <span class="nav_name">Usuarios</span> 
+                            </a>
                             <a href="user_admin.php" class="nav_link"> 
                                 <i class='bx bxs-user-plus nav_icon'></i>
-                                <span class="nav_name">Gestión de</br> Usuarios</span> 
+                                <span class="nav_name">Añadir</br> Usuarios</span> 
                             </a> 
-                            <!--<a href="#" class="nav_link"> 
-                                <i class='bx bx-bar-chart-alt-2 nav_icon'></i> 
-                                <span class="nav_name">Stats</span> 
-                            </a>-->
+                            
                         </div>
                     </div>
                     <div class="nav_list">
