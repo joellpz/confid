@@ -58,11 +58,11 @@
                                 <span class="nav_name">Página Principal</span> 
                             </a> 
                             <a href="consulta_clientes.php" class="nav_link">  
-                                <i class='bx bx-user nav_icon'></i> 
+                                <i class='bx bxs-contact' ></i> 
                                 <span class="nav_name">Clientes</span> 
                             </a> 
                             <a href="consulta_pedidos.php" class="nav_link"> 
-                                <i class='bx bx-clipboard bx-tada bx-flip-horizontal' ></i>
+                                <i class='bx bx-clipboard bx-flip-horizontal'></i>
                                 <span class="nav_name">Consulta Pedidos</span> 
                             </a> 
                             <a href="consulta_detalles_pedidos.php" class="nav_link"> 
@@ -70,7 +70,7 @@
                                 <span class="nav_name">Facturación</span> 
                             </a>
                             <a href="#" class="nav_link"> 
-                                <i class='bx bx-folder nav_icon'></i>
+                                <i class='bx bxs-user-plus'></i>
                                 <span class="nav_name">Gestión de Usuarios</span> 
                             </a> 
                             <!--<a href="#" class="nav_link"> 
