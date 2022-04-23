@@ -53,7 +53,7 @@
                             <span class="nav_logo-name">C O N F I D</span> 
                         </a>
                         <div class="nav_list"> 
-                            <a href="#" class="nav_link active"> 
+                            <a href="index.php" class="nav_link active"> 
                                 <i class='bx bx-grid-alt nav_icon'></i> 
                                 <span class="nav_name">Página Principal</span> 
                             </a> 
