@@ -2,7 +2,7 @@
 <html>
     <?php 
         $file="inicio";
-        include 'content/head.php';
+        include 'head.php';
     ?>  
 
     <style>
@@ -13,7 +13,7 @@
     </style>
     
     <body>
-        <?php include_once 'content/header.php'; ?>
+        <?php include_once 'header.php'; ?>
         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"> <!-- Las imagenes deberian tener el mismo tamaño o proporción. Tener en cuenta al escoger las imagenes el color del carousel-->
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -83,7 +83,7 @@
                 <div class="col-6 textos" style="text-align: center; padding: 10%;">
                     <h3>Contacta con nosotros</h3><br><br>
                     <p>Si tienes cualquier duda sobre nuestros servicios, o si crees que necesitas un sevicio a medida puedes enviarnos un mail haciendo clic aquí</p>
-                    <a class="btn btn-primary" href="content/contacto.html" role="button">Contacta!</a>
+                    <a class="btn btn-primary" href="contacto.html" role="button">Contacta!</a>
                 </div>
             </div>
         </div>
