@@ -13,7 +13,6 @@ if (isset($_POST['login'])) {
 
     //echo "$email, $contra";
     $consulta = "SELECT * FROM usuarios WHERE (email = '$login' OR usuario = '$login') AND passwd = '$contra'";
-    echo $consulta;
     $result = mysqli_query($conn, $consulta);    
 
     if ($row = mysqli_fetch_array($result)) {
