@@ -6,12 +6,15 @@
     ?>  
 
     <script> 
-        var name = document.getElementById(name);
-        var alias = document.getElementById(alias); 
+        var n = document.getElementById('name');
+        //var a = document.getElementById(alias); 
 
-        name.addEventListener('keypress', k =>{
-            console.log(k.keyCode);
-        }       
+        console.log(n/*,a*/);
+        function write(){
+            console.log(1);
+        }  
+        n.addEventListener('keypress', write, false);        
+           
         
         function autonomo(){
             var check = document.getElementById("auto");
@@ -50,20 +53,20 @@
             <br>
             <div class="row justify-content-center">
                     <div class="col-4 form-check">
-                        <input type="checkbox" class="form-check-input" id="auto" onclick="autonomo()">
+                        <input type="checkbox" class="form-check-input" id="auto" onclick="autonomo">
                         <label class="form-check-label" for="autonomo" id="auto">Soy autónomo</label>
                     </div>
             </div>
             <br>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <label for="name" class="form-label" id="name">Nombre*</label>
-                    <input type="name" class="form-control" id="name">
+                    <label for="name" class="form-label">Nombre*</label>
+                    <input type="name" class="form-control" id="name" class="name">
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <label for="Alias" class="form-label" id="Alias">Alias*</label>
+                    <label for="Alias" class="form-label">Alias*</label>
                     <input type="text" class="form-control" id="Alias" value="">
                 </div>
             </div>
