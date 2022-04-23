@@ -1,32 +1,3 @@
-
-
-<?php 
-    session_start();
-    $trabajador = false;
-    $cliente = false;
-    require 'php/config.php';
-
-    if(isset($_SESSION['user_id'])){
-        $consulta_trabajadores = "SELECT idUsuario FROM trabajadores WHERE idUsuario = '$_SESSION[user_id]'"; 
-        $trabajadores = mysqli_query($conn, $consulta_trabajadores);
-        $row_trab = mysqli_fetch_array($trabajadores);
-        if($row_trab){
-            $trabajador = true;
-            $cliente = false;
-        }else{
-            $consulta_clientes = "SELECT idUsuario FROM clientes WHERE idUsuario = '$_SESSION[user_id]'"; 
-            $clientes = mysqli_query($conn, $consulta_clientes);
-            $row_cli = mysqli_fetch_array($clientes);
-            if ($row_cli){
-                $cliente = true;
-                $trabajador = false;
-            }
-        }
-    }
-    
-    
-    
-?>
 <style>
     
     .in-se{
@@ -69,7 +40,7 @@
         } else if ($trabajador) { 
     ?>
         <section class="admin_body" id="body-pd">
-            <script src="js/header_show.js"></script>
+            
             <header class="header" id="header">
                 <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
                 <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
@@ -113,9 +84,6 @@
                         <span class="nav_name">SignOut</span> 
                     </a>
                 </nav>
-            </div>
-            <div class="height-100 bg-light">
-                Menu Principal
             </div>
         </section>
     <?php 

@@ -59,3 +59,5 @@ TAREAS:
 - Posteriormente carrito.
 - Aplicar include de los headers a todas las páginas.
 - Login en el que se introduzca o el Email o el nombre de usuario(Específicamente para los administradores).
+
+
