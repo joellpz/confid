@@ -69,7 +69,7 @@
                                 <i class='bx bxs-report nav_icon'></i> 
                                 <span class="nav_name">Facturación</span> 
                             </a>
-                            <a href="#" class="nav_link"> 
+                            <a href="user_admin.php" class="nav_link"> 
                                 <i class='bx bxs-user-plus nav_icon'></i>
                                 <span class="nav_name">Gestión de Usuarios</span> 
                             </a> 
