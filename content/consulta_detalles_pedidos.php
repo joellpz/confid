@@ -1,9 +1,8 @@
 <?php
+    session_start();
     require 'php/config.php';
     // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -25,8 +24,11 @@
 
                     while ($row = mysqli_fetch_array($res)) {
                         echo '<tr>';
-                        echo '<td>' . $row['ID_PEDIDO'] . '</td>';
-                        echo '<td>' . $row['ID_PRODUCTO'] . '</td>';
+                        echo '<td>' . $row['idPedido'] . '</td>';
+                        echo '<td>' . $row['idProducto'] . '</td>';
+                        echo '<td>' . $row['fecha'] . '</td>';
+                        echo '<td>' . $row['precioTotal'] . '</td>';
+                        echo '<td>' . $row['idTransporte'] . '</td>';
                         echo '<td>' . $row['cantidad'] . '</td>';
                         echo '</tr>';
                     }
