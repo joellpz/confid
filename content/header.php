@@ -4,7 +4,7 @@
     session_start();
     $trabajador = false;
     $cliente = false;
-    require 'php/config.php';
+    require '../php/config.php';
 
     if(isset($_SESSION['user_id'])){
         $consulta_trabajadores = "SELECT idUsuario FROM trabajadores WHERE idUsuario = '$_SESSION[user_id]'"; 
