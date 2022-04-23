@@ -8,14 +8,16 @@ if (!$conn) {
 
 if (isset($_POST['login'])) {
     session_start();
-    $email = $_POST['login_email'];
+    $login = $_POST['login_email'];
     $contra = $_POST['login_pass'];
 
-    echo "$email, $contra";
-    $consulta = "SELECT * FROM usuarios WHERE email = '$email' AND passwd = '$contra'";
-    $result = mysqli_query($conn, $consulta);
+    //echo "$email, $contra";
+    $consulta = "SELECT * FROM usuarios WHERE (email = '$login' OR usuario = '$login') AND passwd = '$contra'";
+    echo $consulta;
+    $result = mysqli_query($conn, $consulta);    
 
     if ($row = mysqli_fetch_array($result)) {
+        echo 'Hola';
         $_SESSION['user_id'] = $row['idUsuarios'];
         $_SESSION['user_passwd'] = $row['passwd'];
         $_SESSION['user_name'] = $row['nombre'];
