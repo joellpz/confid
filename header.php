@@ -62,7 +62,7 @@
                                 <span class="nav_name">Clientes</span> 
                             </a> 
                             <a href="consulta_pedidos.php" class="nav_link"> 
-                                <i class='bx bx-message-square-detail nav_icon'></i> 
+                                <i class='bx bx-clipboard bx-tada bx-flip-horizontal' ></i>
                                 <span class="nav_name">Consulta Pedidos</span> 
                             </a> 
                             <a href="consulta_detalles_pedidos.php" class="nav_link"> 
