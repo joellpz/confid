@@ -2,6 +2,7 @@
 <html>
     <?php 
         $file=basename(__FILE__, '.php');
+        /* $file= "C. Panel"; */
         include 'head.php'; //CAMBIAR RUTA SEGUN UBI
     ?>  
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>
