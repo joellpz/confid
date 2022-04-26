@@ -5,28 +5,6 @@
         include 'head.php'; //CAMBIAR RUTA SEGUN UBI
     ?>  
 
-    <script> 
-        var n = document.getElementById('name');
-        //var a = document.getElementById(alias); 
-
-        console.log(n/*,a*/);
-        function write(){
-            console.log(1);
-        }  
-        n.addEventListener('keypress', write, false);        
-           
-        
-        function autonomo(){
-            var check = document.getElementById("auto");
-            var cif = document.getElementById("CIF");
-            if(check.checked){ 
-                cif.innerHTML = "NIF/DNI*"; 
-            }else{ 
-                cif.innerHTML = "CIF*";
-            }
-        }
-    </script>
-
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <?php include_once 'header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->   
         
@@ -53,7 +31,7 @@
             <br>
             <div class="row justify-content-center">
                     <div class="col-4 form-check">
-                        <input type="checkbox" class="form-check-input" id="auto" onclick="autonomo">
+                        <input type="checkbox" class="form-check-input" id="auto" onclick="autonomo()">
                         <label class="form-check-label" for="autonomo" id="auto">Soy autónomo</label>
                     </div>
             </div>
@@ -61,7 +39,7 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="name" class="form-label">Nombre*</label>
-                    <input type="name" class="form-control" id="name" class="name">
+                    <input type="placeholder" class="form-control" id="name" class="name">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -91,6 +69,24 @@
                     </div>
                 </div>
             </div>
-        </form>        
+        </form>     
+        <script> 
+            /*const n = document.querySelector('#name');
+            const a = document.getElementById('Alias');*/
+
+            /*function write(){
+                console.log('si');
+            }           
+            
+            function autonomo(){
+                var check = document.getElementById("auto");
+                var cif = document.getElementById("CIF");
+                if(check.checked){ 
+                    cif.innerHTML = "NIF/DNI*"; 
+                }else{ 
+                    cif.innerHTML = "CIF*";
+                }
+            }*/
+        </script>
     </body>
 </html>

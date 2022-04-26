@@ -29,7 +29,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="php/signout.php">Cerrar Sesión</a>
                 </div>
-            </div>    
+            </div>
             <a class=" link px-3 d-flex align-items-center" href="#">
                 <i class="bx bx-cart-alt px-1"></i>
                 <span class="d-none d-md-inline-block">Carrito</span>
