@@ -39,7 +39,7 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="name" class="form-label">Nombre*</label>
-                    <input type="placeholder" class="form-control" id="name" class="name">
+                    <input type="placeholder" class="form-control" id="name" class="name" onkeyup="write()">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -71,10 +71,10 @@
             </div>
         </form>     
         <script> 
-            /*const n = document.querySelector('#name');
-            const a = document.getElementById('Alias');*/
+            const n = document.querySelector('#name');
+            const a = document.getElementById('Alias');
 
-            /*function write(){
+            function write(){
                 console.log('si');
             }           
             
@@ -86,7 +86,7 @@
                 }else{ 
                     cif.innerHTML = "CIF*";
                 }
-            }*/
+            }
         </script>
     </body>
 </html>
