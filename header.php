@@ -115,7 +115,7 @@
                         </div>
                         <div class="dropdown-divider"></div>
                         <div class="d-flex">
-                            <a class="dropdown-item col mx-2" href="registro.html">Eres nuevo? Regístrate!</a>
+                            <a class="dropdown-item col mx-2" href="registro.php">Eres nuevo? Regístrate!</a>
                             <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block"/>
                         </div>
                     </div>
