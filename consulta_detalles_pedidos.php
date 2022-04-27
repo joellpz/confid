@@ -12,18 +12,20 @@
             <thead>
                 <tr style="background-color: #646CDF;">
                     <th>Código Usuario</th>
-                    <th>Alias</th>
+                    <th>Nombre del Cliente</th>
                     <th>CIF</th>
-                    <th>Precio Total</th>
+                    <th>Facturación Anual</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
 
-                    $consulta = "SELECT clientes.idUsuario, Alias, CIF, pedidos.precioTotal 
+                    $consulta = "SELECT clientes.idUsuario, Alias, CIF, SUM(pedidos.precioTotal)
                     FROM clientes, pedidos, detallespedidos 
-                    WHERE clientes.idUsuario like pedidos.idUsuario AND pedidos.idPedidos like detallespedidos.idPedido 
-                    GROUP BY idUsuario";
+                    WHERE clientes.idUsuario like pedidos.idUsuario
+                    AND pedidos.idPedido like detallespedidos.idPedido 
+                    GROUP BY clientes.idUsuario";
+
                     $res = mysqli_query($conn, $consulta);    
 
                     while ($row = mysqli_fetch_array($res)) {
@@ -31,7 +33,7 @@
                         echo '<td>' . $row['idUsuario'] . '</td>';
                         echo '<td>' . $row['Alias'] . '</td>';
                         echo '<td>' . $row['CIF'] . '</td>';
-                        echo '<td>' . $row['precioTotal'] . '</td>';
+                        echo '<td>' . $row['SUM(pedidos.precioTotal)'] . '</td>';
                         echo '</tr>';
 
 
