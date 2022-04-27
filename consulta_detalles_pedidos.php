@@ -11,17 +11,31 @@
         <table border= "1" style="width: 80%;">
             <thead>
                 <tr style="background-color: #646CDF;">
-                    <th>ID Pedido</th>
-                    <th>ID Producto</th>
-                    <th>Fecha</th>
+                    <th>Código Usuario</th>
+                    <th>Alias</th>
+                    <th>CIF</th>
                     <th>Precio Total</th>
-                    <th>Transportista</th>
-                    <th>Cantidad</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $consulta = "SELECT * FROM detallespedidos";
+
+                    $consulta = "SELECT clientes.idUsuario, Alias, CIF, pedidos.precioTotal 
+                    FROM clientes, pedidos, detallespedidos 
+                    WHERE clientes.idUsuario like pedidos.idUsuario AND pedidos.idPedidos like detallespedidos.idPedido 
+                    GROUP BY idUsuario";
+                    $res = mysqli_query($conn, $consulta);    
+
+                    while ($row = mysqli_fetch_array($res)) {
+                        echo '<tr>';
+                        echo '<td>' . $row['idUsuario'] . '</td>';
+                        echo '<td>' . $row['Alias'] . '</td>';
+                        echo '<td>' . $row['CIF'] . '</td>';
+                        echo '<td>' . $row['precioTotal'] . '</td>';
+                        echo '</tr>';
+
+
+                    /*$consulta = "SELECT * FROM detallespedidos";
                     $res = mysqli_query($conn, $consulta);
 
                     while ($row = mysqli_fetch_array($res)) {
@@ -32,7 +46,7 @@
                         echo '<td>' . $row['precioTotal'] . '</td>';
                         echo '<td>' . $row['idTransporte'] . '</td>';
                         echo '<td>' . $row['cantidad'] . '</td>';
-                        echo '</tr>';
+                        echo '</tr>';*/
                     }
                 ?>
             </tbody>
