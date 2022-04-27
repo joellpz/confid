@@ -23,7 +23,5 @@ if (isset($_POST['login'])) {
         $_SESSION['user_email'] = $row['email'];
         header('Location: ../index.php');
     }
-    
-      
 }
 ?>
