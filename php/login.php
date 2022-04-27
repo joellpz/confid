@@ -17,13 +17,11 @@ if (isset($_POST['login'])) {
 
     if ($row = mysqli_fetch_array($result)) {
         echo 'Hola';
-        $_SESSION['user_id'] = $row['idUsuarios'];
+        $_SESSION['user_id'] = $row['idUsuario'];
         $_SESSION['user_passwd'] = $row['passwd'];
         $_SESSION['user_name'] = $row['nombre'];
         $_SESSION['user_email'] = $row['email'];
         header('Location: ../index.php');
     }
-    
-    
 }
 ?>
