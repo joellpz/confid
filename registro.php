@@ -12,15 +12,15 @@
             <div class="row" style="height: 150px;"></div>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <label for="singup_email" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="singup_email" name=""aria-describedby="emailHelp">
+                    <label for="singup_user" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="singup_user" aria-describedby="emailHelp" name="singup_user">
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="singup_pass" class="form-label">Contraseña*</label>
-                    <input type="password" class="form-control" id="singup_pass">
+                    <input type="password" class="form-control" id="singup_pass" name="singup_pass">
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -38,26 +38,26 @@
             <br>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <label for="name" class="form-label">Nombre*</label>
-                    <input type="placeholder" class="form-control" id="name" class="name">
+                    <label for="singup_name" class="form-label">Nombre*</label>
+                    <input type="placeholder" class="form-control" id="singup_name" name="singup_name">
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <label for="Alias" class="form-label">Alias*</label>
-                    <input type="text" class="form-control" id="Alias" value="" disabled>
+                    <label for="singup_alias" class="form-label">Alias*</label>
+                    <input type="text" class="form-control" id="singup_alias" name="singup_alias" disabled>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <label for="CIF" class="form-label" id="CIF">CIF*</label>
-                    <input type="text" class="form-control" id="CIF">
+                    <label for="singup_cif" class="form-label" id="CIF">CIF*</label>
+                    <input type="text" class="form-control" id="singup_cif" name="singup_cif">
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <label for="Direccion" class="form-label">Dirección*</label>
-                    <input type="text" class="form-control" id="Direccion">
+                    <label for="singup_dir" class="form-label">Dirección*</label>
+                    <input type="text" class="form-control" id="singup_dir" name="singup_dir">
                 </div>
             </div>           
             <br>   
@@ -69,24 +69,29 @@
                     </div>
                 </div>
             </div>
-        </form>
-        <script>
+        </form>     
+        <script> 
 
-            const n = document.querySelector('#name');
-            const a = document.getElementById('Alias');
+            const n = document.querySelector('#singup_name');
+            const a = document.getElementById('singup_alias');
             n.addEventListener("keydown", write);
             function write(){
-                a.value = a.value + event.key;
-            }
+                if(event.which == '8' || event.which == '16' || event.which == '20' || event.which == '13'  || event.which == '1718' || event.which == '17'){
+                    a.value = a.value.substring(0, a.value.length - 1);
+                }else{
+                    a.value = a.value + event.which;
+                }                
+            }                       
 
             function autonomo(){
                 var check = document.getElementById("auto");
                 var cif = document.getElementById("CIF");
                 if(check.checked){ 
                     cif.innerHTML = "NIF/DNI*"; 
-                    a.disabled = true;
+                    a.disabled = false;
                 }else{ 
                     cif.innerHTML = "CIF*";
+                    a.disabled = true;
                 }
             }
         </script>
