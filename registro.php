@@ -13,7 +13,7 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="singup_user" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="singup_user" aria-describedby="emailHelp" name="singup_user">
+                    <input type="email" class="form-control" id="singup_user" name="singup_user">
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>
             </div>
