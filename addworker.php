@@ -17,38 +17,38 @@
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <?php include_once 'header.php'; ?>
         <h2>Añadir Usuario</h2>
-        <form action="php/singup.php" method="post" class="m-4">
+        <form action="php/signup.php" method="post" class="m-4">
             <div class="row justify-content-center py-2">
                 <div class="col-4">
-                    <label for="singup_user" class="form-label">Nº Empleado*</label>
-                    <input type="number" maxlength="5" class="form-control" id="singup_num" name="singup_num" required>
+                    <label for="signup_user" class="form-label">Nº Empleado*</label>
+                    <input type="number" maxlength="5" class="form-control" id="signup_num" name="signup_num" required>
                 </div>
                 <div class="col-4">
-                    <label for="singup_ss" class="form-label">Nº Seguridad Social*</label>
-                    <input type="text" class="form-control" id="singup_ss" name="singup_ss" required>
+                    <label for="signup_ss" class="form-label">Nº Seguridad Social*</label>
+                    <input type="text" class="form-control" id="signup_ss" name="signup_ss" required>
                 </div>
             </div>    
             <div class="row justify-content-center py-2">
                 <div class="col-4">
-                    <label for="singup_name" class="form-label">Nombre*</label>
-                    <input type="text" class="form-control" id="singup_name" name="singup_name" required>
+                    <label for="signup_name" class="form-label">Nombre*</label>
+                    <input type="text" class="form-control" id="signup_name" name="signup_name" required>
                 </div>
                 <div class="col-4">
-                    <label for="singup_surname" class="form-label">Apellido*</label>
-                    <input type="text" class="form-control" id="singup_surname" name="singup_surname" required>
+                    <label for="signup_surname" class="form-label">Apellido*</label>
+                    <input type="text" class="form-control" id="signup_surname" name="signup_surname" required>
                 </div>
             </div>
             <div class="row justify-content-center py-2">
                 <div class="col-8">
-                    <label for="singup_email" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="singup_email" name="singup_email" aria-describedby="emailHelp" required>
+                    <label for="signup_email" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="signup_email" name="signup_email" aria-describedby="emailHelp" required>
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>
             </div>
             <div class="row justify-content-center py-2">
                 <div class="col-4">
-                    <label for="singup_pass" class="form-label">Contraseña*</label>
-                    <input type="text" class="form-control" id="singup_pass" name="singup_pass" required>
+                    <label for="signup_pass" class="form-label">Contraseña*</label>
+                    <input type="text" class="form-control" id="signup_pass" name="signup_pass" required>
                 </div>
             </div>  
             <div class="container-fluid p-2">
