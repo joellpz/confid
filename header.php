@@ -73,7 +73,7 @@
                                 <i class='bx bx-user nav_icon'></i> 
                                 <span class="nav_name">Usuarios</span> 
                             </a>
-                            <a href="adduser.php" class="nav_link"> 
+                            <a href="addworker.php" class="nav_link"> 
                                 <i class='bx bxs-user-plus nav_icon'></i>
                                 <span class="nav_name">Añadir</br> Usuarios</span> 
                             </a> 
