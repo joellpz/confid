@@ -5,19 +5,25 @@
         include 'head.php'; //CAMBIAR RUTA SEGUN UBI
     ?>      
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
-        <?php include_once 'header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->   
+        <?php include_once 'header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->  
+        <style>
+            .btn{
+                width:100%;
+                max-width: 200px;
+            }
+        </style>
         <h2>Registro de Usuarios</h2>
         <form action="php/signup.php" method="post" ><br>              
             <div class="row justify-content-center py-2">
-                <div class="col-2" style="margin-top:">
-                    <label class="btn btn-outline-secondary" for="signup_auto" id="signup_auto" name="signup_auto">Soy autónomo</label>
-                    <input type="checkbox" class="btn-check" id="signup_auto" onclick="autonomo()">                    
-                </div>
                 <div class="col-6">
                     <label for="signup_user" class="form-label">Email*</label>
                     <input type="email" class="form-control" id="signup_user" name="signup_user" required>
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
-                </div>                
+                </div>  
+                <div class="col-2" style="display: flex;flex-wrap: nowrap;justify-content: center;align-items: center; margin-top: 0.3%">
+                    <label class="btn btn-outline-secondary" for="signup_auto" name="signup_auto">Soy autónomo</label>
+                    <input type="checkbox" class="btn-check" id="signup_auto" onclick="autonomo()">                    
+                </div>              
             </div>
             <br>
             <div class="row justify-content-center">                
@@ -64,9 +70,11 @@
             </div> 
             <br>
             <div class="container-fluid h-100">
-                <div class="row w-100">
-                    <div class="col text-center">
+                <div class="row justify-content-center">
+                    <div class="col-2 text-center">
                         <input type="submit" class="btn btn-primary" name="add_cliente" value="Regístrate"/>
+                    </div>
+                    <div class="col-2 text-center">                       
                         <a href="index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
                     </div>
                 </div>
