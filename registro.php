@@ -31,8 +31,8 @@
             <br>
             <div class="row justify-content-center">
                     <div class="col-4 form-check">
-                        <input type="checkbox" class="form-check-input" id="auto" onclick="autonomo()">
-                        <label class="form-check-label" for="autonomo" id="auto">Soy autónomo</label>
+                        <input type="checkbox" class="form-check-input" id="singup_auto" onclick="autonomo()">
+                        <label class="form-check-label" for="singup_auto" id="singup_auto" name="singup_auto">Soy autónomo</label>
                     </div>
             </div>
             <br>
