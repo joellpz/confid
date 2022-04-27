@@ -21,7 +21,22 @@
             </thead>
             <tbody>
                 <?php
-                    $consulta = "SELECT * FROM detallespedidos";
+
+                    $consulta = "SELECT idUsuario, Alias, CIF, precioTotal FROM clientes, pedidos, detallespedidos
+                    WHERE clientes.idUsuario like pedidos.idUsuario AND pedidos.idPedidos like detallespedidos.idPedido
+                    GROUP BY idUsuario";
+                    $res = mysqli_query($conn, $consulta);    
+
+                    while ($row = mysqli_fetch_array($res)) {
+                        echo '<tr>';
+                        echo '<td>' . $row['idUsuario'] . '</td>';
+                        echo '<td>' . $row['Alias'] . '</td>';
+                        echo '<td>' . $row['CIF'] . '</td>';
+                        echo '<td>' . $row['precioTotal'] . '</td>';
+                        echo '</tr>';
+
+
+                    /*$consulta = "SELECT * FROM detallespedidos";
                     $res = mysqli_query($conn, $consulta);
 
                     while ($row = mysqli_fetch_array($res)) {
@@ -32,7 +47,7 @@
                         echo '<td>' . $row['precioTotal'] . '</td>';
                         echo '<td>' . $row['idTransporte'] . '</td>';
                         echo '<td>' . $row['cantidad'] . '</td>';
-                        echo '</tr>';
+                        echo '</tr>';*/
                     }
                 ?>
             </tbody>
