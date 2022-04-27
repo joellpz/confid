@@ -13,7 +13,7 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="singup_email" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="singup_email" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="singup_email" name=""aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>
             </div>
@@ -64,8 +64,8 @@
             <div class="container-fluid h-100">
                 <div class="row w-100">
                     <div class="col text-center">
-                        <input type="submit" class="btn btn-primary" name="registrar" value="Regístrate"/>
-                        <a href="index.html"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
+                        <input type="submit" class="btn btn-primary" name="add_cliente" value="Regístrate"/>
+                        <a href="index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
                     </div>
                 </div>
             </div>
