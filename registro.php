@@ -39,13 +39,13 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="name" class="form-label">Nombre*</label>
-                    <input type="placeholder" class="form-control" id="name" class="name" onkeyup="write()">
+                    <input type="placeholder" class="form-control" id="name" class="name">
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="Alias" class="form-label">Alias*</label>
-                    <input type="text" class="form-control" id="Alias" value="">
+                    <input type="text" class="form-control" id="Alias" value="" disabled>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -69,20 +69,22 @@
                     </div>
                 </div>
             </div>
-        </form>     
-        <script> 
+        </form>
+        <script>
+
             const n = document.querySelector('#name');
             const a = document.getElementById('Alias');
-
+            n.addEventListener("keydown", write);
             function write(){
-                console.log('si');
-            }           
-            
+                a.value = a.value + event.key;
+            }
+
             function autonomo(){
                 var check = document.getElementById("auto");
                 var cif = document.getElementById("CIF");
                 if(check.checked){ 
                     cif.innerHTML = "NIF/DNI*"; 
+                    a.disabled = true;
                 }else{ 
                     cif.innerHTML = "CIF*";
                 }
