@@ -11,19 +11,18 @@
         <table border= "1" style="width: 80%;">
             <thead>
                 <tr style="background-color: #646CDF;">
-                    <th>ID Pedido</th>
-                    <th>ID Producto</th>
-                    <th>Fecha</th>
+                    <th>Código Usuario</th>
+                    <th>Alias</th>
+                    <th>CIF</th>
                     <th>Precio Total</th>
-                    <th>Transportista</th>
-                    <th>Cantidad</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
 
-                    $consulta = "SELECT idUsuario, Alias, CIF, precioTotal FROM clientes, pedidos, detallespedidos
-                    WHERE clientes.idUsuario like pedidos.idUsuario AND pedidos.idPedidos like detallespedidos.idPedido
+                    $consulta = "SELECT clientes.idUsuario, Alias, CIF, pedidos.precioTotal 
+                    FROM clientes, pedidos, detallespedidos 
+                    WHERE clientes.idUsuario like pedidos.idUsuario AND pedidos.idPedidos like detallespedidos.idPedido 
                     GROUP BY idUsuario";
                     $res = mysqli_query($conn, $consulta);    
 
