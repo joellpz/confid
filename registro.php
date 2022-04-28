@@ -48,7 +48,7 @@
             </div>
 
             <br>
-            <div classa="row justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="signup_cif" class="form-label" id="CIF">CIF*</label>
                     <input type="text" class="form-control" id="signup_cif" name="signup_cif" required>
