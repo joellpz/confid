@@ -1,19 +1,19 @@
-<style>
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-</style>
 <!DOCTYPE html>
-<?php
-    $file="Control Panel";
-    include 'head.php';
-?>
 <html>
-    
+    <?php
+        $file="Control Panel";
+        include 'head.php';
+    ?>
+    <style>
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0; 
+        }
+    </style>
+
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <?php include_once 'header.php'; ?>
         <h2>Añadir Usuario</h2>

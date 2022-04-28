@@ -16,7 +16,6 @@ if (isset($_POST['login'])) {
     $result = mysqli_query($conn, $consulta);    
 
     if ($row = mysqli_fetch_array($result)) {
-        echo 'Hola';
         $_SESSION['user_id'] = $row['idUsuario'];
         $_SESSION['user_passwd'] = $row['passwd'];
         $_SESSION['user_name'] = $row['nombre'];
