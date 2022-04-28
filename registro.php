@@ -13,11 +13,12 @@
             }
         </style>
         <h2>Registro de Usuarios</h2>
-        <form action="php/signup.php" method="post" ><br>              
+        <form action="php/signup.php" method="post" id="form"><br>              
             <div class="row justify-content-center py-2">
                 <div class="col-6">
                     <label for="signup_user" class="form-label">Email*</label>
                     <input type="email" class="form-control" id="signup_user" name="signup_user" required>
+                    <input type="hidden" class="form-control" id="signup_email" name="signup_email">
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>  
                 <div class="col-2" style="display: flex;flex-wrap: nowrap;justify-content: center;align-items: center; margin-top: 0.3%">
@@ -38,15 +39,6 @@
                     <span id="passwordHelpInline" class="form-text">El nombre de tu empresa.</span>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    
-                </div>
-                <div class="col-4">
-                    
-                </div>
-            </div>
-
             <br>
             <div class="row justify-content-center">
                 <div class="col-4">
@@ -73,7 +65,7 @@
             <div class="container-fluid h-100">
                 <div class="row justify-content-center">
                     <div class="col-2 text-center">
-                        <input type="submit" class="btn btn-primary" name="add_cliente" value="Regístrate"/>
+                        <input type="button" class="btn btn-primary" name="add_cliente" value="Regístrate" onclick='registro()'/>
                     </div>
                     <div class="col-2 text-center">                       
                         <a href="index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
@@ -82,7 +74,6 @@
             </div>
         </form>     
         <script> 
-
             const n = document.querySelector('#signup_name');
             const a = document.getElementById('signup_alias');
             n.addEventListener("keydown", write);
@@ -104,6 +95,14 @@
                     cif.innerHTML = "CIF*";
                     a.disabled = true;
                 }
+            }
+            const user = document.getElementById('signup_user');
+            const email = document.getElementById('signup_email');
+            const form = document.getElementById('form');
+
+            function registro(){
+                email.value = user.value;
+                form.submit();
             }
         </script>
     </body>
