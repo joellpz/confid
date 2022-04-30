@@ -7,8 +7,11 @@
 
     <style>
         .card{
-        border-radius: 30px;
-        
+            border-radius: 30px;        
+        }
+        #prod{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
         }
     </style>
     
@@ -49,21 +52,21 @@
         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"> <!-- Las imagenes deberian tener el mismo tamaño o proporción. Tener en cuenta al escoger las imagenes el color del carousel-->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/img-horizontal.png" class="d-block w-50" alt=""> 
+                    <img id='prod' src="img/productos/portada4.1.jpg" class="d-block w-100" alt=""> 
                     <div class="carousel-caption d-none d-md-block"> 
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img-horizontal.png" class="d-block w-50" alt="">
+                    <img id='prod' src="img/productos/portada2.1.jpg" class="d-block w-100" alt="">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img-horizontal.png" class="d-block w-50" alt="">
+                    <img id='prod' src="img/productos/portada3.1.jpg" class="d-block w-100" alt="">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
@@ -86,7 +89,7 @@
         <div class="row align-items-center">
             <div class="col">
             <div class="card h-100">
-                <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
+                <img id='prod' src="img/productos/servicio1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -95,7 +98,7 @@
             </div>
             <div class="col">
             <div class="card h-100">
-                <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
+                <img id='prod' src="img/productos/servicio2.png" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -110,7 +113,11 @@
         <div class="container bloque_contacto" style="border: 2px solid black; border-radius: 30px;">
             <div class="row align-items-center">
                 <div class="col-6 imagen">
+<<<<<<< HEAD
                     <img src="img/img-cuadrada.png" style="width: 100%;"/>
+=======
+                    <img id='prod' src="img/logo/CONFID-Logo.png" style="width: 100%;"/>
+>>>>>>> c4778730ad7c869a2b679abb877db3b027abc797
                 </div>
                 <div class="col-6 textos" style="text-align: center; padding: 10%;">
                     <h3>Contacta con nosotros</h3><br><br>
@@ -126,7 +133,7 @@
             <div class="row align-items-center">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
+                        <img id='prod' src="img/productos/camara1.1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -135,7 +142,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
+                        <img id='prod' src="img/productos/camara2.1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -144,7 +151,7 @@
                 </div>  
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
+                        <img id='prod' src="img/productos/camara3.1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
