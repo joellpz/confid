@@ -8,7 +8,7 @@
         $email = $_POST['signup_email'];
         $name = $_POST['signup_name'];
 
-        $consulta_usuario = "INSERT INTO usuarios VALUES (NULL,< '$usuario', '$pass', '$name', '$email')";
+        $consulta_usuario = "INSERT INTO usuarios VALUES (NULL,'$usuario', '$pass', '$name', '$email')";
         mysqli_query($conn,$consulta_usuario);
 
         $consulta_id = "SELECT MAX(idUsuario) FROM `usuarios`;";
@@ -37,7 +37,7 @@
             mysqli_query($conn,$consulta_cli);
         }
 
-        /*header('Location: ../index.php');*/
+        header('Location: ../index.php');
 
     }
 ?>
