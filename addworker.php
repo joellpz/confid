@@ -21,7 +21,7 @@
             <div class="row justify-content-center py-2">
                 <div class="col-4">
                     <label for="signup_user" class="form-label">Nº Empleado*</label>
-                    <input type="number" maxlength="5" class="form-control" id="signup_num" name="signup_num" required>
+                    <input type="number" maxlength="5" class="form-control" id="signup_user" name="signup_user" required>
                 </div>
                 <div class="col-4">
                     <label for="signup_ss" class="form-label">Nº Seguridad Social*</label>

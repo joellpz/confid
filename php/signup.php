@@ -1,14 +1,14 @@
 <?php
     include('config.php');
     session_start();
-
-    if(isset($_POST['add_worker']) || isset($_POST['add_cliente'])){
-        $usuario = $_POST['signup_name'];
+    var_dump($_POST);
+    if( isset($_POST)/*isset($_POST['add_worker']) || isset($_POST['add_cliente'])*/){
+        $usuario = $_POST['signup_user'];
         $pass = $_POST['signup_pass'];
         $email = $_POST['signup_email'];
         $name = $_POST['signup_name'];
 
-        $consulta_usuario = "INSERT INTO usuarios VALUES (NULL, '$usuario', '$pass', '$name', '$email')";
+        $consulta_usuario = "INSERT INTO usuarios VALUES (NULL,< '$usuario', '$pass', '$name', '$email')";
         mysqli_query($conn,$consulta_usuario);
 
         $consulta_id = "SELECT MAX(idUsuario) FROM `usuarios`;";
@@ -23,16 +23,21 @@
             $consulta_trab = "INSERT INTO trabajadores VALUES ('$id', '$ss', '$apel')";
             mysqli_query($conn,$consulta_trab);
         }else{
-            $alias = $_POST['signup_alias'];
+            if(isset($_POST['signup_auto'])){
+                $autonomo = 1;
+                $alias = $_POST['signup_alias'];
+            }else{
+                $autonomo = 0;
+                $alias = $_POST['signup_name'];
+            }
             $cif = $_POST['signup_cif'];
             $dir = $_POST['signup_dir'];
-            $autonomo = $_POST['signup_auto'];
-
+            
             $consulta_cli = "INSERT INTO clientes VALUES ('$id', '$alias', '$cif', '$dir', '$autonomo')";
             mysqli_query($conn,$consulta_cli);
         }
 
-        header('Location: ../index.php');
+        /*header('Location: ../index.php');*/
 
     }
 ?>
