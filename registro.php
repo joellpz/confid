@@ -81,7 +81,7 @@
                 if(event.which == '8' || event.which == '16' || event.which == '20' || event.which == '13'  || event.which == '1718' || event.which == '17'){
                     a.value = a.value.substring(0, a.value.length - 1);
                 }else{
-                    a.value = a.value + event.which;
+                    a.value = a.value + event.key;
                 }                
             }                       
 

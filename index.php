@@ -73,12 +73,12 @@
         </div>
         </div>
         <br><br>
-
+        
         <!-- Bloque de introducción al contacto -->
         <div class="container bloque_contacto" style="border: 2px solid black; border-radius: 30px;">
             <div class="row align-items-center">
                 <div class="col-6 imagen">
-                    <img src="img/img-cuadrada.png" style="width: 100%;"/>
+                    <img src="img/logo/CONFID-Logo.png" style="width: 100%;"/>
                 </div>
                 <div class="col-6 textos" style="text-align: center; padding: 10%;">
                     <h3>Contacta con nosotros</h3><br><br>
