@@ -14,6 +14,38 @@
     
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <?php include_once 'header.php'; ?>
+        <div class="navegacion">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <div class="container">
+                    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+                    <img
+                        src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                        height="16"
+                        alt="MDB Logo"
+                        loading="lazy"
+                        style="margin-top: -1px;"
+                    />
+                    </a>
+                    <div class="flex-row navbar-nav ms-auto justify-content-end" id="navbarButtonsExample">
+                        <ul class="flex-row navbar-nav ms-auto justify-content-end">
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+
         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"> <!-- Las imagenes deberian tener el mismo tamaño o proporción. Tener en cuenta al escoger las imagenes el color del carousel-->
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -73,12 +105,12 @@
         </div>
         </div>
         <br><br>
-        
+
         <!-- Bloque de introducción al contacto -->
         <div class="container bloque_contacto" style="border: 2px solid black; border-radius: 30px;">
             <div class="row align-items-center">
                 <div class="col-6 imagen">
-                    <img src="img/logo/CONFID-Logo.png" style="width: 100%;"/>
+                    <img src="img/img-cuadrada.png" style="width: 100%;"/>
                 </div>
                 <div class="col-6 textos" style="text-align: center; padding: 10%;">
                     <h3>Contacta con nosotros</h3><br><br>
