@@ -14,6 +14,7 @@
                     <th>Nº Pedido</th>
                     <th>Precio Total</th>
                     <th>idUsuario</th>
+                    <th>Nº Pedido Externo</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,6 +27,7 @@
                         echo '<td>' . $row['idPedido'] . '</td>';
                         echo '<td>' . $row['precioTotal'] . '</td>';
                         echo '<td>' . $row['idUsuario'] . '</td>';
+                        echo '<td>' . $row['pedidoExterno'] . '</td>';
                         echo '</tr>';
                     }
                 ?>
