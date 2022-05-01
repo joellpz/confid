@@ -18,31 +18,24 @@
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <?php include_once 'header.php'; ?>
         <div class="navegacion">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                
-                <div class="container">
-                    <a class="navbar-brand me-2" href="https://mdbgo.com/">
-                    <img
-                        src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-                        height="16"
-                        alt="MDB Logo"
-                        loading="lazy"
-                        style="margin-top: -1px;"
-                    />
+            <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
+                <div class="container p-2 border-bottom">
+                    <a class="navbar-brand me-2" href="index.php">
+                        <img src="img/logo/LogoMenu-CONFID.png" width="150" alt="CONFID Logo" loading="lazy"/>
                     </a>
-                    <div class="flex-row navbar-nav ms-auto justify-content-end" id="navbarButtonsExample">
-                        <ul class="flex-row navbar-nav ms-auto justify-content-end">
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                    <div class="flex-row navbar-nav ms-auto justify-content-end">
+                        <ul class="flex-row nav nav-pills ms-auto justify-content-end">
+                            <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="index.php">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes Somos</a>
+                            <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="#">Quienes Somos</a>
+                            </li> 
+                            <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="productos.html">Productos</a>
                             </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
