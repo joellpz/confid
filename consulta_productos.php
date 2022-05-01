@@ -14,7 +14,7 @@
                     <th>Referencia</th>
                     <th>Nombre</th>
                     <th>Descripción</th>
-                    <th>Almacén</th>
+                    <th>Unidades en Almacén</th>
                     <th>P.V.P.(€)</th>
                     <th>Categoria</th>
                 </tr>
