@@ -1,3 +1,7 @@
+<?php
+    $file="Control Panel";
+    include 'head.php';
+?>
 <!DOCTYPE html>
 <html>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
