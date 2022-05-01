@@ -63,8 +63,13 @@
                             </a> 
                             <a href="consulta_pedidos.php" class="nav_link"> 
                                 <i class='bx bx-clipboard bx-flip-horizontal nav_icon'></i>
-                                <span class="nav_name">Consulta Pedidos</span> 
+                                <span class="nav_name">Consulta Pedidos</span>
+
+                            <a href="consulta_productos.php" class="nav_link"> 
+                            <i class='bx bxl-product-hunt nav_icon'></i>
+                                <span class="nav_name">Consulta Productos</span>     
                             </a> 
+
                             <a href="consulta_detalles_pedidos.php" class="nav_link"> 
                                 <i class='bx bxs-report nav_icon'></i> 
                                 <span class="nav_name">Facturación</span> 

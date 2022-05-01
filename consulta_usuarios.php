@@ -6,17 +6,17 @@
             if(isset($_POST["del"])){
                 $id = $_POST['del'];
                 $delete = "DELETE FROM clientes WHERE idClientes = $id";
-                mysqli_query($conn, $delete) or die('Consulta fallida: ' . mysqli_error());
+                mysqli_query($conn, $delete);
                 echo"<br><h3>Eliminando Cliente ". $id . "...</h3>";
                 header("Location:../principal.php"); //Redirigir a Principal.
             }else{
         ?>
         <div>    
-            <div style="border-color:red; margin:auto; width:80%">    
+            <div>    
             <h1>Clientes</h1>
                 <table border= "1" style="width:100%;margin:auto;">
                     <thead>
-                        <tr style="background-color: rgba(0, 68, 255, 0.397) ">
+                        <tr style="background-color: #646CDF;">
                             <th>Editar</th>
                             <th>ID Usuario</th>
                             <th>Usuario</th>
