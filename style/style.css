@@ -226,3 +226,14 @@
 .borde{
     border: red solid;
 }
+
+/* 
+    ESTILO CAJAS DE PRODUCTOS
+                                */
+.card{
+    border-radius: 30px;        
+}
+#prod{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}                                
