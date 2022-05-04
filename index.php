@@ -4,6 +4,7 @@
         $file="inicio";
         include 'head.php';
     ?>      
+    <link rel ="stylesheet" href="style/caja_prods.css"/>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <?php include_once 'header.php'; ?>
         <div class="navegacion">

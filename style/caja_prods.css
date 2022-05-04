@@ -1,0 +1,12 @@
+/* 
+    ESTILO CAJAS DE PRODUCTOS
+                                */
+.card{
+    border-radius: 30px;        
+    min-height: 600px;
+    max-height: 800px;
+}
+#prod{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}                                

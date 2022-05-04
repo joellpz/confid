@@ -5,13 +5,6 @@
         include 'head.php';
     ?>  
     <style>
-        .card{
-        border-radius: 30px;
-        }
-        #prod{
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-        }
         h1{
             text-align: center;
             border: 2px #646CDF solid;
@@ -19,7 +12,8 @@
             padding-bottom: 7px;
         }
     </style>
-    <body>
+    <link rel ="stylesheet" href="style/caja_prods.css"/>
+    <body>        
         <?php 
             include_once 'header.php'; 
 
@@ -35,22 +29,21 @@
                         <h1>'.$row1['nombre'].'</h1>
                         <div class="row align-items-center">';
 
-                while ($row2 = mysqli_fetch_array($rescat)) {  
-                    $cont = 1;
-                    echo '  <div class="col-4">
+                while ($row2 = mysqli_fetch_array($rescat)) { 
+                    echo '  <div class="col-4 mb-3">
                                 <div class="card">
-                                    <img src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="...">
+                                    <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">'.$row2['nombre'].'</h5>
                                         <p class="card-text">'.$row2['descripcion'].'</p>
                                     </div>
                                 </div>
                             </div>';
-                    $cont++;
                 }              
                 echo '  </div>
                     </div><br><br>';  
             }
         ?>
+        
     </body>
 </html>
