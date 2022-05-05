@@ -2,7 +2,7 @@ Colores de la empresa:
 	Azul: #646CDF
 	Gris: #535253
 	Blanco: #FFFFFF
-
+a
 Compra: 
 	carrito sin loguear--> añadir  
 	logueado  --> Comprar 
