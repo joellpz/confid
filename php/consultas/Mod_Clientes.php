@@ -1,6 +1,11 @@
+<?php
+    $file="Control Panel";
+    include '../../head.php';
+?>
 <!DOCTYPE html>
 <html>
-    <body>
+    <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>
+        <?php include_once '../../header.php';?>
         <?php
             require ("../config.php");
             $id = $_GET['id'];
@@ -21,8 +26,8 @@
             }else{
         ?>
         <form method="post" action="<?php $_SERVER['PHP_SELF']?>">
-            <table style="font-size: 20px;margin:auto;">
-                <thead>
+            <table border= "1" style="width:100%;margin:auto;">
+                <thead style="background-color: #646CDF;">
                     <th colspan="2">Modificar usuario Nº<?php echo $row['idUsuario']?></th>
                 </thead>
                 <tr>

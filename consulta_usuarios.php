@@ -14,7 +14,7 @@
         <?php
             if(isset($_POST["del"])){
                 $id = $_POST['del'];
-                $delete = "DELETE FROM clientes WHERE idClientes = $id";
+                $delete = "DELETE FROM usuarios WHERE idUsuario = $id";
                 mysqli_query($conn, $delete);
                 echo"<br><h3>Eliminando Cliente ". $id . "...</h3>";
                 header("Location:index.php"); //Redirigir a Principal.
