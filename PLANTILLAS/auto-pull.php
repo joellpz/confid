@@ -3,4 +3,6 @@
 if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
   shell_exec( 'cd /var/www/confid/ && git reset --hard HEAD && git pull' );
 }
-?>hi
+shell_exec( 'cd /var/www/confid/ && git reset --hard HEAD && git pull' );
+?>
+hi
