@@ -74,10 +74,10 @@
                                 <i class='bx bxs-report nav_icon'></i> 
                                 <span class="nav_name">Facturación</span> 
                             </a>
-                            <a href="consulta_usuarios.php" class="nav_link"> 
+                            <!--<a href="consulta_usuarios.php" class="nav_link"> 
                                 <i class='bx bx-user nav_icon'></i> 
                                 <span class="nav_name">Usuarios</span> 
-                            </a>
+                            </a>-->
                             <a href="addworker.php" class="nav_link"> 
                                 <i class='bx bxs-user-plus nav_icon'></i>
                                 <span class="nav_name">Añadir</br> Usuarios</span> 
