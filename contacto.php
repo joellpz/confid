@@ -99,7 +99,7 @@
             <br>
             <div class="col text-center">
                 <button type="submit" class="btn btn-primary">Entrar</button>
-                <a href="index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
+                <a class="btn btn-primary" href="index.php" role="button">Volver a Inicio</a>
             </div>
             <div class="status"></div>
         </div>
