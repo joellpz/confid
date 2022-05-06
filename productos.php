@@ -34,11 +34,18 @@
                                 <div class="card">
                                     <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">'.$row2['nombre'].'</h5>
-                                        <p class="card-text">'.$row2['descripcion'].'</p>
+                                        <h5 class="card-title">'.$row2['nombre'].'</h5>';
+                                        if((strlen($row2['descripcion']))> 200) { 
+                                            $desc=substr($row2['descripcion'], 0, 200)."..."; 
+                                            echo '<p class="card-text">'.$desc.'</p>';
+                                        }else{
+                                            echo '<p class="card-text">'.$row2['descripcion'].'</p>';
+                                        }
+                    echo                '                                        
                                     </div>
                                 </div>
                             </div>';
+                    echo strlen($row2['descripcion']);
                 }              
                 echo '  </div>
                     </div><br><br>';  
