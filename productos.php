@@ -30,22 +30,14 @@
                         <div class="row align-items-center">';
 
                 while ($row2 = mysqli_fetch_array($rescat)) { 
-                    echo '  <div class="col-4 mb-3">
+                    echo '  <div class="col-3 mb-3">
                                 <div class="card">
-                                    <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="...">
+                                    <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="'.$row2['nombre'].'">
                                     <div class="card-body">
-                                        <h5 class="card-title">'.$row2['nombre'].'</h5>';
-                                        if((strlen($row2['descripcion']))> 175) { 
-                                            $desc=substr($row2['descripcion'], 0, 175)."..."; 
-                                            echo '<p class="card-text">'.$desc.'</p>';
-                                        }else{
-                                            echo '<p class="card-text">'.$row2['descripcion'].'</p>';
-                                        }
-                    echo                '                                      
+                                        <h5 class="card-title">'.$row2['nombre'].'</h5>                                                                          
                                     </div>
                                 </div>
                             </div>';
-                    echo strlen($row2['descripcion']);
                 }              
                 echo '  </div>
                     </div><br><br>';  
