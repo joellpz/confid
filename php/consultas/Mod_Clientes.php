@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>
-        <?php include_once '../../header.php';?>
+    <?php include_once '../../header.php';?>
         <?php
             require ("../config.php");
             $id = $_GET['id'];

@@ -101,7 +101,7 @@
                 <div class="col-6 textos" style="text-align: center; padding: 10%;">
                     <h3>Contacta con nosotros</h3><br><br>
                     <p>Si tienes cualquier duda sobre nuestros servicios, o si crees que necesitas un sevicio a medida puedes enviarnos un mail haciendo clic aquí</p>
-                    <a class="btn btn-primary" href="contacto.html" role="button">Contacta!</a>
+                    <a class="btn btn-primary" href="contacto.php" role="button">Contacta!</a>
                 </div>
             </div>
         </div>
