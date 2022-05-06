@@ -19,7 +19,7 @@
                                 <a class="nav-link" href="index.php">Inicio</a>
                             </li>
                             <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="#">Quienes Somos</a>
+                                <a class="nav-link" href="somos.php">Quienes Somos</a>
                             </li> 
                             <li class="nav-item px-2" role="presentation">
                                 <a class="nav-link" href="productos.php">Productos</a>
