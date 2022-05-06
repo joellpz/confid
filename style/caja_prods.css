@@ -4,9 +4,12 @@
 .card{
     border-radius: 30px;        
     min-height: 600px;
-    max-height: 800px;
+    max-height: 800px;    
+}
+.card-body p{
+    text-align: justify;
 }
 #prod{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-}                                
+}                       
