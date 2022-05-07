@@ -3,6 +3,7 @@
 //if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
   shell_exec( 'cd /var/www/confid/');
   shell_exec( 'git pull > Comprovar.txt');
+  echo shell_exec('cat Comprovar.txt');
 //}
 ?>
 hi
