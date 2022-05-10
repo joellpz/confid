@@ -34,7 +34,9 @@
                                 <div class="card">
                                     <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="'.$row2['nombre'].'">
                                     <div class="card-body">
-                                        <h5 class="card-title">'.$row2['nombre'].'</h5>                                                                          
+                                        <h5 class="card-title">'.$row2['nombre'].'</h5><br><br>
+                                        <p style="color:--first-color;">'.$row2['precioIVA'].'</p>
+                                        <p>'.$row2['precioNoIVA'].'</p>
                                     </div>
                                 </div>
                             </div>';
