@@ -30,7 +30,7 @@
                         <div class="row align-items-center">';
 
                 while ($row2 = mysqli_fetch_array($rescat)) { 
-                    echo '  <div class="col-3 mb-3">
+                    echo '  <div class="col-4 mb-3">
                                 <div class="card">
                                     <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="'.$row2['nombre'].'">
                                     <div class="card-body">
