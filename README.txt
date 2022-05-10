@@ -61,3 +61,11 @@ TAREAS:
 - Login en el que se introduzca o el Email o el nombre de usuario(Específicamente para los administradores).
 
 
+
+Productos:
+
+ME500					Electroimán mini de superfície de 250 kg. protección IP65.
+2C						"Pasacorrientes de 2 contactos."
+99NF-L22G				Abrepuertas PFail SecureP conmutador FL
+R-N412-FL (30054/G)		"Abrepuertas 12 Vcc Fail Secure Frente largo."
+R-50N512-FC				Abrepuertas 12 Vcc Fail-Safe comutador FC.
