@@ -35,8 +35,8 @@
                                     <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="'.$row2['nombre'].'">
                                     <div class="card-body">
                                         <h5 class="card-title">'.$row2['nombre'].'</h5><br><br>
-                                        <p style="color:#646CDF; font-weight:bold; font-size: 16px; text-align:right;">'.$row2['precioIVA'].'</p>
-                                        <p style="color:#646CDF; font-weight:bold; font-size: 11px; text-align:right;">'.$row2['precioNoIVA'].'</p>
+                                        <p style="color:#646CDF; font-weight:bold; font-size: 23px; text-align:right;">'.$row2['precioIVA'].' €</p>
+                                        <p style="color:#646CDF; font-weight:bold; font-size: 16px; text-align:right;">'.$row2['precioNoIVA'].' € SENSE IVA</p>
                                     </div>
                                 </div>
                             </div>';
