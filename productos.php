@@ -27,11 +27,11 @@
 
                 echo '<div class="container servicios_destacados">
                         <h1>'.$row1['nombre'].'</h1>
-                        <div class="row align-items-center">';
+                        <div class="carousel-inner">';
 
                 while ($row2 = mysqli_fetch_array($rescat)) { 
-                    echo '  <div class="col-4 mb-3">
-                                <div class="card">
+                    echo '<div class="carousel-item">
+                                <div class="card h-100">
                                     <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="'.$row2['nombre'].'">
                                     <div class="card-body">
                                         <h5 class="card-title" style="text-align:center;">'.$row2['nombre'].'</h5><br><br>
@@ -43,7 +43,7 @@
                 }              
                 echo '  </div>
                     </div><br><br>';  
-            }
+            }            
         ?>
         
     </body>
