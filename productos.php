@@ -5,32 +5,6 @@
         include 'head.php';
     ?>  
     <link rel ="stylesheet" href="style/caja_prods.css"/>
-    <style>
-        .boton{
-            display: flex;
-            justify-content: flex-start;
-        }
-        .precio{
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-        .owl-carousel{
-            margin: 0 auto;
-            max-width: 1300px;
-        }
-
-        .iva{
-            font-size: 22px;
-            font-weight: bold;
-            color:darkcyan;
-        }
-
-        .Siva{
-            font-size: 16px;
-            color:darkcyan;
-        }
-    </style>
 
     <body>
         <?php 

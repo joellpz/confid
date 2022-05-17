@@ -28,7 +28,8 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </div>  
+            </nav>
         </div>
 
         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"> <!-- Las imagenes deberian tener el mismo tamaño o proporción. Tener en cuenta al escoger las imagenes el color del carousel-->

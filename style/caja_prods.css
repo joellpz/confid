@@ -6,7 +6,10 @@ h1{
     border: 2px #646CDF solid;
     border-radius: 15px;
     padding-bottom: 7px;
+    width: 1000px;
+    margin: 0 auto;
 }
+
 .card{
     border-radius: 30px;        
     min-height: 350px;
@@ -14,16 +17,46 @@ h1{
     width: 275px;
     margin: 0 auto;
 }
+
 .card-body span{
     text-align: center;
     color:#646CDF; 
     font-weight:bold; 
 }
+
 .card-title{
     text-align:start;
     font-size: 18px;
 }
+
 #prod{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-}                       
+} 
+
+.boton{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.precio{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.owl-carousel{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.iva{
+    font-size: 22px;
+    font-weight: bold;
+    color:darkcyan;
+}
+
+.Siva{
+    font-size: 16px;
+    color:darkcyan;
+}

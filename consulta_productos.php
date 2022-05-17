@@ -15,13 +15,14 @@
                     <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Unidades en Almacén</th>
+                    <th>P.V.P.(€ + IVA)</th>
                     <th>P.V.P.(€)</th>
                     <th>Categoria</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $consulta = "SELECT idProductos, productos.nombre, descripcion, stock, precio, categorias.nombre
+                    $consulta = "SELECT idProductos, productos.nombre, descripcion, stock, precioIVA, precioNoIVA, categorias.nombre
                     FROM productos, categorias
                     WHERE categorias.idCategoria like productos.idCategoria";
                     $res = mysqli_query($conn, $consulta);  
@@ -29,11 +30,12 @@
                     while ($row = mysqli_fetch_array($res)) {
                         echo '<tr>';
                         echo '<td>' . $row['idProductos'] . '</td>';
-                        echo '<td>' . $row['productos.nombre'] . '</td>';
+                        echo '<td>' . $row['nombre'] . '</td>';
                         echo '<td>' . $row['descripcion'] . '</td>';
                         echo '<td>' . $row['stock'] . '</td>';
-                        echo '<td>' . $row['precio'] . '</td>';
-                        echo '<td>' . $row['categorias.nombre'] . '</td>';
+                        echo '<td>' . $row['precioIVA'] . '</td>';
+                        echo '<td>' . $row['precioNoIVA'] . '</td>';
+                        echo '<td>' . $row[6] . '</td>';
                         echo '</tr>';
                     }
                 ?>
