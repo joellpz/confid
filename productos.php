@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
     <?php 
-        $file="inicio";
+        $file="Productos";
         include 'head.php';
     ?>  
+    <link rel ="stylesheet" href="style/caja_prods.css"/>
     <style>
-        h1{
-            text-align: center;
-            border: 2px #646CDF solid;
-            border-radius: 15px;
-            padding-bottom: 7px;
+        .boton{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .precio{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .owl-carousel{
+            margin: 0 auto;
+            max-width: 1300px;
+        }
+
+        .iva{
+            font-size: 22px;
+            font-weight: bold;
+            color:darkcyan;
+        }
+
+        .Siva{
+            font-size: 16px;
+            color:darkcyan;
         }
     </style>
-    <link rel ="stylesheet" href="style/caja_prods.css"/>
-    <body>        
+
+    <body>
         <?php 
             include_once 'header.php'; 
 
@@ -24,27 +43,60 @@
 
                 $qcateg = 'SELECT * FROM productos WHERE idCategoria = '.$row1['idCategoria'];
                 $rescat = mysqli_query($conn, $qcateg);
+        ?>
+                <div class="container-fluid my-5">
+                    <h1 class="text-center fw-bold display-1 mb-5"><?php echo $row1['nombre']; ?></h1>
+                    <div class="row">
+                        <div class="col-12 m-auto">
+                            <div class="owl-carousel owl-theme">
 
-                echo '<div class="container servicios_destacados">
-                        <h1>'.$row1['nombre'].'</h1>
-                        <div class="row">';
+            <?php while ($row2 = mysqli_fetch_array($rescat)) { ?>
 
-                while ($row2 = mysqli_fetch_array($rescat)) { 
-                    echo '  <div class="col-4 mb-3">
-                                <div class="card">
-                                    <img id="prod" src="img/productos/'.$row2['idProductos'].'.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">'.$row2['nombre'].'</h5>
-                                        <p style="color:#646CDF; font-weight:bold; font-size: 23px; text-align:right;">'.number_format($row2['precioIVA'],2).' €</p>
-                                        <p style="color:#646CDF; font-weight:bold; font-size: 16px; text-align:right;">'.number_format($row2['precioNoIVA'],2).' € SENSE IVA</p>                                                         
+                                <div class="item mb-3">
+                                    <div class="card border-0 shadow">
+                                        <img id="prod" src="img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div style="color:black;" class="card-title text-center">
+                                                <h4><b><?php echo $row2['nombre']; ?></b></h4>
+                                            </div>
+                                            <div class="precio">
+                                                <span style="font-size: 28px; margin-right: 10px;"><?php echo number_format($row2['precioIVA'],2); ?>  €</span>
+                                                <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?>  € SENSE IVA</span>
+                                            </div>   
+                                            <br>
+                                            <span class="boton"><input type="submit" value="Ver Producto"/></span>                                                     
+                                        </div>
                                     </div>
                                 </div>
-                            </div>';
-                }              
-                echo '  </div>
-                    </div><br><br>';  
-            }            
-        ?>
-        
+
+            <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <?php } ?>
+
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    900: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            })
+        </script>
     </body>
 </html>
