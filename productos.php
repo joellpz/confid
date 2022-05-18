@@ -26,9 +26,11 @@
 
             <?php while ($row2 = mysqli_fetch_array($rescat)) { ?>
 
-                                <div class="item mb-3">
-                                    <div class="card border-0 shadow">
-                                        <img id="prod" src="img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
+                                <div class="item mb-3">                                    
+                                    <div class="card border-0 shadow">  
+                                        <a class="" href="si" >                                      
+                                            <img id="prod" src="img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
+                                        </a>
                                         <div class="card-body">
                                             <div style="color:black;" class="card-title text-center">
                                                 <h4><b><?php echo $row2['nombre']; ?></b></h4>
@@ -39,10 +41,9 @@
                                             </div>   
                                             <br>
                                             <span class="boton"><input type="submit" value="Ver Producto"/></span>                                                     
-                                        </div>
-                                    </div>
+                                        </div>                                        
+                                    </div>                                    
                                 </div>
-
             <?php } ?>
                             </div>
                         </div>
@@ -55,7 +56,6 @@
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 15,
-                nav: true,
                 responsive: {
                     0: {
                         items: 1
