@@ -7,9 +7,33 @@
     <link rel ="stylesheet" href="style/caja_prods.css"/>
 
     <body>
+        <?php include_once 'header.php'; ?>
+        <div class="navegacion">
+            <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
+                <div class="container p-2 border-bottom">
+                    <a class="navbar-brand me-2" href="index.php">
+                        <img src="img/logo/LogoMenu-CONFID.png" width="150" alt="CONFID Logo" loading="lazy"/>
+                    </a>
+                    <div class="flex-row navbar-nav ms-auto justify-content-end">
+                        <ul class="flex-row nav nav-pills ms-auto justify-content-end">
+                            <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="index.php">Inicio</a>
+                            </li>
+                            <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="somos.php">Quienes Somos</a>
+                            </li> 
+                            <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="productos.php">Productos</a>
+                            </li>
+                            <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="contacto.php">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </nav>
+        </div>
         <?php 
-            include_once 'header.php'; 
-
             $qprods = "SELECT * FROM categorias";
             $resprods = mysqli_query($conn, $qprods);            
 
@@ -28,7 +52,7 @@
 
                                 <div class="item mb-3">                                    
                                     <div class="card border-0 shadow">  
-                                        <a class="" href="si" >                                      
+                                        <a class="" href="desc_prod.php" >                                      
                                             <img id="prod" src="img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
                                         </a>
                                         <div class="card-body">
@@ -40,7 +64,7 @@
                                                 <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?>  € SENSE IVA</span>
                                             </div>   
                                             <br>
-                                            <span class="boton"><input type="submit" value="Ver Producto"/></span>                                                     
+                                            <span class="boton"><input class="btn btn-outline-primary" type="submit" value="Añadir al Carrito"/></span>                                                     
                                         </div>                                        
                                     </div>                                    
                                 </div>
@@ -54,6 +78,9 @@
 
         <script>
             $('.owl-carousel').owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
                 loop: true,
                 margin: 15,
                 responsive: {

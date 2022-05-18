@@ -36,7 +36,16 @@ h1{
 
 .boton{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;        
+}
+
+.btn{
+    color: #646CDF;
+    border-color: #646CDF;
+}
+
+.btn:hover{
+    background-color: #646CDF;
 }
 
 .precio{
