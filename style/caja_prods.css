@@ -39,13 +39,14 @@ h1{
     justify-content: flex-end;        
 }
 
-.btn{
+.carrito{
     color: #646CDF;
     border-color: #646CDF;
 }
 
-.btn:hover{
+.carrito:hover{
     background-color: #646CDF;
+    border-color: #535253;
 }
 
 .precio{

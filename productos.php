@@ -18,7 +18,7 @@
                 $rescat = mysqli_query($conn, $qcateg);
         ?>
                 <div class="container-fluid my-5">
-                    <h1 class="text-center fw-bold display-1 mb-5"><?php echo $row1['nombre']; ?></h1>
+                    <h1 class="text-center fw-bold display-1 mb-5 md"><?php echo $row1['nombre']; ?></h1>
                     <div class="row">
                         <div class="col-12 m-auto">
                             <div class="owl-carousel owl-theme">
@@ -39,7 +39,7 @@
                                                 <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?>  € SENSE IVA</span>
                                             </div>   
                                             <br>
-                                            <span class="boton"><input class="btn btn-outline-primary" type="submit" value="Añadir al Carrito"/></span>                                                     
+                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito"/></span>                                                     
                                         </div>                                        
                                     </div>                                    
                                 </div>
