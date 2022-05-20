@@ -12,13 +12,14 @@
     --normal-font-size: 1rem;
     --z-fixed: 100
 }
-
+*{
+    font-family: var(--body-font);
+    /*font-size: var(--normal-font-size);*/
+}
 *,
 ::before,
 ::after {
     box-sizing: border-box;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
 }
 
 .admin_body {
