@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <?php 
-        $file="inicio";
+        $file=basename(__FILE__, '.php');
         include 'head.php';
     ?>      
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
