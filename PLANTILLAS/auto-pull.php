@@ -5,4 +5,4 @@ if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
   //echo shell_exec('cat Comprovar.txt');
 }
 ?>
-hi
+hia
