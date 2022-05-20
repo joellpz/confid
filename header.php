@@ -135,6 +135,7 @@
     <?php }?>
     
 </header>
+<?php if ($file!="Control Panel"){ ?>
         <div class="navegacion">
             <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
                 <div class="container p-2 border-bottom">
@@ -160,3 +161,4 @@
                 </div>  
             </nav>
         </div>
+<?php } ?>
