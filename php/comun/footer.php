@@ -2,6 +2,9 @@
   .color-azul{
     background-color: #646CDF;
   }
+
+  
+
 </style>
 
 <body>
@@ -20,23 +23,23 @@
 
       <!-- Right -->
       <div>
-        <a href="" class="text-white me-4">
-          <i class='bx bxl-facebook'></i>
+        <a href="https://www.facebook.com" class="text-white me-4 text-decoration-none">
+          <i class='bx bxl-facebook fot_icon'></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="bx bxl-twitter"></i>
+        <a href="https://twitter.com" class="text-white me-4 text-decoration-none">
+          <i class="bx bxl-twitter fot_icon"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="bx bxl-google"></i>
+        <a href="https://www.google.es" class="text-white me-4 text-decoration-none">
+          <i class="bx bxl-google fot_icon"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="bx bxl-instagram"></i>
+        <a href="https://www.instagram.com" class="text-white me-4 text-decoration-none">
+          <i class="bx bxl-instagram fot_icon"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="bx bxl-linkedin"></i>
+        <a href="https://es.linkedin.com" class="text-white me-4 text-decoration-none">
+          <i class="bx bxl-linkedin fot_icon"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="bx bxl-github"></i>
+        <a href="https://github.com" class="text-white me-4 text-decoration-none">
+          <i class="bx bxl-github fot_icon"></i>
         </a>
       </div>
       <!-- Right -->
@@ -51,12 +54,10 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold">Company name</h6>
+            <h6 class="text-uppercase fw-bold">Confid</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto color-azul opacity-100" style="width: 60px; height: 2px"/>
             <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+            Encuentra la solución que mejor se adapta a tus necesidades. Contamos con un gran equipo de expertos y garantizamos los mejores resultados como distribuidora de sistemas de seguridad.
             </p>
           </div>
           <!-- Grid column -->
@@ -64,19 +65,16 @@
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Products</h6>
+            <h6 class="text-uppercase fw-bold">Explorar</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto color-azul opacity-100" style="width: 60px; height: 2px"/>
             <p>
-              <a href="#!" class="text-white">MDBootstrap</a>
+              <a href="/content/productos.php" class="text-white">Productos</a>
             </p>
             <p>
-              <a href="#!" class="text-white">MDWordPress</a>
+              <a href="/content/somos.php" class="text-white">Quienes Somos</a>
             </p>
             <p>
-              <a href="#!" class="text-white">BrandFlow</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Bootstrap Angular</a>
+              <a href="#!" class="text-white">Terminos y Condiciones</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -84,22 +82,19 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <h6 class="text-uppercase fw-bold">Utilidades</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto color-azul opacity-100"
                 style="width: 60px; height: 2px"
                 />
             <p>
-              <a href="#!" class="text-white">Your Account</a>
+              <a href="#!" class="text-white">Tu cuenta</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Become an Affiliate</a>
+              <a href="#!" class="text-white">Ver Pedidos</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Shipping Rates</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Help</a>
+              <a href="#!" class="text-white">Carrito</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -107,13 +102,12 @@
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <h6 class="text-uppercase fw-bold">Contacto</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto color-azul opacity-100" style="width: 60px; height: 2px"/>
 
-            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <p><i class="bx bxs-home mr-3 fot_icon"></i>  Barcelona, 08917, ESP</p>
+            <p><i class='bx bxs-envelope fot_icon'></i>  info@confid.com</p>
+            <p><i class='bx bxs-phone fot_icon'></i>  +34 93 345 67 89</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -124,8 +118,8 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/"
+      © 2022 Copyright:
+      <a class="text-white text-decoration-none" href="https://mdbootstrap.com/"
          >CONFID.ES</a
         >
     </div>

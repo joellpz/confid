@@ -224,7 +224,10 @@
 .btn-primary:hover{
     background-color:  #535253a9;
 }
-
 .borde{
     border: red solid;
-}                  
+}
+
+.fot_icon{
+    font-size: 1.20rem;
+}
