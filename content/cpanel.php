@@ -74,35 +74,26 @@
                     var id = comp.id;
 
                 switch(id){
-                    case "home":
-                        $('#recarga').load('/index.php');
-                        break;
                     case "cli":
-                    case 1:
                         $('#recarga').load('/content/CPanel/consulta_clientes.php');
                         break;
                     case "ped":
-                    case 2:
                         $('#recarga').load('/content/CPanel/consulta_pedidos.php');
                         break;
                     case "prod":
-                    case 3:
                         $('#recarga').load('/content/CPanel/consulta_productos.php');
                         break;
                     case "det_ped":
-                    case 4:
                         $('#recarga').load('/content/CPanel/consulta_detalles_pedidos.php');
                         break;
                     case "users":
-                    case 5:
                         $('#recarga').load('/content/CPanel/consulta_usuarios.php');
                         break;
                     case "add_user":
-                    case 6:
                         $('#recarga').load('/content/CPanel/addworker.php');
                         break;
                     default:
-                       // $('#recarga').load('/index.php');
+                       $('#recarga').load('/index.php');
                 }
                 console.log(id);
             }
