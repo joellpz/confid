@@ -1,13 +1,12 @@
 <?php
     $file="Control Panel";
-    include '../../head.php';
+    $far="../../";
+    include $far.'php/comun/head.php';
 ?>
 <!DOCTYPE html>
 <html>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>
-    <?php include_once '../../header.php';?>
-        <?php
-            require ("../config.php");
+    <?php
             $id = $_GET['id'];
             $consulta = "SELECT * FROM usuarios WHERE idUsuario = $id";
             $result= mysqli_query ($conn, $consulta);
@@ -22,9 +21,11 @@
                 $update = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
                 mysqli_query($conn, $update) or die('Consulta fallida: ');
             
-                header("Location:../../consulta_usuarios.php");  //Redirigir a Principal.
+                header("Location:$far/content/CPanel/consulta_usuarios.php");  //Redirigir a Principal.
             }else{
         ?>
+    <?php include_once $far.'content/header.php'; ?>
+        
         <form method="post" action="<?php $_SERVER['PHP_SELF']?>">
             <table border= "1" style="width:100%;margin:auto;">
                 <thead style="background-color: #646CDF;">
@@ -56,6 +57,6 @@
         <?php
             }               
         ?>   
-        <br>   
+        <?php include_once $far.'php/comun/footer.php'; ?>   
     </body>
 </html>

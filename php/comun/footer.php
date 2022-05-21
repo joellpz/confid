@@ -3,9 +3,7 @@
     background-color: #646CDF;
   }
 </style>
-<head>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
-</head>
+
 <body>
     <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="mt-5">

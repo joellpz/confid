@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <?php 
-        $file="Productos";
-        include 'head.php';
+        $file=basename(__FILE__, '.php');
+        $far="../";
+        include $far.'php/comun/head.php';
     ?>  
-    <link rel ="stylesheet" href="style/caja_prods.css"/>
+    <link rel ="stylesheet" href="/style/caja_prods.css"/>
 
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
-        <?php include_once 'header.php'; ?>
+        <?php include_once $far.'content/header.php'; ?>
         <?php 
             $qprods = "SELECT * FROM categorias";
             $resprods = mysqli_query($conn, $qprods);            
@@ -27,8 +28,8 @@
 
                                 <div class="item mb-3">                                    
                                     <div class="card border-0 shadow">  
-                                        <a class="" href="desc_prod.php" >                                      
-                                            <img id="prod" src="img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
+                                        <a class="" href="/desc_prod.php" >                                      
+                                            <img id="prod" src="/img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
                                         </a>
                                         <div class="card-body">
                                             <div style="color:black;" class="card-title text-center">
@@ -49,7 +50,7 @@
                     </div>
                 </div>
         <?php } ?>
-
+        <?php include_once $far.'php/comun/footer.php'; ?>
 
         <script>
             $('.owl-carousel').owlCarousel({

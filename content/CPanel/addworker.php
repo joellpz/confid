@@ -2,7 +2,8 @@
 <html>
     <?php
         $file="Control Panel";
-        include 'head.php';
+        $far="../../";
+        include $far.'php/comun/head.php';
     ?>
     <style>
         input[type=number]::-webkit-inner-spin-button, 
@@ -15,9 +16,9 @@
     </style>
 
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
-        <?php include_once 'header.php'; ?>
+        <?php include_once $far.'content/header.php'; ?>
         <h2>Añadir Usuario</h2>
-        <form action="php/signup.php" method="post" class="m-4">
+        <form action="/php/signup.php" method="post" class="m-4">
             <div class="row justify-content-center py-2">
                 <div class="col-4">
                     <label for="signup_user" class="form-label">Nº Empleado*</label>

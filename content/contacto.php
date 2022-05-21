@@ -2,11 +2,11 @@
 <html>
     <?php 
         $file=basename(__FILE__, '.php');
-        /* $file= "C. Panel"; */ // Panel de Administador SOLO
-        include 'head.php'; //CAMBIAR RUTA SEGUN UBI
+        $far="../";
+        include $far.'php/comun/head.php';
     ?>  
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
-        <?php include_once 'header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->
+        <?php include_once $far.'content/header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->
         <section class="mb-4">
 
             <!--Section heading-->
@@ -79,7 +79,7 @@
                     <br>
                     <div class="col text-center">
                         <button type="submit" class="btn btn-primary">Entrar</button>
-                        <a class="btn btn-primary" href="index.php" role="button">Volver a Inicio</a>
+                        <a class="btn btn-primary" href="/index.php" role="button">Volver a Inicio</a>
                     </div>
                     <div class="status"></div>
                 </div>
@@ -102,8 +102,8 @@
                     </ul>
                 </div>
                 <!--Grid column-->
-
             </div>
         </section>
+        <?php include_once $far.'php/comun/footer.php'; ?>
     </body>
 </html>

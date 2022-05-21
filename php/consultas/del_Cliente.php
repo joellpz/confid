@@ -5,9 +5,9 @@
             require ("../config.php");
             $id = $_GET['id'];
             $delete = "DELETE * FROM usuarios WHERE idUsuario = $id";
-            mysqli_query($conn, $delete) or die('Consulta fallida: ' . mysqli_error());
+            mysqli_query($conn, $delete) or die('Consulta fallida: ');
             
-            header("Location:../../consulta_usuarios.php"); //Redirigir a Principal.
+            header("Location:$far/content/CPanel/consulta_usuarios.php"); //Redirigir a Principal.
 
             
         ?>   

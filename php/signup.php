@@ -37,7 +37,7 @@
             mysqli_query($conn,$consulta_cli);
         }
 
-        header('Location: ../index.php');
+        header('Location: /index.php');
 
     }
 ?>

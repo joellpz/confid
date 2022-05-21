@@ -2,10 +2,11 @@
 <html>
     <?php 
         $file=basename(__FILE__, '.php');
-        include 'head.php'; //CAMBIAR RUTA SEGUN UBI
+        $far="../";
+        include $far.'php/comun/head.php';
     ?>      
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
-        <?php include_once 'header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->  
+        <?php include_once $far.'content/header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->  
         <style>
             .btn{
                 width:100%;
@@ -68,11 +69,12 @@
                         <input type="button" class="btn btn-primary" name="add_cliente" value="Regístrate" onclick='registro()'/>
                     </div>
                     <div class="col-2 text-center">                       
-                        <a href="index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
+                        <a href="/index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
                     </div>
                 </div>
             </div>
-        </form>     
+        </form>
+        <?php include_once $far.'php/comun/footer.php'; ?>
         <script> 
             const n = document.querySelector('#signup_name');
             const a = document.getElementById('signup_alias');

@@ -10,9 +10,9 @@
 
     <link rel="shortcut icon" href="img/logo/icon-logo-CONFID.png" sizes="64x64"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel ="stylesheet" href="style/style.css"/>
+    <link rel ="stylesheet" href="/style/style.css"/>
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"> 
-    <script src="js/header_show.js"></script>
+    <script src="/js/header_show.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
     <script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.1.3,npm/@popperjs/core@2.11.5" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> 
@@ -29,7 +29,9 @@
     session_start();
     $trabajador = false;
     $cliente = false;
-    require 'php/config.php';
+    require $far.'php/config.php';
+    
+    
 
     if(isset($_SESSION['user_id'])){
         $consulta_trabajadores = "SELECT idUsuario FROM trabajadores WHERE idUsuario = '$_SESSION[user_id]'"; 
