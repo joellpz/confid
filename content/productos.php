@@ -28,7 +28,7 @@
 
                                 <div class="item mb-3">                                    
                                     <div class="card border-0 shadow">  
-                                        <a class="" href="/content/desc_prod.php" >                                      
+                                        <a class="" href="/content/desc_prod.php?id='<?php echo $row2['idProductos']; ?>'" >                                      
                                             <img id="prod" src="/img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
                                         </a>
                                         <div class="card-body">

@@ -92,7 +92,7 @@
                     <span class="d-none d-md-inline-block">Usuario</span> 
                 </a>
                 <div class="dropdown-menu in-se">
-                    <form  action="/php/login.php" method="POST" class="px-4">
+                    <form  action="return false" onsubmit="return false" method="POST" class="px-4">
                         <div class="d-flex">
                         <!-- Email input -->
                             <div class="form-outline mx-2">
@@ -106,12 +106,14 @@
                                 <input type="password" name="login_pass" id="login_pass" class="form-control" />
                             </div>
                         </div>
+                        <div id="resultado"></div>
                         <div class="dropdown-divider"></div>
                         <div class="d-flex">
                             <a class="dropdown-item col mx-2" href="/content/registro.php">Eres nuevo? Regístrate!</a>
-                            <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block"/>
+                            <button >Accesar</button>
+                            <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block" onclick="Validar(document.getElementById('login_email').value, document.getElementById('login_pass').value, document.getElementById('path').value);"/>
                         </div>
-                        <input type="hidden" name="path" value="<?php echo $file;?>"/>
+                        <input type="hidden" id="path" name="path" value="<?php echo $file;?>"/>
                     </form>
                 </div>
             </div>
@@ -120,7 +122,22 @@
                 <i class="bx bx-cart-alt px-1"></i>
                 <span class="d-none d-md-inline-block">Carrito</span>
             </a>
-        </div>        
+        </div>
+
+        <script>
+        function Validar(login_email, login_pass, path)
+        {
+            $.ajax({
+                url: "/php/login.php",
+                type: "POST",
+                data: "login_email="+login_email+"&login_pass="+login_pass+"&path="+path,
+                success: function(resp){
+                $('#resultado').html(resp)
+                }       
+            });
+        }
+        </script>
+
     <?php }?>
     
 </header>
