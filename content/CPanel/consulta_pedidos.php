@@ -7,7 +7,6 @@
 <!DOCTYPE html>
 <html>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
-        <?php include_once $far.'content/header.php'; ?>
         <h2>Consulta y Gestión de Pedidos</h2>
         <table border= "1" style="width: 80%;">
             <thead>

@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
         $_SESSION['user_passwd'] = $row['passwd'];
         $_SESSION['user_name'] = $row['nombre'];
         $_SESSION['user_email'] = $row['email'];
-        header('Location: /index.php');
+        header('Location: ../index.php');
     }
 }
 ?>

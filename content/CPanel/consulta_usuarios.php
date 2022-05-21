@@ -11,7 +11,6 @@
 <!DOCTYPE html>
 <html>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
-        <?php include_once $far.'content/header.php'; ?>
         <?php
             if(isset($_POST["del"])){
                 $id = $_POST['del'];

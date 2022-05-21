@@ -1,18 +1,6 @@
-<style>
-    
-    .in-se{
-    width: 500px;
-    }
-
-    .btn-primary{
-        background-color: var(--first-color);
-    }
-
-    .btn-primary:hover{
-        background-color:  #535253a9;
-    }
-
-</style>
+<head>
+    <link rel ="stylesheet" href="/style/style.css"/> 
+</head>
 <header>
     <?php 
         if ($cliente) { 
@@ -57,28 +45,28 @@
                                 <i class='bx bx-grid-alt nav_icon nav_icon'></i> 
                                 <span class="nav_name">Página Principal</span> 
                             </a> 
-                            <a href="/content/CPanel/consulta_clientes.php" class="nav_link">  
+                            <a href="/content/cpanel.php?cons=cli" class="nav_link">  
                                 <i class='bx bxs-contact nav_icon' ></i> 
                                 <span class="nav_name">Clientes</span> 
                             </a> 
-                            <a href="/content/CPanel/consulta_pedidos.php" class="nav_link"> 
+                            <a href="/content/cpanel.php?cons=ped" class="nav_link"> 
                                 <i class='bx bx-clipboard bx-flip-horizontal nav_icon'></i>
                                 <span class="nav_name">Consulta Pedidos</span>
 
-                            <a href="/content/CPanel/consulta_productos.php" class="nav_link"> 
+                            <a href="/content/cpanel.php?cons=prod" class="nav_link"> 
                             <i class='bx bxl-product-hunt nav_icon'></i>
                                 <span class="nav_name">Consulta Productos</span>     
                             </a> 
 
-                            <a href="/content/CPanel/consulta_detalles_pedidos.php" class="nav_link"> 
+                            <a href="/content/cpanel.php?cons=det_ped" class="nav_link"> 
                                 <i class='bx bxs-report nav_icon'></i> 
                                 <span class="nav_name">Facturación</span> 
                             </a>
-                            <a href="/content/CPanel/consulta_usuarios.php" class="nav_link"> 
+                            <a href="/content/cpanel.php?cons=users" class="nav_link"> 
                                 <i class='bx bx-user nav_icon'></i> 
                                 <span class="nav_name">Usuarios</span> 
                             </a>
-                            <a href="/content/CPanel/addworker.php" class="nav_link"> 
+                            <a href="/content/cpanel.php?cons=add_user" class="nav_link"> 
                                 <i class='bx bxs-user-plus nav_icon'></i>
                                 <span class="nav_name">Añadir</br> Usuarios</span> 
                             </a> 

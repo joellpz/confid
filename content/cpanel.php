@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <?php 
+    <?php
+        
         $file=basename(__FILE__, '.php');
         $far="../";
         include $far.'php/comun/head.php';
-    ?>  
-    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
-        <?php //include_once '../header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->
+        
+       
+    ?>
+    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>' onload="tabla_cpanel(<?php echo $_GET['cons']?>)">
+        <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->
         <section class="admin_body" id="body-pd">
             <header class="header" id="header">
                 <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
@@ -15,37 +18,38 @@
             <div class="l-navbar" id="nav-bar">
                 <nav class="nav">
                     <div> 
-                        <a href="/#" class="nav_logo">
+                        <a href="/index.php" class="nav_logo">
                             <img src="/img/logo/white-icono-logo-CONFID.png" width="35px"> 
                             <span class="nav_logo-name">C O N F I D</span> 
                         </a>
                         <div class="nav_list"> 
-                            <a href="/index.php" class="nav_link active"> 
+                            <a href="/index.php" class="nav_link"> 
                                 <i class='bx bx-grid-alt nav_icon nav_icon'></i> 
                                 <span class="nav_name">Página Principal</span> 
                             </a> 
-                            <a href="/content/CPanel/consulta_clientes.php" class="nav_link">  
+                            <a href="#" class="nav_link" id="cli" onclick="tabla_cpanel(this)">
                                 <i class='bx bxs-contact nav_icon' ></i> 
-                                <span class="nav_name">Clientes</span> 
-                            </a> 
-                            <a href="/content/CPanel/consulta_pedidos.php" class="nav_link"> 
+                                <span class="nav_name">Clientes</span>
+                            </a>
+                                
+                            <a href="#" class="nav_link" id="ped" onclick="tabla_cpanel(this)"> 
                                 <i class='bx bx-clipboard bx-flip-horizontal nav_icon'></i>
                                 <span class="nav_name">Consulta Pedidos</span>
 
-                            <a href="/content/CPanel/consulta_productos.php" class="nav_link"> 
-                            <i class='bx bxl-product-hunt nav_icon'></i>
+                            <a href="#" class="nav_link" id="prod" onclick="tabla_cpanel(this)">
+                                <i class='bx bxl-product-hunt nav_icon'></i>
                                 <span class="nav_name">Consulta Productos</span>     
                             </a> 
 
-                            <a href="/content/CPanel/consulta_detalles_pedidos.php" class="nav_link"> 
+                            <a href="#" class="nav_link" id="det_ped" onclick="tabla_cpanel(this)"> 
                                 <i class='bx bxs-report nav_icon'></i> 
                                 <span class="nav_name">Facturación</span> 
                             </a>
-                            <a href="/content/CPanel/consulta_usuarios.php" class="nav_link"> 
+                            <a href="#" class="nav_link" id="users" onclick="tabla_cpanel(this)"> 
                                 <i class='bx bx-user nav_icon'></i> 
                                 <span class="nav_name">Usuarios</span> 
                             </a>
-                            <a href="/content/CPanel/addworker.php" class="nav_link"> 
+                            <a href="#" class="nav_link" id="add_user" onclick="tabla_cpanel(this)"> 
                                 <i class='bx bxs-user-plus nav_icon'></i>
                                 <span class="nav_name">Añadir</br> Usuarios</span> 
                             </a> 
@@ -61,8 +65,47 @@
                 </nav>
             </div>
         </section>
-
         
-        <?php include_once $far.'php/comun/footer.php'; ?>
+        <div id="recarga">
+        
+        </div>
+        <script>
+            function tabla_cpanel(comp){
+                    var id = comp.id;
+
+                switch(id){
+                    case "home":
+                        $('#recarga').load('/index.php');
+                        break;
+                    case "cli":
+                    case 1:
+                        $('#recarga').load('/content/CPanel/consulta_clientes.php');
+                        break;
+                    case "ped":
+                    case 2:
+                        $('#recarga').load('/content/CPanel/consulta_pedidos.php');
+                        break;
+                    case "prod":
+                    case 3:
+                        $('#recarga').load('/content/CPanel/consulta_productos.php');
+                        break;
+                    case "det_ped":
+                    case 4:
+                        $('#recarga').load('/content/CPanel/consulta_detalles_pedidos.php');
+                        break;
+                    case "users":
+                    case 5:
+                        $('#recarga').load('/content/CPanel/consulta_usuarios.php');
+                        break;
+                    case "add_user":
+                    case 6:
+                        $('#recarga').load('/content/CPanel/addworker.php');
+                        break;
+                    default:
+                       // $('#recarga').load('/index.php');
+                }
+                console.log(id);
+            }
+            </script>
     </body>
 </html>
