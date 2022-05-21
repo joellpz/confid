@@ -20,7 +20,13 @@ if (isset($_POST['login'])) {
         $_SESSION['user_passwd'] = $row['passwd'];
         $_SESSION['user_name'] = $row['nombre'];
         $_SESSION['user_email'] = $row['email'];
-        header('Location: ../index.php');
+        if($_POST['path'] == 'Inicio'){
+            header('Location: ../index.php');
+        }else{
+            header('Location: ../content/'.$_POST['path'].'.php');
+        }
     }
+}else{
+    /************INICIO DE SESIÓN INCORRECTO*************/
 }
 ?>

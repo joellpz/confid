@@ -111,8 +111,9 @@
                             <a class="dropdown-item col mx-2" href="/content/registro.php">Eres nuevo? Regístrate!</a>
                             <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block"/>
                         </div>
-                    </div>
-                </form>
+                        <input type="hidden" name="path" value="<?php echo $file;?>"/>
+                    </form>
+                </div>
             </div>
         
             <a class=" link px-3 d-flex align-items-center" href="#">
