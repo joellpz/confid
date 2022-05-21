@@ -19,7 +19,7 @@
                 $rescat = mysqli_query($conn, $qcateg);
         ?>
                 <div class="container-fluid my-5">
-                    <h1 class="text-center fw-bold display-1 mb-5 md"><?php echo $row1['nombre']; ?></h1>
+                    <h1 class="text-center fw-bold display-1 mb-5"><?php echo $row1['nombre']; ?></h1>
                     <div class="row">
                         <div class="col-12 m-auto">
                             <div class="owl-carousel owl-theme">
@@ -28,7 +28,7 @@
 
                                 <div class="item mb-3">                                    
                                     <div class="card border-0 shadow">  
-                                        <a class="" href="/desc_prod.php" >                                      
+                                        <a class="" href="/content/desc_prod.php" >                                      
                                             <img id="prod" src="/img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
                                         </a>
                                         <div class="card-body">
