@@ -67,11 +67,11 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="passwd" class="form-label">Contraseña*</label>
-                    <input type="password" class="form-control" id="passwd" name="passwd" value="<?php echo $row['passwd'] ?>" required>
+                    <input type="password" class="form-control" id="passwd" name="passwd" value="<?php echo md5($row['passwd']) ?>" required>
                 </div>
                 <div class="col-4">
                     <label for="pass_rep" class="form-label">Repetir Contraseña*</label>
-                    <input type="password" class="form-control" id="pass_rep" name="pass_rep" value="<?php echo $row['passwd'] ?>" required>
+                    <input type="password" class="form-control" id="pass_rep" name="pass_rep" value="<?php echo md5($row['passwd']) ?>" required>
                 </div>
             </div> 
             <br>

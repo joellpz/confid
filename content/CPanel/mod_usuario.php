@@ -43,7 +43,7 @@
                 </tr>
                 <tr>
                     <td><label for="passwd">Contraseña:</label></td>
-                    <td><input type="text" id="passwd" name="passwd" value="<?php echo $row['passwd']?>" required/></td>
+                    <td><input type="text" id="passwd" name="passwd" value="<?php echo md5($row['passwd'])?>" required/></td>
                 </tr>
                 <tr>
                     <td><label for="nombre">Nombre:</label></td>

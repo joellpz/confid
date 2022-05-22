@@ -11,7 +11,7 @@
     if(isset($_POST['enviar'])){
         echo "Admin";
         $usuario = $_POST["usuario"];
-        $passwd = $_POST["passwd"];
+        $passwd = md5($_POST["passwd"]);
         $nombre = $_POST["nombre"];
         $email = $_POST["email"];
         
@@ -22,7 +22,7 @@
 
     }elseif (isset($_POST['cuenta'])){
         $usuario = $_POST["usuario"];
-        $passwd = $_POST["passwd"];
+        $passwd = md5($_POST["passwd"]);
         $nombre = $_POST["nombre"];
         $email = $_POST["email"];     
         if(isset($_POST['auto'])){
