@@ -27,7 +27,8 @@
                 </div>
                 <div class="col-6">             
                     <p class="card-title"><b><?php echo $row2['nombre'];?></b></p>
-                    <p style=""><?php echo $row2['descripcion'];?></p>
+                    <p><?php echo $row2['descripcion'];?></p>
+                    <p>Stock: <?php echo $row2['stock'];?></p>
                     <p style="color:#646CDF; font-weight:bold; font-size: 23px; text-align:right;"><?php echo number_format($row2['precioIVA'],2);?> €</p>
                     <p style="color:#646CDF; font-weight:bold; font-size: 16px; text-align:right;"><?php echo number_format($row2['precioNoIVA'],2);?> € SENSE IVA</p>
                 </div>
