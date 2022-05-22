@@ -17,7 +17,7 @@
             <div class="row">
 
                 <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5 text-center">                  
+                <div class="col-md-12 mb-md-0 mb-5 text-center">                  
                         <!--Grid row-->
                         <div class="row">
                             <!--Grid column-->
@@ -61,12 +61,36 @@
                             </p>
                             </div>
                         </div>
+                        <div class="container servicios_destacados">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id ="poli" src="../../img/quienes_somos/securitas-direct-servicios-policia" class="card-img-top">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Cada segundo cuenta:</h5>
+                                    <p class="card-text">Ante una situación de peligro, nuestra respuesta
+                                        es rápida y eficaz: recibimos la alerta en segundos y comprobamos
+                                        que ocurre para avisar de inmediato a la Policía.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='prod' src="/img/productos/servicio2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                                </div>  
+                            </div>
+                        </div>
                         <!--Grid row-->
                         <div class="row">
 
                             <!--Grid column-->
                             <div class="col-md-12">
-                                <p>ConfID tiene un compromiso social con el medioambiente reduciendo al máximo cualquier elemento 
+                                <p>ConfID tiene, gracias a su gran Política de Responsabilidad Social Coorporativa, un compromiso social con el medioambiente reduciendo al máximo cualquier elemento 
                                     contaminante tanto en nuestros productos, como en nuestro diseño, analisis e implementación
                                     de nuestros servicios.  
                                 </p>
@@ -74,7 +98,7 @@
                         </div>
                         <div class="col-md-12">
                             <h2 class="h1-responsive font-weight-bold text-center my-4">CONFID ES UN PROVEEDOR LÍDER DE SERVICIOS DE SEGURIDAD</h2>
-                                <p>No es casualidad que una gran institución como PIMEC ( patronal que representa a las micro, pequeñas y 
+                                <p>Por todo lo mencionado anteriormente, no es casualidad que una gran institución como PIMEC ( patronal que representa a las micro, pequeñas y 
                                     medianas empresas y autónomos de Cataluña ) nos ha escogido 
                                     como partners para ofrecer nuestros servicios de ciberseguridad a sus más de 128.000 socios. 
                                 </p>
@@ -86,7 +110,7 @@
 
                             <!--Grid column-->
                             <div class="col-md-12 text-center">
-                                <h3>Empresas col.laboradoras</h3>
+                                <h3>Empresas colaboradoras</h3>
                             </div>
                         </div>
                         <div class="row">
