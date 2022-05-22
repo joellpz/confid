@@ -28,9 +28,9 @@
             <?php while ($row2 = mysqli_fetch_array($rescat)) { ?>
 
                             <div class="row descripcion" id="<?php echo $row2['idProductos'];?>">
-                                <div class="col-6 img_prod">
-                                    <img style="border-radius:20px" src="/img/productos/<?php echo $row2['idProductos'];?>.png" class="card-img-top" alt="...">    
-                                </div>
+                                <a class="col-6 img_prod" href="/content/contacto.php?serv=true">
+                                    <img src="/img/productos/<?php echo $row2['idProductos'];?>.png" class="card-img-top" alt="...">    
+                                </a>
                                 <div class="col-6 serv-info">             
                                     <p class="card-title serv-title"><b><?php echo $row2['nombre'];?></b></p>
                                     <div class="serv-text"><?php echo $row2['descripcion'];?></div>
