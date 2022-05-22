@@ -106,11 +106,10 @@
                                 <input type="password" name="login_pass" id="login_pass" class="form-control" />
                             </div>
                         </div>
-                        <div id="resultado"></div>
+                        <div id="resultado" style="text-align: center; background-color: rgba(255, 71, 71, 0.555);"></div>
                         <div class="dropdown-divider"></div>
                         <div class="d-flex">
                             <a class="dropdown-item col mx-2" href="/content/registro.php">Eres nuevo? Regístrate!</a>
-                            <button >Accesar</button>
                             <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block" onclick="Validar(document.getElementById('login_email').value, document.getElementById('login_pass').value, document.getElementById('path').value);"/>
                         </div>
                         <input type="hidden" id="path" name="path" value="<?php echo $file;?>"/>

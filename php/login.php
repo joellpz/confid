@@ -39,7 +39,7 @@ if (!$conn) {
         }
     }
     else{
-        echo '<span>El usuario y/o clave son incorrectas, vuelva a intentarlo.</span>';
+        echo '<span style="padding: 5px;">El usuario y/o clave son incorrectas, vuelva a intentarlo.</span>';
     }
 //}
 ?>
