@@ -175,8 +175,8 @@
                                 <div class="card h-100">
                                     <img id ="poli" src="../../img/quienes_somos/caras/ceo" class="card-img-top"  alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Nombre</h5>
-                                    <p class="card-text">Dirección Financiera</p>
+                                    <h5 class="card-title">Germán Palomares</h5>
+                                    <p class="card-text">Dirección General</p>
                                     </div>
                                 </div>
                                 </div>
@@ -184,7 +184,7 @@
                                 <div class="card h-100">
                                     <img id='app' src="../../img/quienes_somos/caras/inter" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Nombre</h5>
+                                    <h5 class="card-title">Daisy Xiang Meng</h5>
                                     <p class="card-text">Dirección Ventas Internacional</p>
                                     </div>
                                 </div>
@@ -193,7 +193,7 @@
                                 <div class="card h-100">
                                     <img id='vig' src="../../img/quienes_somos/caras/rrhh" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Nombre</h5>
+                                    <h5 class="card-title">T. J. Jackson Junior</h5>
                                     <p class="card-text">Dirección Recursos Humanos</p>
                                     </div>
                                 </div>
@@ -202,7 +202,7 @@
                                 <div class="card h-100">
                                     <img id='vig' src="../../img/quienes_somos/caras/sac" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Nombre</h5>
+                                    <h5 class="card-title">Hannah Montana</h5>
                                     <p class="card-text">Dirección S.A.C.</p>
                                     </div>
                                 </div>
@@ -215,7 +215,7 @@
                                 <div class="card h-100">
                                     <img id ="poli" src="../../img/quienes_somos/caras/tech" class="card-img-top"  alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Nombre</h5>
+                                    <h5 class="card-title">Jason Smith</h5>
                                     <p class="card-text">Dirección Tecnologica</p>
                                     </div>
                                 </div>
@@ -224,7 +224,7 @@
                                 <div class="card h-100">
                                     <img id='app' src="../../img/quienes_somos/caras/finan" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Nombre</h5>
+                                    <h5 class="card-title">Michael Sappin</h5>
                                     <p class="card-text">Dirección Financiera</p>
                                     </div>
                                 </div>
@@ -233,7 +233,7 @@
                                 <div class="card h-100">
                                     <img id='vig' src="../../img/quienes_somos/caras/ventas" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Nombre</h5>
+                                    <h5 class="card-title">Leo Margets</h5>
                                     <p class="card-text">Dirección Ventas</p>
                                     </div>
                                 </div>
@@ -242,7 +242,7 @@
                                 <div class="card h-100">
                                     <img id='vig' src="../../img/quienes_somos/caras/desarrollo" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Nombre</h5>
+                                    <h5 class="card-title">Antonio Parrales</h5>
                                     <p class="card-text">Dirección de Desarrollo</p>
                                     </div>
                                 </div>
