@@ -6,6 +6,14 @@
         $far="../../";
         include $far.'php/comun/head.php';
     ?>
+    <style>
+        .tabliqui{
+            border: solid 1px;
+            margin: auto;
+            text-align: center;
+            min-width: 35%;
+        }
+    </style>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
     <?php
             if(isset($_GET['id'])){
@@ -18,14 +26,14 @@
                 }
             }
 
-            $consulta = "SELECT * FROM usuarios WHERE idUsuario = $id";
+            $consulta = "SELECT * FROM usuarios, trabajadores WHERE usuarios.idUsuario = trabajadores.idUsuario AND usuarios.idUsuario = $id";
             $result= mysqli_query ($conn, $consulta);
             $row=mysqli_fetch_array($result);
             
             include_once $far.'content/header.php'; ?>
         
-        <form method="post" action="/php/consultas/mod_info.php">
-            <table border= "1" style="width:50%;margin:auto;">
+        <form method="post" action="/php/consultas/mod_info.php?id=<?php echo $id ?>">
+            <table class="tabliqui">
                 <thead style="background-color: #646CDF;">
                     <th colspan="2">Modificar usuario Nº<?php echo $row['idUsuario']?></th>
                 </thead>
@@ -42,8 +50,16 @@
                     <td><input type="text" id="nombre" name="nombre" value="<?php echo $row['nombre']?>" required/></td>
                 </tr>
                 <tr>
+                    <td><label for="apel">Apellido:</label></td>
+                    <td><input type="text" id="apel" name="apel" value="<?php echo $row['apellido']?>" required/></td>
+                </tr>
+                <tr>
                     <td><label for="email">Correo Electronico:</label></td>
                     <td><input type="email" id="email" name="email" value="<?php echo $row['email']?>" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="numss">Numero Seguridad Social:</label></td>
+                    <td><input type="text" id="numss" name="numss" value="<?php echo $row['numEseEse']?>" required/></td>
                 </tr>
                 <tr>
                     <td style="text-align: center; font-size: 20px;" colspan="2">

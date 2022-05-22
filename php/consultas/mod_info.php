@@ -18,7 +18,7 @@
         $update = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
         mysqli_query($conn, $update) or die('Consulta fallida: ');
     
-        //header("Location:" .$far."content/cpanel.php?cons=users");
+        header("Location:" .$far."content/cpanel.php?cons=users");
 
     }elseif (isset($_POST['cuenta'])){
         $usuario = $_POST["usuario"];
