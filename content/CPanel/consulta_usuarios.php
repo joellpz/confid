@@ -38,7 +38,7 @@
                             echo '<td>' . $row['email'] . '</td>';
                             echo '<td style=" text-align:center "><a class="btn btn-primary" href="/content/CPanel/mod_usuario.php?id='. $row["idUsuario"]. '&tipo=1">Editar</a>';
                             echo '&nbsp;&nbsp;';
-                            echo '<a class="btn btn-primary" href="/php/consultas/del_Cliente.php?id='. $row["idUsuario"].'tipo=1">Eliminar</a> </td>';
+                            echo '<a class="btn btn-primary" href="/php/consultas/del_Cliente.php?id='. $row["idUsuario"].'&tipo=1">Eliminar</a> </td>';
                             echo '</tr>';
                         }
                     ?>    
