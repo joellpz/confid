@@ -158,29 +158,6 @@
                             </div>
                         </div>
                     <br>
-<<<<<<< HEAD
-                    <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-12 text-center">
-                                <h3>Nuestro Equipo</h3>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <p>Contamos con un equipo de dirección y control experto en el sector y comprometido
-                                    con la empresa para dar la mayor eficacia y servicio en todo momento.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="container servicios_destacados">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                <div class="card h-100">
-                                    <img id ="poli" src="../../img/quienes_somos/caras/ceo" class="card-img-top"  alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title">Germán Palomares</h5>
-                                    <p class="card-text">Dirección General</p>
-                                    </div>
-                                </div>
-=======
                     <div class="my-5">
                         <div class="row">
                                 <!--Grid column-->
@@ -278,7 +255,6 @@
                                         </div>
                                         </div>  
                                     </div>
->>>>>>> aaf593f7e1e5c985ea09bd3ae2e848cbe386da9c
                                 </div>
                                 <div class="col">
                                 <div class="card h-100">
@@ -349,11 +325,7 @@
                                 </div>  
                             </div>
                         </div>
-<<<<<<< HEAD
-                    <div class="col text-center">
-=======
                     <div class="col text-center my-3">
->>>>>>> aaf593f7e1e5c985ea09bd3ae2e848cbe386da9c
                         <a class="btn btn-primary" href="productos.php" role="button">Nuestros Productos</a>
                         <a class="btn btn-primary" href="contacto.php" role="button">Contacta con ConfID</a>
                     </div>
