@@ -30,7 +30,7 @@
             <div class="row justify-content-center py-2">
                 <div class="col-6">
                     <label for="usuario" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="usuario" name="usuario" value="<?php echo $row['usuario'] ?>" required>
+                    <input type="email" class="form-control" id="usuario" name="usuario" value="<?php echo $row['email'] ?>" required>
                     <input type="hidden" class="form-control" id="email" name="email">
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>  
@@ -78,7 +78,7 @@
             <div class="container-fluid h-100">
                 <div class="row justify-content-center">
                     <div class="col-2 text-center">
-                        <input type="button" class="btn btn-primary" name="add_cliente" value="Regístrate" onclick='registro()'/>
+                        <input type="button" class="btn btn-primary" name="add_cliente" value="Modificar" onclick='registro()'/>
                     </div>
                     <div class="col-2 text-center">                       
                         <a href="/index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
