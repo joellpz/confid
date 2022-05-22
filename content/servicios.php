@@ -9,7 +9,7 @@
     <style>
         
     </style>
-    <body>     
+    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>     
         <?php 
             include_once $far.'content/header.php';
 

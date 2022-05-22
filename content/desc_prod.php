@@ -11,7 +11,7 @@
             margin-top: 7%;
         }
     </style>
-    <body>        
+    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>        
         <?php 
             include_once 'header.php'; 
 
