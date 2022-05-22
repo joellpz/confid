@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 21-05-2022 a las 12:30:31
+-- Tiempo de generación: 22-05-2022 a las 12:29:06
 -- Versión del servidor: 10.5.15-MariaDB-0+deb11u1
 -- Versión de PHP: 7.4.28
 
@@ -43,7 +43,9 @@ INSERT INTO `categorias` (`idCategoria`, `nombre`) VALUES
 (4, 'Decodificadores'),
 (5, 'Paneles Numéricos'),
 (6, 'Soportes y Carcasas'),
-(7, 'Detectores Volumétricos');
+(7, 'Detectores Volumétricos'),
+(8, 'Servicios de monitoreo'),
+(9, 'Servicios con implantación');
 
 -- --------------------------------------------------------
 
@@ -103,7 +105,7 @@ CREATE TABLE `pedidos` (
 CREATE TABLE `productos` (
   `idProductos` int(11) NOT NULL,
   `nombre` varchar(45) NOT NULL,
-  `descripcion` varchar(500) NOT NULL,
+  `descripcion` varchar(1500) NOT NULL,
   `stock` int(11) NOT NULL,
   `precioIVA` float NOT NULL,
   `precioNoIVA` float NOT NULL,
@@ -153,7 +155,13 @@ INSERT INTO `productos` (`idProductos`, `nombre`, `descripcion`, `stock`, `preci
 (37, 'BXS-ST', 'Detector PIR 24 m exterior con área detección estrecha cableado.', 20, 64.67, 53.45, 7),
 (38, 'PDM-I12', 'Detector infrarrojo pasivo volumétrico. Sensor dual. Grado 2.', 20, 81.75, 67.56, 7),
 (39, 'VXI-CMOD', 'Módulo de cámara WiFi HD con vista panorámica para detectores de la gama VXI.', 20, 100.97, 83.45, 7),
-(40, 'VXI-DAM', 'Detector VXI-DAM con módulo de cámara WiFi HD con vista panorámica VXI-CMOD.', 20, 105.79, 87.43, 7);
+(40, 'VXI-DAM', 'Detector VXI-DAM con módulo de cámara WiFi HD con vista panorámica VXI-CMOD.', 20, 105.79, 87.43, 7),
+(41, 'Enterprise', '<p>Si ya tienes un sistema de seguridad implantado en tu empresa, pero quieres ahorrar tiempo de monitorizaci&oacute;n, revisi&oacute;n y mantenimiento, &iexcl;nosotros nos encargamos de todo eso!</p>\r\n<p><br />Caracter&iacute;sticas del servicio:</p>\r\n<ul>\r\n<li>Estudio preliminar del sistema. (Gratuito)</li>\r\n<li>Reestudio del sistema ante actualizaciones de elementos o Software. (Cargo adicional)</li>\r\n<li>Revisi&oacute;n f&iacute;sica rutinaria de los elementos. (Mensualmente)</li>\r\n<li>Revisi&oacute;n l&oacute;gica de los elementos de manera remota. (Semanalmente)</li>\r\n<li>Aplicaci&oacute;n web para consultas al registro de los accesos.</li>\r\n<li>Vista en tiempo real de las c&aacute;maras a trav&eacute;s de nuestra aplicaci&oacute;n web. (L&iacute;mite de 5 c&aacute;maras)</li>\r\n</ul>', 0, 0, 0, 8),
+(42, 'Enterprise Pro', '<p>Servicio de monitoreo de un sistema ya implementado espec&iacute;fico para empresas de un mayor tama&ntilde;o. Nos encargamos de monitorear, revisar y mantener los dispositivos y vigilar la seguridad de los mismos.</p>\r\n<p><br />Caracter&iacute;sticas del servicio:</p>\r\n<ul>\r\n<li>Estudio preliminar del sistema. (Gratuito)</li>\r\n<li>Reestudio del sistema ante actualizaciones de elementos o Software. (Gratuito)</li>\r\n<li>Revisi&oacute;n f&iacute;sica rutinaria de los elementos. (Semanalmente)</li>\r\n<li>Revisi&oacute;n l&oacute;gica de los elementos de manera remota. (Dos d&iacute;as por semana)</li>\r\n<li>Aplicaci&oacute;n web para consultas de todo tipo de informaci&oacute;n recogida por su sistema.</li>\r\n<li>Vista en tiempo real de las c&aacute;maras a trav&eacute;s de nuestra aplicaci&oacute;n web. (L&iacute;mite de 12 c&aacute;maras)</li>\r\n<li>Almacenamiento extra en la nube para mantener copias de seguridad m&aacute;s longevas.</li>\r\n<li>Manejo de log&iacute;stica de logs del sistema.</li>\r\n</ul>', 0, 0, 0, 8),
+(43, 'Personalizable', '<p style=\"text-align: justify;\">Si crees que nuestros servicios no se adaptan completamente a tu empresa, local, lugar de trabajo... Cont&aacute;ctanos y estudiaremos espec&iacute;ficamente tu caso para adaptarlo de la manera m&aacute;s personalizada. Nuestros expertos realizar&aacute;n un estudio preliminar de su sistema, evaluar&aacute;n tanto un sistema ya implementado, contando la posibilidad de realizarle modificaciones para mejorar la seguridad o incluso implantar uno nuevo desde cero.</p>', 0, 0, 0, 8),
+(44, 'Local', '<p>Implementaci&oacute;n de un sistema simple que cuenta con hasta cinco c&aacute;maras, dos sistemas de control de acceso a elecci&oacute;n entre nuestros productos, un decodificador de gama baja y accesorios RFC gratuitos si fuesen necesarios para su sistema.</p>\r\n<p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos aplicando nuestro servicio <a href=\"#42\">Enterprise Pro</a>. Ideal para oficinas y locales de peque&ntilde;o tama&ntilde;o o pocas salas.</p>', 0, 0, 0, 9),
+(45, 'Office', '<p>Implementaci&oacute;n de un sistema avanzado que cuenta con hasta doce c&aacute;maras, cinco sistemas de control de acceso a elecci&oacute;n entre nuestros productos, accesorios RFC gratuitos si fuesen necesarios para su sistema y un decodificador de gama media, necesario para tener un equipo central desde el que poder controlar los dispositivos tanto dentro como fuera de la oficina.</p>\r\n<p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos aplicando nuestro servicio <a href=\"#42\">Enterprise Pro</a>. Ideal para oficinas y locales de mayor tama&ntilde;o y salas.</p>', 0, 0, 0, 9),
+(46, 'SpaceShip', '<p>Implementaci&oacute;n de un sistema profesional que cuenta con un m&iacute;nimo de veinte c&aacute;maras, ocho sistemas de control de acceso a elecci&oacute;n entre nuestros productos, accesorios RFC gratuitos y hasta tres decodificadores de gama alta, necesarios para tener diversos equipos centrales desde los que poder controlar los dispositivos tanto dentro como fuera de la oficina.</p>\r\n<p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos aplicando nuestro servicio <a href=\"#42\">Enterprise Pro</a>. Ideal para grandes naves industriales y oficinas de gran tama&ntilde;o.</p>', 0, 0, 0, 9);
 
 -- --------------------------------------------------------
 
@@ -284,7 +292,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `idCategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `idCategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `clientes`
@@ -308,7 +316,7 @@ ALTER TABLE `pedidos`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `idProductos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `idProductos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
