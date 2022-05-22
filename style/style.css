@@ -239,3 +239,7 @@ input[type=number]::-webkit-inner-spin-button,
             appearance: none;
             margin: 0; 
         }
+
+.contact{
+    margin-left: 5%;
+}

@@ -82,6 +82,9 @@ h1{
     padding: 5%;
     border-radius: 20px;
 }
+.img_prod > img{
+    border-radius:20px
+}
 .row{
     margin-bottom: 5%;
 }

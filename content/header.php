@@ -159,6 +159,9 @@
                                 <a class="nav-link" href="/content/productos.php">Productos</a>
                             </li>
                             <li class="nav-item px-2" role="presentation">
+                                <a class="nav-link" href="/content/servicios.php">Servicios</a>
+                            </li>
+                            <li class="nav-item px-2" role="presentation">
                                 <a class="nav-link" href="/content/contacto.php">Contacto</a>
                             </li>
                         </ul>

@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row descripcion">
                 <div class="col-6 img_prod">
-                    <img style="border-radius:20px" src="/img/productos/<?php echo $row2['idProductos'];?>.png" class="card-img-top" alt="...">    
+                    <img src="/img/productos/<?php echo $row2['idProductos'];?>.png" class="card-img-top" alt="...">    
                 </div>
                 <div class="col-6">             
                     <p class="card-title"><b><?php echo $row2['nombre'];?></b></p>
