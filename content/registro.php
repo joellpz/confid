@@ -5,7 +5,7 @@
         $far="../";
         include $far.'php/comun/head.php';
     ?>      
-    <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
+    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->  
         <style>
             .btn{
@@ -14,7 +14,7 @@
             }
         </style>
         <h2>Registro de Usuarios</h2>
-        <form action="php/signup.php" method="post" id="form"><br>              
+        <form action="/php/signup.php" method="post" id="form"><br>              
             <div class="row justify-content-center py-2">
                 <div class="col-6">
                     <label for="signup_user" class="form-label">Email*</label>
@@ -23,8 +23,8 @@
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>  
                 <div class="col-2" style="display: flex;flex-wrap: nowrap;justify-content: center;align-items: center; margin-top: 0.3%">
-                    <label class="btn btn-outline-secondary" for="signup_auto" name="signup_auto">Soy autónomo</label>
-                    <input type="checkbox" class="btn-check" id="signup_auto" onclick="autonomo()">                    
+                    <label class="btn btn-outline-secondary" for="signup_auto" >Soy autónomo</label>
+                    <input type="checkbox" class="btn-check" id="signup_auto" name="signup_auto"onclick="autonomo()">                    
                 </div>              
             </div>
             <br>

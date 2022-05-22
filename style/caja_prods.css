@@ -71,3 +71,28 @@ h1{
     font-size: 16px;
     color:darkcyan;
 }
+.descripcion{
+    border: 3px solid #646CDF;
+    border-radius: 25px;
+    max-width: 1300px;
+    margin-top: 7%;
+    margin: 0 auto;
+}
+.img_prod{
+    padding: 5%;
+    border-radius: 20px;
+}
+.row{
+    margin-bottom: 5%;
+}
+.serv-title{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.serv-info{
+    margin: auto;  
+    padding-right: 5%;        
+}
+.serv-text{
+    text-align: justify;
+}

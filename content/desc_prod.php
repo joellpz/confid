@@ -5,18 +5,10 @@
         $far="../";
         include $far.'php/comun/head.php';
     ?>
-    
+    <link rel ="stylesheet" href="/style/caja_prods.css"/>
     <style>
         .descripcion{
-            border: 3px solid #646CDF;
-            border-radius: 25px;
-            max-width: 1300px;
             margin-top: 7%;
-        }
-        .img_prod{
-            padding: 5%;
-            background-color: #535253;
-            border-radius: 20px;
         }
     </style>
     <body>        
@@ -28,7 +20,7 @@
             $row2 = mysqli_fetch_array($rescat)
         ?>
 
-        <div class="container servicios_destacados">
+        <div class="container">
             <div class="row descripcion">
                 <div class="col-6 img_prod">
                     <img style="border-radius:20px" src="/img/productos/<?php echo $row2['idProductos'];?>.png" class="card-img-top" alt="...">    

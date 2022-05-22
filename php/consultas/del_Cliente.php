@@ -8,8 +8,6 @@
             mysqli_query($conn, $delete) or die('Consulta fallida: ');
             
             header("Location:$far/content/CPanel/consulta_usuarios.php"); //Redirigir a Principal.
-
-            
         ?>   
         <br>   
     </body>

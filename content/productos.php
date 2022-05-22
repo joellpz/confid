@@ -10,7 +10,7 @@
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
         <?php 
-            $qprods = "SELECT * FROM categorias";
+            $qprods = "SELECT * FROM categorias WHERE idCategoria != 8 AND idCategoria != 9";
             $resprods = mysqli_query($conn, $qprods);            
 
             while ($row1 = mysqli_fetch_array($resprods)) {  

@@ -1,123 +1,45 @@
 <!DOCTYPE html>
 <html>
     <?php 
-        $file="Productos";
+        $file="servicios";
         $far="../";
         include $far.'php/comun/head.php';
-    ?>  
+    ?>
+    <link rel ="stylesheet" href="/style/caja_prods.css"/>
     <style>
-        .card{
-        border-radius: 30px;
-        }
-        #prod{
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-        }
-        h1{
-            text-align: center;
-            border: 2px #646CDF solid;
-            border-radius: 15px;
-            padding-bottom: 7px;
-        }
+        
     </style>
-    <body>
-        <!-- Bloque de servicios-->
-        <br>
-        <div class="container servicios_destacados">
-            <h1>Servicios de monitoreo</h1>
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            
-            <br><br>
+    <body>     
+        <?php 
+            include_once $far.'content/header.php';
+
+            $qprods = "SELECT * FROM categorias WHERE idCategoria = 8 OR idCategoria = 9";
+            $resprods = mysqli_query($conn, $qprods);            
+
+            while ($row1 = mysqli_fetch_array($resprods)) {  
+
+                $qcateg = "SELECT * FROM productos WHERE idCategoria = ".$row1['idCategoria'];
+                $rescat = mysqli_query($conn, $qcateg);
+        ?>
+                <div class="container-fluid my-5">
+                    <h1 class="text-center fw-bold display-1 mb-5"><?php echo $row1['nombre']; ?></h1>
                     
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
+
+            <?php while ($row2 = mysqli_fetch_array($rescat)) { ?>
+
+                            <div class="row descripcion" id="<?php echo $row2['idProductos'];?>">
+                                <div class="col-6 img_prod">
+                                    <img style="border-radius:20px" src="/img/productos/<?php echo $row2['idProductos'];?>.png" class="card-img-top" alt="...">    
+                                </div>
+                                <div class="col-6 serv-info">             
+                                    <p class="card-title serv-title"><b><?php echo $row2['nombre'];?></b></p>
+                                    <div class="serv-text"><?php echo $row2['descripcion'];?></div>
+                                </div>    
+                            </div>                          
+            <?php } ?>                             
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-
-            <br><br>
-
-            <h1>Servicios con implantación de sistema</h1>        
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-
-            <br><br>
-                    
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/img/img-cuadrada.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-
-            <br><br>
-        </div>
-        <?php include_once $far.'php/comun/footer.php'; ?>
+        <?php } ?>                      
+        
+        <?php include_once $far.'php/comun/footer.php'; ?>        
     </body>
 </html>

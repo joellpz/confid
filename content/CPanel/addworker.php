@@ -6,15 +6,11 @@
         include $far.'php/comun/head.php';
     ?>
     <style>
-        input[type=number]::-webkit-inner-spin-button, 
-        input[type=number]::-webkit-outer-spin-button { 
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            margin: 0; 
-        }
+        
     </style>
-
+    <head>
+        <link rel ="stylesheet" href="/style/style.css"/> 
+    </head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <h2>Añadir Usuario</h2>
         <form action="/php/signup.php" method="post" class="m-4">
