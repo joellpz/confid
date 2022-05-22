@@ -44,7 +44,7 @@
             <div class="row justify-content-center py-2">
                 <div class="col-4">
                     <label for="signup_pass" class="form-label">Contraseña*</label>
-                    <input type="text" class="form-control" id="signup_pass" name="signup_pass" required>
+                    <input type="password" class="form-control" id="signup_pass" name="signup_pass" required>
                 </div>
             </div>  
             <div class="container-fluid p-2">

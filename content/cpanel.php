@@ -2,7 +2,7 @@
 <html>
     <?php
         
-        $file=basename(__FILE__, '.php');
+        $file="Control Panel";
         $far="../";
         include $far.'php/comun/head.php';
         

@@ -51,4 +51,8 @@
             }
         }
     }
+
+    if($file=="Control Panel" && $cliente){
+        header('Location: /index.php');
+    }
 ?>

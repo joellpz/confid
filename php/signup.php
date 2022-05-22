@@ -4,7 +4,7 @@
     var_dump($_POST);
     if( isset($_POST)/*isset($_POST['add_worker']) || isset($_POST['add_cliente'])*/){
         $usuario = $_POST['signup_user'];
-        $pass = $_POST['signup_pass'];
+        $pass = md5($_POST['signup_pass']);
         $email = $_POST['signup_email'];
         $name = $_POST['signup_name'];
 

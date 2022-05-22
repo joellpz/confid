@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4deb2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost:3306
--- Tiempo de generación: 22-05-2022 a las 12:29:06
--- Versión del servidor: 10.5.15-MariaDB-0+deb11u1
--- Versión de PHP: 7.4.28
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 22-05-2022 a las 21:22:42
+-- Versión del servidor: 5.7.36
+-- Versión de PHP: 7.4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -27,10 +27,12 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `categorias`
 --
 
-CREATE TABLE `categorias` (
-  `idCategoria` int(11) NOT NULL,
-  `nombre` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS `categorias`;
+CREATE TABLE IF NOT EXISTS `categorias` (
+  `idCategoria` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idCategoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `categorias`
@@ -53,13 +55,15 @@ INSERT INTO `categorias` (`idCategoria`, `nombre`) VALUES
 -- Estructura de tabla para la tabla `clientes`
 --
 
-CREATE TABLE `clientes` (
-  `idUsuario` int(11) NOT NULL,
+DROP TABLE IF EXISTS `clientes`;
+CREATE TABLE IF NOT EXISTS `clientes` (
+  `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
   `alias` varchar(50) NOT NULL,
   `CIF` varchar(15) NOT NULL,
   `direccion` varchar(45) NOT NULL,
-  `autonomo` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `autonomo` tinyint(1) NOT NULL,
+  PRIMARY KEY (`idUsuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `clientes`
@@ -74,13 +78,17 @@ INSERT INTO `clientes` (`idUsuario`, `alias`, `CIF`, `direccion`, `autonomo`) VA
 -- Estructura de tabla para la tabla `detallespedidos`
 --
 
-CREATE TABLE `detallespedidos` (
-  `idPedido` int(11) NOT NULL,
+DROP TABLE IF EXISTS `detallespedidos`;
+CREATE TABLE IF NOT EXISTS `detallespedidos` (
+  `idPedido` int(11) NOT NULL AUTO_INCREMENT,
   `idProducto` int(11) NOT NULL,
   `fecha` date NOT NULL,
   `precioTotal` float DEFAULT NULL,
   `idTransporte` int(11) DEFAULT NULL,
-  ` cantidad` int(5) DEFAULT NULL
+  ` cantidad` int(5) DEFAULT NULL,
+  PRIMARY KEY (`idPedido`,`fecha`,`idProducto`),
+  KEY `fk_detalles_pedidos_Productos1_idx` (`idProducto`),
+  KEY `fk_detallesPedidos_transporte1_idx` (`idTransporte`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -89,11 +97,14 @@ CREATE TABLE `detallespedidos` (
 -- Estructura de tabla para la tabla `pedidos`
 --
 
-CREATE TABLE `pedidos` (
-  `idPedido` int(11) NOT NULL,
+DROP TABLE IF EXISTS `pedidos`;
+CREATE TABLE IF NOT EXISTS `pedidos` (
+  `idPedido` int(11) NOT NULL AUTO_INCREMENT,
   `precioTotal` float DEFAULT NULL,
   `idUsuario` int(11) NOT NULL,
-  `pedidoExterno` int(50) DEFAULT NULL
+  `pedidoExterno` int(50) DEFAULT NULL,
+  PRIMARY KEY (`idPedido`),
+  KEY `fk_pedidos_usuarios1_idx` (`idUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -102,15 +113,18 @@ CREATE TABLE `pedidos` (
 -- Estructura de tabla para la tabla `productos`
 --
 
-CREATE TABLE `productos` (
-  `idProductos` int(11) NOT NULL,
+DROP TABLE IF EXISTS `productos`;
+CREATE TABLE IF NOT EXISTS `productos` (
+  `idProductos` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) NOT NULL,
   `descripcion` varchar(1500) NOT NULL,
   `stock` int(11) NOT NULL,
   `precioIVA` float NOT NULL,
   `precioNoIVA` float NOT NULL,
-  `idCategoria` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `idCategoria` int(11) NOT NULL,
+  PRIMARY KEY (`idProductos`),
+  KEY `fk_Productos_categorias1_idx` (`idCategoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `productos`
@@ -169,10 +183,13 @@ INSERT INTO `productos` (`idProductos`, `nombre`, `descripcion`, `stock`, `preci
 -- Estructura de tabla para la tabla `trabajadores`
 --
 
-CREATE TABLE `trabajadores` (
+DROP TABLE IF EXISTS `trabajadores`;
+CREATE TABLE IF NOT EXISTS `trabajadores` (
   `idUsuario` int(11) NOT NULL,
   `numEseEse` varchar(45) NOT NULL,
-  `apellido` varchar(45) NOT NULL
+  `apellido` varchar(45) NOT NULL,
+  PRIMARY KEY (`idUsuario`),
+  UNIQUE KEY `idUsuario_UNIQUE` (`idUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -188,11 +205,13 @@ INSERT INTO `trabajadores` (`idUsuario`, `numEseEse`, `apellido`) VALUES
 -- Estructura de tabla para la tabla `transporte`
 --
 
-CREATE TABLE `transporte` (
+DROP TABLE IF EXISTS `transporte`;
+CREATE TABLE IF NOT EXISTS `transporte` (
   `idTransporte` int(11) NOT NULL,
   `nombre` varchar(45) DEFAULT NULL,
   `CIF` varchar(15) DEFAULT NULL,
-  `telefono` int(11) DEFAULT NULL
+  `telefono` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idTransporte`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -211,118 +230,23 @@ INSERT INTO `transporte` (`idTransporte`, `nombre`, `CIF`, `telefono`) VALUES
 -- Estructura de tabla para la tabla `usuarios`
 --
 
-CREATE TABLE `usuarios` (
-  `idUsuario` int(11) NOT NULL,
+DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
   `usuario` varchar(45) NOT NULL,
   `passwd` varchar(45) NOT NULL,
   `nombre` varchar(45) NOT NULL,
-  `email` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `email` varchar(45) NOT NULL,
+  PRIMARY KEY (`idUsuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
 INSERT INTO `usuarios` (`idUsuario`, `usuario`, `passwd`, `nombre`, `email`) VALUES
-(1, 'admin', 'admin', 'admin', 'info@confid.es'),
-(2, 'test', 'test', 'test', 'test@test.com');
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `categorias`
---
-ALTER TABLE `categorias`
-  ADD PRIMARY KEY (`idCategoria`);
-
---
--- Indices de la tabla `clientes`
---
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`idUsuario`);
-
---
--- Indices de la tabla `detallespedidos`
---
-ALTER TABLE `detallespedidos`
-  ADD PRIMARY KEY (`idPedido`,`fecha`,`idProducto`),
-  ADD KEY `fk_detalles_pedidos_Productos1_idx` (`idProducto`),
-  ADD KEY `fk_detallesPedidos_transporte1_idx` (`idTransporte`);
-
---
--- Indices de la tabla `pedidos`
---
-ALTER TABLE `pedidos`
-  ADD PRIMARY KEY (`idPedido`),
-  ADD KEY `fk_pedidos_usuarios1_idx` (`idUsuario`);
-
---
--- Indices de la tabla `productos`
---
-ALTER TABLE `productos`
-  ADD PRIMARY KEY (`idProductos`),
-  ADD KEY `fk_Productos_categorias1_idx` (`idCategoria`);
-
---
--- Indices de la tabla `trabajadores`
---
-ALTER TABLE `trabajadores`
-  ADD PRIMARY KEY (`idUsuario`),
-  ADD UNIQUE KEY `idUsuario_UNIQUE` (`idUsuario`);
-
---
--- Indices de la tabla `transporte`
---
-ALTER TABLE `transporte`
-  ADD PRIMARY KEY (`idTransporte`);
-
---
--- Indices de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`idUsuario`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `categorias`
---
-ALTER TABLE `categorias`
-  MODIFY `idCategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT de la tabla `clientes`
---
-ALTER TABLE `clientes`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de la tabla `detallespedidos`
---
-ALTER TABLE `detallespedidos`
-  MODIFY `idPedido` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `pedidos`
---
-ALTER TABLE `pedidos`
-  MODIFY `idPedido` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `productos`
---
-ALTER TABLE `productos`
-  MODIFY `idProductos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
-
---
--- AUTO_INCREMENT de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'info@confid.es'),
+(2, 'test', '098f6bcd4621d373cade4e832627b4f6', 'test', 'test@test.com');
 
 --
 -- Restricciones para tablas volcadas

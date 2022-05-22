@@ -7,7 +7,7 @@ if (!$conn) {
 //if (isset($_POST['login'])) {
     session_start();
     $login = $_POST['login_email'];
-    $contra = $_POST['login_pass'];
+    $contra = md5($_POST['login_pass']);
 
     //echo "$login, $contra";
     $consulta = "SELECT * FROM usuarios WHERE (email = '$login' OR usuario = '$login') AND passwd = '$contra'";
