@@ -114,145 +114,147 @@
                                     como partners para ofrecer nuestros servicios de ciberseguridad a sus más de 128.000 socios. 
                                 </p>
                             </div>
-                        </div>
-                        
+                        </div>                       
                         <!--Grid row-->
-                        <div class="row">
+                        <div class="my-5">
+                            <div class="row">
+                                <!--Grid column-->
+                                <div class="col-md-12 text-center">
+                                    <h3>Empresas colaboradoras</h3>
+                                </div>
+                            </div>
+                            <div class="row">
 
-                            <!--Grid column-->
-                            <div class="col-md-12 text-center">
-                                <h3>Empresas colaboradoras</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <!--Grid column 1-->
-                            <div class="col-md-2 text-center">
-                                <h4>Ayto. de Badalona</h4>
-                                <img src="../../img/quienes_somos/badalona" width="40%">
-                            </div>
-                            <!--Grid column 2-->
-                            <div class="col-md-2 text-center">
-                                <h4>Estrella Damm</h4>
-                                <img src="../../img/quienes_somos/estrella_damm" width="50%">
-                            </div>
-                            <!--Grid column 3-->
-                            <div class="col-md-2 text-center">
-                                <h4>F.C. Barcelona</h4>
-                                <img src="../../img/quienes_somos/barcelona" width="40%">
-                            </div>
-                            <!--Grid column 4-->
-                            <div class="col-md-2 text-center">
-                                <h4>Saint Honore S.A.</h4>
-                                <img src="../../img/quienes_somos/saint_honore" width="45%">
-                            </div>
-                            <!--Grid column 5-->
-                            <div class="col-md-2 text-center">
-                                <h4>Col.legi Cultural</h4>
-                                <img src="../../img/quienes_somos/cultural" width="40%">
-                            </div>
-                            <!--Grid column 6-->
-                            <div class="col-md-2 text-center">
-                                <h4>Sarau 08911</h4>
-                                <img src="../../img/quienes_somos/sarau" width="40%">
+                                <!--Grid column 1-->
+                                <div class="col-md-2 text-center">
+                                    <h4>Ayto. de Badalona</h4>
+                                    <img src="../../img/quienes_somos/badalona" width="40%">
+                                </div>
+                                <!--Grid column 2-->
+                                <div class="col-md-2 text-center">
+                                    <h4>Estrella Damm</h4>
+                                    <img src="../../img/quienes_somos/estrella_damm" width="50%">
+                                </div>
+                                <!--Grid column 3-->
+                                <div class="col-md-2 text-center">
+                                    <h4>F.C. Barcelona</h4>
+                                    <img src="../../img/quienes_somos/barcelona" width="40%">
+                                </div>
+                                <!--Grid column 4-->
+                                <div class="col-md-2 text-center">
+                                    <h4>Saint Honore S.A.</h4>
+                                    <img src="../../img/quienes_somos/saint_honore" width="45%">
+                                </div>
+                                <!--Grid column 5-->
+                                <div class="col-md-2 text-center">
+                                    <h4>Col.legi Cultural</h4>
+                                    <img src="../../img/quienes_somos/cultural" width="40%">
+                                </div>
+                                <!--Grid column 6-->
+                                <div class="col-md-2 text-center">
+                                    <h4>Sarau 08911</h4>
+                                    <img src="../../img/quienes_somos/sarau" width="40%">
+                                </div>
                             </div>
                         </div>
                     <br>
-                    <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-12 text-center">
-                                <h3>Nuestro Equipo</h3>
-                                <h3>Nuestro mayor valor diferencial</h3>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <p>Contamos con un equipo de dirección y control experto en el sector y comprometido
-                                    con la empresa para dar la mayor eficacia y servicio en todo momento.
-                                    Contamos con un talento comprometido y emprendedor. Promovemos un entorno de trabajo 
-                                    basado en la igualdad de oportunidades, la diversidad y la inclusión, 
-                                    e impulsamos formas de trabajo que faciliten el equilibrio entre la vida personal y la profesional.
-                                </p>
-                            </div>
-                        </div>
-                        <div max-width="60%">
-                            <div class="container servicios_destacados">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                    <div class="card h-100">
-                                        <img id ="poli" src="../../img/quienes_somos/caras/ceo" class="card-img-top"  alt="...">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Germán Palomares</h5>
-                                        <p class="card-text">Dirección General</p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col">
-                                    <div class="card h-100">
-                                        <img id='app' src="../../img/quienes_somos/caras/inter" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Daisy Xiang Meng</h5>
-                                        <p class="card-text">Dir. Ventas Internacional</p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col">
-                                    <div class="card h-100">
-                                        <img id='vig' src="../../img/quienes_somos/caras/rrhh" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                        <h5 class="card-title">T. J. Jackson Jr.</h5>
-                                        <p class="card-text">Dir. Recursos Humanos</p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col">
-                                    <div class="card h-100">
-                                        <img id='vig' src="../../img/quienes_somos/caras/sac" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Hannah Montana</h5>
-                                        <p class="card-text">Dirección S.A.C.</p>
-                                        </div>
-                                    </div>
-                                    </div>  
+                    <div class="my-5">
+                        <div class="row">
+                                <!--Grid column-->
+                                <div class="col-md-12 text-center">
+                                    <h3>Nuestro Equipo</h3>
+                                    <h3>Nuestro mayor valor diferencial</h3>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <p>Contamos con un equipo de dirección y control experto en el sector y comprometido
+                                        con la empresa para dar la mayor eficacia y servicio en todo momento.
+                                        Contamos con un talento comprometido y emprendedor. Promovemos un entorno de trabajo 
+                                        basado en la igualdad de oportunidades, la diversidad y la inclusión, 
+                                        e impulsamos formas de trabajo que faciliten el equilibrio entre la vida personal y la profesional.
+                                    </p>
                                 </div>
                             </div>
-                            <br>
-                            <div class="container servicios_destacados">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                    <div class="card h-100">
-                                        <img id ="poli" src="../../img/quienes_somos/caras/tech" class="card-img-top"  alt="...">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Jason Smith</h5>
-                                        <p class="card-text">Dirección Tecnologica</p>
+                            <div max-width="50%">
+                                <div class="container servicios_destacados">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                        <div class="card h-100">
+                                            <img id ="poli" src="../../img/quienes_somos/caras/ceo" class="card-img-top"  alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Germán Palomares</h5>
+                                            <p class="card-text">Dirección General</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    </div>
-                                    <div class="col">
-                                    <div class="card h-100">
-                                        <img id='app' src="../../img/quienes_somos/caras/finan" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Michael Sappin</h5>
-                                        <p class="card-text">Dirección Financiera</p>
                                         </div>
-                                    </div>
-                                    </div>
-                                    <div class="col">
-                                    <div class="card h-100">
-                                        <img id='vig' src="../../img/quienes_somos/caras/ventas" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Leo Margets</h5>
-                                        <p class="card-text">Dirección Ventas</p>
+                                        <div class="col">
+                                        <div class="card h-100">
+                                            <img id='app' src="../../img/quienes_somos/caras/inter" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Daisy Xiang Meng</h5>
+                                            <p class="card-text">Dir. Ventas Internacional</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    </div>
-                                    <div class="col">
-                                    <div class="card h-100">
-                                        <img id='vig' src="../../img/quienes_somos/caras/desarrollo" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                        <h5 class="card-title">Antonio Parrales</h5>
-                                        <p class="card-text">Dirección de Desarrollo</p>
                                         </div>
+                                        <div class="col">
+                                        <div class="card h-100">
+                                            <img id='vig' src="../../img/quienes_somos/caras/rrhh" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">T. J. Jackson Jr.</h5>
+                                            <p class="card-text">Dir. Recursos Humanos</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col">
+                                        <div class="card h-100">
+                                            <img id='vig' src="../../img/quienes_somos/caras/sac" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Hannah Montana</h5>
+                                            <p class="card-text">Dirección S.A.C.</p>
+                                            </div>
+                                        </div>
+                                        </div>  
                                     </div>
-                                    </div>  
+                                </div>
+                                <br>
+                                <div class="container servicios_destacados">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                        <div class="card h-100">
+                                            <img id ="poli" src="../../img/quienes_somos/caras/tech" class="card-img-top"  alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Jason Smith</h5>
+                                            <p class="card-text">Dirección Tecnológica</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col">
+                                        <div class="card h-100">
+                                            <img id='app' src="../../img/quienes_somos/caras/finan" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Michael Sappin</h5>
+                                            <p class="card-text">Dirección Financiera</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col">
+                                        <div class="card h-100">
+                                            <img id='vig' src="../../img/quienes_somos/caras/ventas" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Leo Margets</h5>
+                                            <p class="card-text">Dirección de Ventas</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col">
+                                        <div class="card h-100">
+                                            <img id='vig' src="../../img/quienes_somos/caras/desarrollo" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Antonio Parrales</h5>
+                                            <p class="card-text">Dirección de Desarrollo</p>
+                                            </div>
+                                        </div>
+                                        </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
