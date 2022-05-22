@@ -13,7 +13,9 @@
                 max-width: 200px;
             }
         </style>
-        <h2>Registro de Usuarios</h2>
+        <div class="text-center mx-2">
+            <h2>Registro de Usuarios</h2>
+        </div>
         <form action="/php/signup.php" method="post" id="form"><br>              
             <div class="row justify-content-center py-2">
                 <div class="col-6">
