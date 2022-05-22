@@ -26,7 +26,7 @@
         <div class="text-center mx-2">
             <h2>Modificar Información de la Cuenta</h2>
         </div>
-        <form action="/php/consultas/mod_info.php" method="post" id="form">
+        <form action="/php/consultas/mod_info.php?id=<?php echo $id?>" method="post" id="form">
             <div class="row justify-content-center py-2">
                 <div class="col-6">
                     <label for="usuario" class="form-label">Email*</label>
