@@ -12,16 +12,14 @@
             <!--Section heading-->
             <h2 class="h1-responsive font-weight-bold text-center my-4">¿Quienes Somos?</h2>
             <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Analizamos, Instalamos y Mejoramos</p>
+            <h4 class="text-center w-responsive mx-auto mb-5">Analizamos, Instalamos y Mejoramos</h4>
 
             <div class="row">
 
                 <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5 text-center">
-                   
+                <div class="col-md-9 mb-md-0 mb-5 text-center">                  
                         <!--Grid row-->
                         <div class="row">
-
                             <!--Grid column-->
                             <div class="col-md-12 text-center">
                                 <p>ConfID se trata de una empresa fundada en el año 2020 cuyo objetivo principal es reinventar el 
@@ -35,7 +33,7 @@
                         <div class="row">
                             <!--Grid column-->
                             <div class="col-md-12 text-center">
-                                <h2 class="h1-responsive font-weight-bold text-center my-4">Al otro lado, simepre estamos nosotros</h2>
+                                <h2 class="h1-responsive font-weight-bold text-center my-4">Al otro lado, siempre estamos nosotros</h2>
                             </div>
                         </div>
                         <!--Grid row-->
@@ -58,7 +56,8 @@
                             <!--Grid column-->
                             <div class="col-md-12">
                             <p>Desde ConfID tenemos siempre en cuenta la opinion de nuestros clientes y agradecemos su compromiso con nosotros
-                                haciendonos crecer año tras año en más de un 12% de media anual.
+                                haciendonos crecer año tras año en más de un 12% de media anual. Por todo ello hemos decidido llenar este año 2022
+                                de descuentos y recompensas muy interesantes por la contratación de nuestros servicios.
                             </p>
                             </div>
                         </div>
