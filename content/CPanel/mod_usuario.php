@@ -25,7 +25,7 @@
             include_once $far.'content/header.php'; ?>
         
         <form method="post" action="/php/consultas/mod_info.php">
-            <table border= "1" style="width:100%;margin:auto;">
+            <table border= "1" style="width:50%;margin:auto;">
                 <thead style="background-color: #646CDF;">
                     <th colspan="2">Modificar usuario Nº<?php echo $row['idUsuario']?></th>
                 </thead>
@@ -47,7 +47,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center; font-size: 20px;" colspan="2">
-                        <input type="submit" name="enviar" value="Modificar"/>
+                        <input type="submit" class="btn btn-primary" name="enviar" value="Modificar"/>
                     </td>
                 </tr>
             </table>

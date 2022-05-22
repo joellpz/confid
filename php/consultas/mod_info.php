@@ -18,7 +18,7 @@
         $update = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
         mysqli_query($conn, $update) or die('Consulta fallida: ');
     
-        header("Location:" .$far."content/cpanel.php?cons=users");
+        //header("Location:" .$far."content/cpanel.php?cons=users");
 
     }elseif (isset($_POST['cuenta'])){
         $usuario = $_POST["usuario"];
@@ -38,8 +38,11 @@
         $update_cli = "UPDATE clientes SET alias='$alias', CIF='$cif', direccion = '$dir', autonomo='$autonomo' WHERE idUsuario = $id";
         mysqli_query($conn, $update_users) or die('Consulta fallida: ');
         mysqli_query($conn, $update_cli) or die('Consulta fallida: ');
-    
-        header("Location:".$far."content/user/mod_account.php");
-
+        
+        if($trabajador){
+            header("Location:" .$far."content/cpanel.php?cons=users");
+        }else{
+            header("Location:".$far."content/user/mod_account.php");
+        }
     }   
 ?>
