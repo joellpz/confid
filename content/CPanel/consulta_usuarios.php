@@ -14,15 +14,6 @@
     <link rel ="stylesheet" href="/style/style.css"/> 
 </head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
-        <?php
-            if(isset($_POST["del"])){
-                $id = $_POST['del'];
-                $delete = "DELETE FROM usuarios WHERE idUsuario = $id";
-                mysqli_query($conn, $delete);
-                echo"<br><h3>Eliminando Cliente ". $id . "...</h3>";
-                header("Location:/index.php"); //Redirigir a Principal.
-            }else{
-        ?>
         <div>    
             <div>    
             <h1>Clientes</h1>
@@ -45,7 +36,7 @@
                             echo '<td>' . $row['passwd'] . '</td>';
                             echo '<td>' . $row['nombre'] . '</td>';
                             echo '<td>' . $row['email'] . '</td>';
-                            echo '<td style=" text-align:center "><a class="btn btn-primary" href="/content/CPanel/mod_users.php?id='. $row["idUsuario"]. '&tipo=1">Editar</a>';
+                            echo '<td style=" text-align:center "><a class="btn btn-primary" href="/content/CPanel/mod_usuario.php?id='. $row["idUsuario"]. '&tipo=1">Editar</a>';
                             echo '&nbsp;&nbsp;';
                             echo '<a class="btn btn-primary" href="/php/consultas/del_Cliente.php?id='. $row["idUsuario"].'tipo=1">Eliminar</a> </td>';
                             echo '</tr>';
@@ -55,8 +46,5 @@
             </div>
         </div>
         <br>
-        <?php
-                }
-        ?>    
     </body>
 </html>
