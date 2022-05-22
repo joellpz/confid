@@ -162,8 +162,8 @@
                         <div class="row">
                                 <!--Grid column-->
                                 <div class="col-md-12 text-center">
-                                    <h3>Nuestro Equipo</h3>
-                                    <h3>Nuestro mayor valor diferencial</h3>
+                                    <h3>Nuestro Equipo,
+                                    nuestro mayor valor diferencial</h3>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <p>Contamos con un equipo de dirección y control experto en el sector y comprometido
