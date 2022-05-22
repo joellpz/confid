@@ -61,6 +61,30 @@
                             </p>
                             </div>
                         </div>
+                        <div class="container servicios_destacados">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id ="poli" src="../../img/quienes_somos/securitas-direct-servicios-policia" class="card-img-top">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Cada segundo cuenta:</h5>
+                                    <p class="card-text">Ante una situación de peligro, nuestra respuesta
+                                        es rápida y eficaz: recibimos la alerta en segundos y comprobamos
+                                        que ocurre para avisar de inmediato a la Policía.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='prod' src="/img/productos/servicio2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                                </div>  
+                            </div>
+                        </div>
                         <!--Grid row-->
                         <div class="row">
 
