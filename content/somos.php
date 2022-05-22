@@ -333,7 +333,6 @@
                 </div>
             </div>
         </section>
-
         <?php include_once $far.'php/comun/footer.php'; ?> 
     </body>
 </html>
