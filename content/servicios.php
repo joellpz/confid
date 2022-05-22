@@ -34,7 +34,10 @@
                                 <div class="col-6 serv-info">             
                                     <p class="card-title serv-title"><b><?php echo $row2['nombre'];?></b></p>
                                     <div class="serv-text"><?php echo $row2['descripcion'];?></div>
-                                </div>    
+                                    <div class="boton">
+                                        <a href="/content/contacto.php?serv=true" class="btn btn-primary btn-block">¡Me interesa!</a>
+                                    </div>
+                                </div>                                
                             </div>                          
             <?php } ?>                             
                 </div>
