@@ -14,7 +14,7 @@
             }
         </style>
         <h2>Registro de Usuarios</h2>
-        <form action="php/signup.php" method="post" id="form"><br>              
+        <form action="/php/signup.php" method="post" id="form"><br>              
             <div class="row justify-content-center py-2">
                 <div class="col-6">
                     <label for="signup_user" class="form-label">Email*</label>

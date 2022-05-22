@@ -10,8 +10,10 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel ="stylesheet" href="/style/style.css"/> 
+</head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
-        <?php include_once $far.'content/header.php'; ?>
         <?php
             if(isset($_POST["del"])){
                 $id = $_POST['del'];
@@ -43,7 +45,7 @@
                             echo '<td>' . $row['passwd'] . '</td>';
                             echo '<td>' . $row['nombre'] . '</td>';
                             echo '<td>' . $row['email'] . '</td>';
-                            echo '<td style=" text-align:center "><a class="btn btn-primary" href="/content/CPanel/mod_user.php?id='. $row["idUsuario"]. '&tipo=1">Editar</a>';
+                            echo '<td style=" text-align:center "><a class="btn btn-primary" href="/content/CPanel/mod_users.php?id='. $row["idUsuario"]. '&tipo=1">Editar</a>';
                             echo '&nbsp;&nbsp;';
                             echo '<a class="btn btn-primary" href="/php/consultas/del_Cliente.php?id='. $row["idUsuario"].'tipo=1">Eliminar</a> </td>';
                             echo '</tr>';

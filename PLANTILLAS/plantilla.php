@@ -9,6 +9,6 @@
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
         <!--body-->
-        <?php include_once 'footer.php'; ?>
+        <?php include_once $far.'php/comun/footer.php'; ?>
     </body>
 </html>

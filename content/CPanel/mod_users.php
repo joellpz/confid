@@ -1,11 +1,12 @@
-<?php
-    $file="Control Panel";
-    $far="../../";
-    include $far.'php/comun/head.php';
-?>
+
 <!DOCTYPE html>
 <html>
-    <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>
+    <?php
+        $file="Control Panel";
+        $far="../../";
+        include $far.'php/comun/head.php';
+    ?>
+    <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
     <?php
             $id = $_GET['id'];
             $consulta = "SELECT * FROM usuarios WHERE idUsuario = $id";
@@ -21,7 +22,7 @@
                 $update = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
                 mysqli_query($conn, $update) or die('Consulta fallida: ');
             
-                header("Location:$far/content/CPanel/consulta_usuarios.php");  //Redirigir a Principal.
+                header("Location:" .$far."content/cpanel.php?cons=users");  //Redirigir a Principal.
             }else{
         ?>
     <?php include_once $far.'content/header.php'; ?>

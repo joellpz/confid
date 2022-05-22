@@ -6,6 +6,9 @@
 
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel ="stylesheet" href="/style/style.css"/> 
+    </head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <h2>Facturación</h2>
         <table border= "1" style="width: 80%;">
