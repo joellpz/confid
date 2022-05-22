@@ -65,26 +65,37 @@
                             <div class="row align-items-center">
                                 <div class="col">
                                 <div class="card h-100">
-                                    <img id ="poli" src="../../img/quienes_somos/securitas-direct-servicios-policia" class="card-img-top">
+                                    <img id ="poli" src="../../img/quienes_somos/patrulla" class="card-img-top"  alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Cada segundo cuenta:</h5>
-                                    <p class="card-text">Ante una situación de peligro, nuestra respuesta
-                                        es rápida y eficaz: recibimos la alerta en segundos y comprobamos
+                                    <h5 class="card-title">Cada segundo cuenta</h5>
+                                    <p class="card-text">Recibimos la alerta en segundos y comprobamos
                                         que ocurre para avisar de inmediato a la Policía.</p>
                                     </div>
                                 </div>
                                 </div>
                                 <div class="col">
                                 <div class="card h-100">
-                                    <img id='prod' src="/img/productos/servicio2.png" class="card-img-top" alt="...">
+                                    <img id='app' src="../../img/quienes_somos/app" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">Aplicación de Gestión Autónoma</h5>
+                                    <p class="card-text">Controle sus cámaras y accesos directamente desde nuestra aplicación.</p>
                                     </div>
                                 </div>
-                                </div>  
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='vig' src="../../img/quienes_somos/vigilancia" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Expertos en Seguridad y Vigilancia</h5>
+                                    <p class="card-text">Con un gran equipo detrás en el que confiamos
+                                        para que tu estes tranquilo.
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>    
                             </div>
                         </div>
+                        <br>
                         <!--Grid row-->
                         <div class="row">
 
