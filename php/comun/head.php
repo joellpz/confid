@@ -30,7 +30,7 @@
     $trabajador = false;
     $cliente = false;
     require $far.'php/config.php';
-    require $far.'php/carrito.php';
+    /*require $far.'php/carrito.php';*/
     
     
 
