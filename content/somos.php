@@ -210,6 +210,7 @@
                                     </div>  
                                 </div>
                             </div>
+                            <br>
                             <div class="container servicios_destacados">
                                 <div class="row align-items-center">
                                     <div class="col">
@@ -251,6 +252,7 @@
                                 </div>
                             </div>
                         </div>
+                        <br>
                     <div class="col text-center">
                         <a class="btn btn-primary" href="productos.php" role="button">Nuestros Productos</a>
                         <a class="btn btn-primary" href="contacto.php" role="button">Contacta con ConfID</a>
