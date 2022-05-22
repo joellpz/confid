@@ -9,9 +9,9 @@
         <?php include_once $far.'content/header.php'; ?>
         <section class="mb-12">
 
-            <!--Section heading-->
+            <!--Título-->
             <h2 class="h1-responsive font-weight-bold text-center my-4">¿Quienes Somos?</h2>
-            <!--Section description-->
+            <!--Subtítulo-->
             <h4 class="text-center w-responsive mx-auto mb-5">Analizamos, Instalamos y Mejoramos</h4>
 
             <div class="row">
@@ -20,7 +20,7 @@
                 <div class="col-md-12 mb-md-0 mb-5 text-center">                  
                         <!--Grid row-->
                         <div class="row">
-                            <!--Grid column-->
+                            <!--Texto 1-->
                             <div class="col-md-12 text-center">
                                 <p>ConfID se trata de una empresa fundada en el año 2020 cuyo objetivo principal es reinventar el 
                                     concepto de la seguridad, el acceso y la vigilancia de localizaciones, tanto públicas como privadas.
@@ -38,7 +38,7 @@
                         </div>
                         <!--Grid row-->
                         <div class="row">
-                            <!--Grid column-->
+                            <!--Texto 2-->
                             <div class="col-md-12">
                             <p>  Contamos con expertos preparados para responder las 24 horas y 
                                 protocolos de actuación basados en alerta directa a la policía.
@@ -53,7 +53,7 @@
                         </div>
                         <!--Grid row-->
                         <div class="row">
-                            <!--Grid column-->
+                            <!--Texto 3-->
                             <div class="col-md-12">
                             <p>Desde ConfID tenemos siempre en cuenta la opinion de nuestros clientes y agradecemos su compromiso con nosotros
                                 haciendonos crecer año tras año en más de un 12% de media anual. Por todo ello hemos decidido llenar este año 2022
@@ -61,6 +61,7 @@
                             </p>
                             </div>
                         </div>
+                        <!--Items de empresa-->
                         <div class="container servicios_destacados">
                             <div class="row align-items-center">
                                 <div class="col">
@@ -115,42 +116,42 @@
                                 </p>
                             </div>
                         </div>                       
-                        <!--Grid row-->
+                        <!--margen verical al div de las empresas-->
                         <div class="my-5">
                             <div class="row">
-                                <!--Grid column-->
+                                <!--Empresas-->
                                 <div class="col-md-12 text-center">
                                     <h3>Empresas colaboradoras</h3>
                                 </div>
                             </div>
                             <div class="row">
 
-                                <!--Grid column 1-->
+                                <!--Logo 1-->
                                 <div class="col-md-2 text-center">
                                     <h4>Ayto. de Badalona</h4>
                                     <img src="../../img/quienes_somos/badalona" width="40%">
                                 </div>
-                                <!--Grid column 2-->
+                                <!--Logo 2-->
                                 <div class="col-md-2 text-center">
                                     <h4>Estrella Damm</h4>
                                     <img src="../../img/quienes_somos/estrella_damm" width="50%">
                                 </div>
-                                <!--Grid column 3-->
+                                <!--Logo 3-->
                                 <div class="col-md-2 text-center">
                                     <h4>F.C. Barcelona</h4>
                                     <img src="../../img/quienes_somos/barcelona" width="40%">
                                 </div>
-                                <!--Grid column 4-->
+                                <!--Logo 4-->
                                 <div class="col-md-2 text-center">
                                     <h4>Saint Honore S.A.</h4>
                                     <img src="../../img/quienes_somos/saint_honore" width="45%">
                                 </div>
-                                <!--Grid column 5-->
+                                <!--Logo 5-->
                                 <div class="col-md-2 text-center">
                                     <h4>Col.legi Cultural</h4>
                                     <img src="../../img/quienes_somos/cultural" width="40%">
                                 </div>
-                                <!--Grid column 6-->
+                                <!--Logo 6-->
                                 <div class="col-md-2 text-center">
                                     <h4>Sarau 08911</h4>
                                     <img src="../../img/quienes_somos/sarau" width="40%">
