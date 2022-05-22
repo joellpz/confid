@@ -17,7 +17,7 @@
             <div class="row">
 
                 <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5 text-center">                  
+                <div class="col-md-12 mb-md-0 mb-5 text-center">                  
                         <!--Grid row-->
                         <div class="row">
                             <!--Grid column-->
