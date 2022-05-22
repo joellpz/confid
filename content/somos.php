@@ -68,8 +68,8 @@
                                     <img id ="poli" src="../../img/quienes_somos/patrulla" class="card-img-top"  alt="...">
                                     <div class="card-body">
                                     <h5 class="card-title">Cada segundo cuenta</h5>
-                                    <p class="card-text">Recibimos la alerta en segundos y comprobamos
-                                        que ocurre para avisar de inmediato a la Policía.</p>
+                                    <p class="card-text">Comprobamos que ocurre y en segundos
+                                         avisamos a la Policía.</p>
                                     </div>
                                 </div>
                                 </div>
@@ -157,10 +157,100 @@
                                 <img src="../../img/quienes_somos/sarau" width="40%">
                             </div>
                         </div>
-                   
                     <br>
+                    <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12 text-center">
+                                <h3>Nuestro Equipo</h3>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <p>Contamos con un equipo de dirección y control experto en el sector y comprometido
+                                    con la empresa para dar la mayor eficacia y servicio en todo momento.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container servicios_destacados">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id ="poli" src="../../img/quienes_somos/caras/ceo" class="card-img-top"  alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <p class="card-text">Dirección Financiera</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='app' src="../../img/quienes_somos/caras/inter" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <p class="card-text">Dirección Ventas Internacional</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='vig' src="../../img/quienes_somos/caras/rrhh" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <p class="card-text">Dirección Recursos Humanos</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='vig' src="../../img/quienes_somos/caras/sac" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <p class="card-text">Dirección S.A.C.</p>
+                                    </div>
+                                </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="container servicios_destacados">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id ="poli" src="../../img/quienes_somos/caras/tech" class="card-img-top"  alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <p class="card-text">Dirección Tecnologica</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='app' src="../../img/quienes_somos/caras/finan" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <p class="card-text">Dirección Financiera</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='vig' src="../../img/quienes_somos/caras/ventas" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <p class="card-text">Dirección Ventas</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img id='vig' src="../../img/quienes_somos/caras/desarrollo" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <p class="card-text">Dirección de Desarrollo</p>
+                                    </div>
+                                </div>
+                                </div>  
+                            </div>
+                        </div>
                     <div class="col text-center">
-                    <a class="btn btn-primary" href="productos.php" role="button">Nuestros Productos</a>
+                        <a class="btn btn-primary" href="productos.php" role="button">Nuestros Productos</a>
                         <a class="btn btn-primary" href="contacto.php" role="button">Contacta con ConfID</a>
                     </div>
                     <div class="status"></div>
