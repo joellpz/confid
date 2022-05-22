@@ -162,10 +162,14 @@
                             <!--Grid column-->
                             <div class="col-md-12 text-center">
                                 <h3>Nuestro Equipo</h3>
+                                <h3>Nuestro mayor valor diferencial</h3>
                             </div>
                             <div class="col-md-12 text-center">
                                 <p>Contamos con un equipo de dirección y control experto en el sector y comprometido
                                     con la empresa para dar la mayor eficacia y servicio en todo momento.
+                                    Contamos con un talento comprometido y emprendedor. Promovemos un entorno de trabajo 
+                                    basado en la igualdad de oportunidades, la diversidad y la inclusión, 
+                                    e impulsamos formas de trabajo que faciliten el equilibrio entre la vida personal y la profesional.
                                 </p>
                             </div>
                         </div>
@@ -186,7 +190,7 @@
                                         <img id='app' src="../../img/quienes_somos/caras/inter" class="card-img-top" alt="...">
                                         <div class="card-body">
                                         <h5 class="card-title">Daisy Xiang Meng</h5>
-                                        <p class="card-text">Dirección Ventas Internacional</p>
+                                        <p class="card-text">Dir. Ventas Internacional</p>
                                         </div>
                                     </div>
                                     </div>
@@ -195,7 +199,7 @@
                                         <img id='vig' src="../../img/quienes_somos/caras/rrhh" class="card-img-top" alt="...">
                                         <div class="card-body">
                                         <h5 class="card-title">T. J. Jackson Jr.</h5>
-                                        <p class="card-text">Dirección Recursos Humanos</p>
+                                        <p class="card-text">Dir. Recursos Humanos</p>
                                         </div>
                                     </div>
                                     </div>
@@ -252,8 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <br>
-                    <div class="col text-center">
+                    <div class="col text-center my-3">
                         <a class="btn btn-primary" href="productos.php" role="button">Nuestros Productos</a>
                         <a class="btn btn-primary" href="contacto.php" role="button">Contacta con ConfID</a>
                     </div>
