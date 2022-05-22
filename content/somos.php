@@ -86,7 +86,7 @@
 
                             <!--Grid column-->
                             <div class="col-md-12 text-center">
-                                <h3>Empresas col.laboradoras</h3>
+                                <h3>Empresas colaboradoras</h3>
                             </div>
                         </div>
                         <div class="row">
