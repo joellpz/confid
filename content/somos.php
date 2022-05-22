@@ -66,7 +66,7 @@
 
                             <!--Grid column-->
                             <div class="col-md-12">
-                                <p>ConfID tiene un compromiso social con el medioambiente reduciendo al máximo cualquier elemento 
+                                <p>ConfID tiene, gracias a su gran Política de Responsabilidad Social Coorporativa, un compromiso social con el medioambiente reduciendo al máximo cualquier elemento 
                                     contaminante tanto en nuestros productos, como en nuestro diseño, analisis e implementación
                                     de nuestros servicios.  
                                 </p>
@@ -74,7 +74,7 @@
                         </div>
                         <div class="col-md-12">
                             <h2 class="h1-responsive font-weight-bold text-center my-4">CONFID ES UN PROVEEDOR LÍDER DE SERVICIOS DE SEGURIDAD</h2>
-                                <p>No es casualidad que una gran institución como PIMEC ( patronal que representa a las micro, pequeñas y 
+                                <p>Por todo lo mencionado anteriormente, no es casualidad que una gran institución como PIMEC ( patronal que representa a las micro, pequeñas y 
                                     medianas empresas y autónomos de Cataluña ) nos ha escogido 
                                     como partners para ofrecer nuestros servicios de ciberseguridad a sus más de 128.000 socios. 
                                 </p>
