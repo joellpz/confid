@@ -4,37 +4,16 @@
         $file= "Modificar Cuenta";
         $far="../../";//Distancia para llegar a la general.
         include $far.'php/comun/head.php';//CAMBIAR RUTA SEGUN UBI
- 
-        $id = $_SESSION['user_id'];
+
+        if($trabajador){
+            $id = $_GET['id'];
+        }else{
+            $id = $_SESSION['user_id'];
+        }
+
         $consulta = "SELECT * FROM usuarios, clientes WHERE clientes.idUsuario = usuarios.idUsuario AND usuarios.idUsuario = $id";
         $result= mysqli_query ($conn, $consulta);
-        $row=mysqli_fetch_array($result);
-               
-
-        if (isset($_POST['usuario'])){
-            $usuario = $_POST["usuario"];
-            $passwd = $_POST["passwd"];
-            $nombre = $_POST["nombre"];
-            $email = $_POST["email"];     
-            if(isset($_POST['auto'])){
-                $autonomo = 1;
-                $alias = $_POST['alias'];
-            }else{
-                $autonomo = 0;
-                $alias = $_POST['nombre'];
-            }
-            $cif = $_POST['cif'];
-            $dir = $_POST['dir'];
-            var_dump($_POST);
-            $update_users = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
-            $update_cli = "UPDATE clientes SET alias='$alias', CIF='$cif', direccion = '$dir', autonomo='$autonomo' WHERE idUsuario = $id";
-            mysqli_query($conn, $update_users) or die('Consulta fallida: ');
-            mysqli_query($conn, $update_cli) or die('Consulta fallida: ');
-        
-            //header("refresh:0;url=". $_SERVER['PHP_SELF']);
-
-        }   
-        
+        $row=mysqli_fetch_array($result);      
     ?>  
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>' <?php ?>>
         <?php include_once $far.'content/header.php';  ?>
@@ -47,11 +26,11 @@
         <div class="text-center mx-2">
             <h2>Modificar Información de la Cuenta</h2>
         </div>
-        <form action="<?php $_SERVER['PHP_SELF']?>" method="post" id="form">
+        <form action="/php/consultas/mod_info.php" method="post" id="form">
             <div class="row justify-content-center py-2">
                 <div class="col-6">
                     <label for="usuario" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="usuario" name="usuario" value="<?php echo $row['usuario'] ?>" required>
+                    <input type="email" class="form-control" id="usuario" name="usuario" value="<?php echo $row['email'] ?>" required>
                     <input type="hidden" class="form-control" id="email" name="email">
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>  
@@ -99,7 +78,7 @@
             <div class="container-fluid h-100">
                 <div class="row justify-content-center">
                     <div class="col-2 text-center">
-                        <input type="button" class="btn btn-primary" name="add_cliente" value="Regístrate" onclick='registro()'/>
+                        <input type="button" class="btn btn-primary" name="add_cliente" value="Modificar" onclick='registro()'/>
                     </div>
                     <div class="col-2 text-center">                       
                         <a href="/index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>

@@ -8,26 +8,23 @@
     ?>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
     <?php
-            $id = $_GET['id'];
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                $cons_es_trabajador = "SELECT idUsuario FROM trabajadores WHERE idUsuario = $id"; 
+                $es_trabajador = mysqli_query($conn, $cons_es_trabajador);
+                $row_es_trab = mysqli_fetch_array($es_trabajador);
+                if(!$row_es_trab){
+                    header("Location:$far/content/user/mod_account.php?id=$id");
+                }
+            }
+
             $consulta = "SELECT * FROM usuarios WHERE idUsuario = $id";
             $result= mysqli_query ($conn, $consulta);
             $row=mysqli_fetch_array($result);
             
-            if(isset($_POST['enviar'])){
-                $usuario = $_POST["usuario"];
-                $passwd = $_POST["passwd"];
-                $nombre = $_POST["nombre"];
-                $email = $_POST["email"];
-
-                $update = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
-                mysqli_query($conn, $update) or die('Consulta fallida: ');
-            
-                header("Location:" .$far."content/cpanel.php?cons=users");  //Redirigir a Principal.
-            }else{
-        ?>
-    <?php include_once $far.'content/header.php'; ?>
+            include_once $far.'content/header.php'; ?>
         
-        <form method="post" action="<?php $_SERVER['PHP_SELF']?>">
+        <form method="post" action="/php/consultas/mod_info.php">
             <table border= "1" style="width:100%;margin:auto;">
                 <thead style="background-color: #646CDF;">
                     <th colspan="2">Modificar usuario Nº<?php echo $row['idUsuario']?></th>

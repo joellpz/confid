@@ -12,13 +12,15 @@
             <!--Section heading-->
             <h2 class="h1-responsive font-weight-bold text-center my-4">Contacta con ConfID</h2>
             <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna pregunta? Porfavor, Contacta directamente con nosotros. Nuestro equipo
-                de profesionales estará encantado de atenderte.</p>
-
+            <?php if(isset($_GET['serv'])){ ?>
+                <p class="text-center w-responsive mx-auto mb-5">Contáctanos para confirmar una cita y personalizar al máximo nuestros servicios. ¡Responderemos lo antes posible!</p>
+            <?php }else{ ?>
+                <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna pregunta? Porfavor, Contacta directamente con nosotros. Nuestro equipo de profesionales estará encantado de atenderte.</p>
+            <?php } ?>
             <div class="row">
 
                 <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
+                <div class="col-md-8 mb-md-0 mb-5 contact">
                     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
                         <!--Grid row-->
