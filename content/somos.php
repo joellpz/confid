@@ -66,7 +66,7 @@
                             <div class="row align-items-center">
                                 <div class="col">
                                 <div class="card h-100">
-                                    <img id ="poli" src="/img/quienes_somos/patrulla" class="card-img-top"  alt="...">
+                                    <img id ="poli" src="/img/quienes_somos/patrulla.png" class="card-img-top"  alt="...">
                                     <div class="card-body">
                                     <h5 class="card-title">Cada segundo cuenta</h5>
                                     <p class="card-text">Comprobamos que ocurre y en segundos
@@ -76,7 +76,7 @@
                                 </div>
                                 <div class="col">
                                 <div class="card h-100">
-                                    <img id='app' src="/img/quienes_somos/app" class="card-img-top" alt="...">
+                                    <img id='app' src="/img/quienes_somos/app.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <h5 class="card-title">Aplicación de Gestión Autónoma</h5>
                                     <p class="card-text">Controle sus cámaras y accesos directamente desde nuestra aplicación.</p>
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="col">
                                 <div class="card h-100">
-                                    <img id='vig' src="/img/quienes_somos/vigilancia" class="card-img-top" alt="...">
+                                    <img id='vig' src="/img/quienes_somos/vigilancia.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                     <h5 class="card-title">Expertos en Seguridad y Vigilancia</h5>
                                     <p class="card-text">Con un gran equipo detrás en el que confiamos
@@ -129,32 +129,32 @@
                                 <!--Logo 1-->
                                 <div class="col-md-2 text-center">
                                     <h4>Ayto. de Badalona</h4>
-                                    <img src="/img/quienes_somos/badalona" width="40%">
+                                    <img src="/img/quienes_somos/badalona.png" width="40%">
                                 </div>
                                 <!--Logo 2-->
                                 <div class="col-md-2 text-center">
                                     <h4>Estrella Damm</h4>
-                                    <img src="/img/quienes_somos/estrella_damm" width="50%">
+                                    <img src="/img/quienes_somos/estrella_damm.png" width="50%">
                                 </div>
                                 <!--Logo 3-->
                                 <div class="col-md-2 text-center">
                                     <h4>F.C. Barcelona</h4>
-                                    <img src="/img/quienes_somos/barcelona" width="40%">
+                                    <img src="/img/quienes_somos/barcelona.png" width="40%">
                                 </div>
                                 <!--Logo 4-->
                                 <div class="col-md-2 text-center">
                                     <h4>Saint Honore S.A.</h4>
-                                    <img src="/img/quienes_somos/saint_honore" width="45%">
+                                    <img src="/img/quienes_somos/saint_honore.png" width="45%">
                                 </div>
                                 <!--Logo 5-->
                                 <div class="col-md-2 text-center">
                                     <h4>Col.legi Cultural</h4>
-                                    <img src="/img/quienes_somos/cultural" width="40%">
+                                    <img src="/img/quienes_somos/cultural.png" width="40%">
                                 </div>
                                 <!--Logo 6-->
                                 <div class="col-md-2 text-center">
                                     <h4>Sarau 08911</h4>
-                                    <img src="/img/quienes_somos/sarau" width="40%">
+                                    <img src="/img/quienes_somos/sarau.png" width="40%">
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                                     <div class="row align-items-center">
                                         <div class="col">
                                         <div class="card h-100">
-                                            <img id ="poli" src="/img/quienes_somos/caras/ceo" class="card-img-top"  alt="...">
+                                            <img id ="poli" src="/img/quienes_somos/caras/ceo.jpg" class="card-img-top"  alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Germán Palomares</h5>
                                             <p class="card-text">Dirección General</p>
@@ -189,7 +189,7 @@
                                         </div>
                                         <div class="col">
                                         <div class="card h-100">
-                                            <img id='app' src="/img/quienes_somos/caras/inter" class="card-img-top" alt="...">
+                                            <img id='app' src="/img/quienes_somos/caras/inter.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Daisy Xiang Meng</h5>
                                             <p class="card-text">Dir. Ventas Internacional</p>
@@ -198,7 +198,7 @@
                                         </div>
                                         <div class="col">
                                         <div class="card h-100">
-                                            <img id='vig' src="/img/quienes_somos/caras/rrhh" class="card-img-top" alt="...">
+                                            <img id='vig' src="/img/quienes_somos/caras/rrhh.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">T. J. Jackson Jr.</h5>
                                             <p class="card-text">Dir. Recursos Humanos</p>
@@ -207,7 +207,7 @@
                                         </div>
                                         <div class="col">
                                         <div class="card h-100">
-                                            <img id='vig' src="/img/quienes_somos/caras/sac" class="card-img-top" alt="...">
+                                            <img id='vig' src="/img/quienes_somos/caras/sac.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Hannah Montana</h5>
                                             <p class="card-text">Dirección S.A.C.</p>
@@ -221,7 +221,7 @@
                                     <div class="row align-items-center">
                                         <div class="col">
                                         <div class="card h-100">
-                                            <img id ="poli" src="/img/quienes_somos/caras/tech" class="card-img-top"  alt="...">
+                                            <img id ="poli" src="/img/quienes_somos/caras/tech.jpg" class="card-img-top"  alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Jason Smith</h5>
                                             <p class="card-text">Dirección Tecnológica</p>
@@ -230,7 +230,7 @@
                                         </div>
                                         <div class="col">
                                         <div class="card h-100">
-                                            <img id='app' src="/img/quienes_somos/caras/finan" class="card-img-top" alt="...">
+                                            <img id='app' src="/img/quienes_somos/caras/finan.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Michael Sappin</h5>
                                             <p class="card-text">Dirección Financiera</p>
@@ -239,7 +239,7 @@
                                         </div>
                                         <div class="col">
                                         <div class="card h-100">
-                                            <img id='vig' src="/img/quienes_somos/caras/ventas" class="card-img-top" alt="...">
+                                            <img id='vig' src="/img/quienes_somos/caras/ventas.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Leo Margets</h5>
                                             <p class="card-text">Dirección de Ventas</p>
@@ -248,7 +248,7 @@
                                         </div>
                                         <div class="col">
                                         <div class="card h-100">
-                                            <img id='vig' src="/img/quienes_somos/caras/desarrollo" class="card-img-top" alt="...">
+                                            <img id='vig' src="/img/quienes_somos/caras/desarrollo.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Antonio Parrales</h5>
                                             <p class="card-text">Dirección de Desarrollo</p>
