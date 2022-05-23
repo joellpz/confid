@@ -40,7 +40,7 @@
                                                 <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?>  € SENSE IVA</span>
                                             </div>   
                                             <br>
-                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito"/></span>                                                     
+                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Añadir_Carrito(<?php echo $row2['idProductos']; ?>)"/></span>                                                     
                                         </div>                                        
                                     </div>                                    
                                 </div>
@@ -51,7 +51,8 @@
                 </div>
         <?php } ?>
         <?php include_once $far.'php/comun/footer.php'; ?>
-
+        
+        <script src="/js/add_carrito.js"></script>
         <script>
             $('.owl-carousel').owlCarousel({
                 autoplay: true,
