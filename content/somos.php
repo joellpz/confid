@@ -129,32 +129,32 @@
                                 <!--Logo 1-->
                                 <div class="col-md-2 text-center">
                                     <h4>Ayto. de Badalona</h4>
-                                    <img src="/img/quienes_somos/badalona.png" width="40%">
+                                    <img src="/img/quienes_somos/badalona.png" width="100px">
                                 </div>
                                 <!--Logo 2-->
                                 <div class="col-md-2 text-center">
                                     <h4>Estrella Damm</h4>
-                                    <img src="/img/quienes_somos/estrella_damm.png" width="50%">
+                                    <img src="/img/quienes_somos/estrella_damm.png" width="135px">
                                 </div>
                                 <!--Logo 3-->
                                 <div class="col-md-2 text-center">
                                     <h4>F.C. Barcelona</h4>
-                                    <img src="/img/quienes_somos/barcelona.png" width="40%">
+                                    <img src="/img/quienes_somos/barcelona.png" width="100px">
                                 </div>
                                 <!--Logo 4-->
                                 <div class="col-md-2 text-center">
                                     <h4>Saint Honore S.A.</h4>
-                                    <img src="/img/quienes_somos/saint_honore.png" width="45%">
+                                    <img src="/img/quienes_somos/saint_honore.png" width="115px">
                                 </div>
                                 <!--Logo 5-->
                                 <div class="col-md-2 text-center">
                                     <h4>Col.legi Cultural</h4>
-                                    <img src="/img/quienes_somos/cultural.png" width="40%">
+                                    <img src="/img/quienes_somos/cultural.png" width="150px">
                                 </div>
                                 <!--Logo 6-->
                                 <div class="col-md-2 text-center">
                                     <h4>Sarau 08911</h4>
-                                    <img src="/img/quienes_somos/sarau.png" width="40%">
+                                    <img src="/img/quienes_somos/sarau.jpg" width="100px">
                                 </div>
                             </div>
                         </div>

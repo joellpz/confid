@@ -71,10 +71,13 @@
               <a href="/content/productos.php" class="text-white">Productos</a>
             </p>
             <p>
-              <a href="/content/somos.php" class="text-white">Quienes Somos</a>
+              <a href="/content/somos.php" class="text-white">Quiénes Somos</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Terminos y Condiciones</a>
+              <a href="/content/contacto.php" class="text-white">Contáctanos</a>
+            </p>
+            <p>
+              <a href="/content/term_cond.php" class="text-white">Términos y Condiciones</a>
             </p>
           </div>
 

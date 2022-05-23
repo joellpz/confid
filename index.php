@@ -10,13 +10,13 @@
         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"> <!-- Las imagenes deberian tener el mismo tamaño o proporción. Tener en cuenta al escoger las imagenes el color del carousel-->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/img/productos/portada1.jpg" class="d-block w-100" alt=""> 
+                    <img src="/img/portadas/portada1.jpg" class="d-block w-100" alt=""> 
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/productos/portada2.jpg" class="d-block w-100" alt="">
+                    <img src="/img/portadas/portada2.jpg" class="d-block w-100" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/productos/portada3.jpg" class="d-block w-100" alt="">
+                    <img src="/img/portadas/portada3.jpg" class="d-block w-100" alt="">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
