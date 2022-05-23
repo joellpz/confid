@@ -77,27 +77,6 @@
               <a href="#!" class="text-white">Terminos y Condiciones</a>
             </p>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Utilidades</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto color-azul opacity-100"
-                style="width: 60px; height: 2px"
-                />
-            <p>
-              <a href="#!" class="text-white">Tu cuenta</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Ver Pedidos</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Carrito</a>
-            </p>
-          </div>
-          <!-- Grid column -->
 
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -106,7 +85,7 @@
             <hr class="mb-4 mt-0 d-inline-block mx-auto color-azul opacity-100" style="width: 60px; height: 2px"/>
 
             <p><i class="bx bxs-home mr-3 fot_icon"></i>  Barcelona, 08917, ESP</p>
-            <p><i class='bx bxs-envelope fot_icon'></i>  info@confid.com</p>
+            <p><i class='bx bxs-envelope fot_icon'></i>  info@confid.es</p>
             <p><i class='bx bxs-phone fot_icon'></i>  +34 93 345 67 89</p>
           </div>
           <!-- Grid column -->
@@ -119,7 +98,7 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2022 Copyright:
-      <a class="text-white text-decoration-none" href="https://mdbootstrap.com/"
+      <a class="text-white text-decoration-none" href="https://confid.es"
          >CONFID.ES</a
         >
     </div>

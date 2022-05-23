@@ -5,7 +5,11 @@
     if( isset($_POST)/*isset($_POST['add_worker']) || isset($_POST['add_cliente'])*/){
         $usuario = $_POST['signup_user'];
         $pass = md5($_POST['signup_pass']);
-        $email = $_POST['signup_email'];
+        if(isset($_POST['add_worker'])){
+            $email = $_POST['signup_email'];
+        }else{
+            $email = $_POST['signup_user'];
+        }
         $name = $_POST['signup_name'];
 
         $consulta_usuario = "INSERT INTO usuarios VALUES (NULL,'$usuario', '$pass', '$name', '$email')";

@@ -30,7 +30,7 @@
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <label for="name" class="">Nombre</label>
-                                    <input type="text" id="name" name="name" class="form-control">
+                                    <input type="text" id="name" name="name" class="form-control" required>
                                     
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <label for="email" class="">Correo Electrónico</label>
-                                    <input type="text" id="email" name="email" class="form-control">
+                                    <input type="email" id="email" name="email" class="form-control" required>
                                     
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
                                     <label for="subject" class="">Asunto</label>
-                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <input type="text" id="subject" name="subject" class="form-control" required>
                                     
                                 </div>
                             </div>
@@ -69,20 +69,27 @@
 
                                 <div class="md-form">
                                     <label for="message">Mensaje</label>
-                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea" required></textarea>
                                 
                                 </div>
 
                             </div>
+                            
                         </div>
                         <!--Grid row-->
-
+                        <div class="row">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="TerminosCondiciones" required>
+                                <label class="form-check-label" for="TerminosCondiciones">He leido y acepto los <a class="text-decoration-none" href="/content/tyc.php">Terminos y Condiciones</a>.</label>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <input type="submit" class="btn btn-primary" value="Enviar"></button>
+                            <a class="btn btn-primary" href="/index.php" role="button">Volver a Inicio</a>
+                         </div>
                     </form>
                     <br>
-                    <div class="col text-center">
-                        <button type="submit" class="btn btn-primary">Entrar</button>
-                        <a class="btn btn-primary" href="/index.php" role="button">Volver a Inicio</a>
-                    </div>
+                    
                     <div class="status"></div>
                 </div>
                 <!--Grid column-->

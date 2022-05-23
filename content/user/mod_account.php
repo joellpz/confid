@@ -78,8 +78,7 @@
             <div class="container-fluid h-100">
                 <div class="row justify-content-center">
                     <div class="col-2 text-center">
-                        <input type="button" class="btn btn-primary" name="add_cliente" value="Modificar" onclick='registro()'/>
-                        <input type="hidden" name="cuenta" id="cuenta" value="cuenta"/>
+                        <input type="submit" class="btn btn-primary" name="cuenta" value="Modificar"/>
                     </div>
                     <div class="col-2 text-center">                       
                         <a href="/index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>
@@ -110,14 +109,6 @@
                     cif.innerHTML = "CIF*";
                     a.disabled = true;
                 }
-            }
-            const user = document.getElementById('usuario');
-            const email = document.getElementById('email');
-            const form = document.getElementById('form');
-
-            function registro(){
-                email.value = user.value;
-                form.submit();
             }
         </script>
     </body>
