@@ -129,27 +129,27 @@
                                 <!--Logo 1-->
                                 <div class="col-md-2 text-center">
                                     <h4>Ayto. de Badalona</h4>
-                                    <img src="/img/quienes_somos/badalona.png" width="100px">
+                                    <img src="/img/quienes_somos/badalona.png" alt="ayunt_badalona" width="100px">
                                 </div>
                                 <!--Logo 2-->
                                 <div class="col-md-2 text-center">
                                     <h4>Estrella Damm</h4>
-                                    <img src="/img/quienes_somos/estrella_damm.png" width="135px">
+                                    <img src="/img/quienes_somos/estrella_damm.png" alt="estrella_dam" width="135px">
                                 </div>
                                 <!--Logo 3-->
                                 <div class="col-md-2 text-center">
                                     <h4>F.C. Barcelona</h4>
-                                    <img src="/img/quienes_somos/barcelona.png" width="100px">
+                                    <img src="/img/quienes_somos/barcelona.png" alt="barça" width="100px">
                                 </div>
                                 <!--Logo 4-->
                                 <div class="col-md-2 text-center">
                                     <h4>Saint Honore S.A.</h4>
-                                    <img src="/img/quienes_somos/saint_honore.png" width="115px">
+                                    <img src="/img/quienes_somos/saint_honore.png" alt="saint_honore" width="115px">
                                 </div>
                                 <!--Logo 5-->
                                 <div class="col-md-2 text-center">
                                     <h4>Col.legi Cultural</h4>
-                                    <img src="/img/quienes_somos/cultural.png" width="150px">
+                                    <img src="/img/quienes_somos/cultural.png" alt="collegi_cultural" width="150px">
                                 </div>
                                 <!--Logo 6-->
                                 <div class="col-md-2 text-center">
