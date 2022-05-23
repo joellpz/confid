@@ -27,12 +27,14 @@
 
 <?php 
     session_start();
+
+    $_SESSION['carrito_prod'] = "4";
+    $_SESSION['carrito_cant'] = "2";
+
+
     $trabajador = false;
     $cliente = false;
     require $far.'php/config.php';
-    /*require $far.'php/carrito.php';*/
-    
-    
 
     if(isset($_SESSION['user_id'])){
         $consulta_trabajadores = "SELECT idUsuario FROM trabajadores WHERE idUsuario = '$_SESSION[user_id]'"; 
