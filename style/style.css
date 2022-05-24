@@ -243,3 +243,10 @@ input[type=number]::-webkit-inner-spin-button,
 .contact{
     margin-left: 5%;
 }
+
+.bloque_contacto{
+    background: url("/img/contacto.jpeg");
+    background-size: cover;
+    font-size: 18px;
+    max-height: 400px;
+}

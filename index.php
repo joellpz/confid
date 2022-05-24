@@ -56,16 +56,11 @@
         <br><br>
 
         <!-- Bloque de introducción al contacto -->
-        <div class="container bloque_contacto" style="border: 2px solid black; border-radius: 30px;">
-            <div class="row align-items-center">
-                <div class="col-6 imagen">
-                    <img id='prod' src="/img/logo/CONFID-Logo.png" style="width: 100%;"/>
-                </div>
-                <div class="col-6 textos" style="text-align: center; padding: 10%;">
-                    <h3>Contacta con nosotros</h3><br><br>
-                    <p>Si tienes cualquier duda sobre nuestros servicios, o si crees que necesitas un sevicio a medida puedes enviarnos un mail haciendo clic aquí</p>
-                    <a class="btn btn-primary" href="contacto.php" role="button">Contacta!</a>
-                </div>
+        <div class="row bloque_contacto">
+            <div class="col-6 textos text-center" style="padding: 5%;">
+                <h2 class="">¡Contacta con nosotros!</h2>
+                <p class="m-5">Si tienes cualquier duda sobre nuestros servicios, o si crees que <br>necesitas un sevicio a medida puedes enviarnos un mail <br>haciendo clic en el siguiente botón.</p>
+                <a class="btn btn-primary px-5 py-2" href="contacto.php" role="button">¡Contacta!</a>
             </div>
         </div>
         <br><br>
