@@ -5,7 +5,7 @@
         $far="../";
         include $far.'php/comun/head.php';
     ?>  
-    <link rel ="stylesheet" href="/style/caja_prods.css"/>
+    <link rel="stylesheet" href="/style/caja_prods.css"/>
 
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
@@ -36,11 +36,10 @@
                                                 <h4><b><?php echo $row2['nombre']; ?></b></h4>
                                             </div>
                                             <div class="precio">
-                                                <span style="font-size: 28px; margin-right: 10px;"><?php echo number_format($row2['precioIVA'],2); ?>  €</span>
-                                                <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?>  € SENSE IVA</span>
+                                                <span style="font-size: 28px; margin-right: 10px;"><?php echo number_format($row2['precioIVA'],2); ?> €</span>
+                                                <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?> € SENSE IVA</span>
                                             </div>   
-                                            <br>
-                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Añadir_Carrito(<?php echo $row2['idProductos']; ?>)"/></span>                                                     
+                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)"/></span>                                                     
                                         </div>                                        
                                     </div>                                    
                                 </div>
@@ -53,6 +52,11 @@
         <?php include_once $far.'php/comun/footer.php'; ?>
         
         <script src="/js/add_carrito.js"></script>
+        <script>
+            function Add(id){
+                Añadir_Carrito(id,1);              
+            }
+        </script>
         <script>
             $('.owl-carousel').owlCarousel({
                 autoplay: true,

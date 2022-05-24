@@ -1,6 +1,7 @@
-function Añadir_Carrito(id){
+function Añadir_Carrito(id,cant){
     $.post("/php/add_carrito.php",
     {
-        ident: id
+        ident: id,
+        stock: cant
     });               
 }
