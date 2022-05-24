@@ -65,6 +65,13 @@
                 </div>
             </div> 
             <br>
+            <div class="row justify-content-center">
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="TerminosCondiciones" required>
+                    <label class="form-check-label" for="TerminosCondiciones">He leido y acepto los <a class="text-decoration-none"  href="/content/term_cond.php">Terminos y Condiciones</a>.</label>
+                </div>
+            </div>
+            <br>
             <div class="container-fluid h-100">
                 <div class="row justify-content-center">
                     <div class="col-2 text-center">

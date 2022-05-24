@@ -22,7 +22,7 @@
                 $es_trabajador = mysqli_query($conn, $cons_es_trabajador);
                 $row_es_trab = mysqli_fetch_array($es_trabajador);
                 if(!$row_es_trab){
-                    header("Location:$far/content/user/mod_account.php?id=$id");
+                    header("Location:".$far."content/user/mod_account.php?id=$id");
                 }
             }
 

@@ -73,7 +73,15 @@
                     <label for="pass_rep" class="form-label">Repetir Contraseña*</label>
                     <input type="password" class="form-control" id="pass_rep" name="pass_rep" value="<?php echo md5($row['passwd']) ?>" required>
                 </div>
-            </div> 
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="TerminosCondiciones" required>
+                    <label class="form-check-label" for="TerminosCondiciones">He leido y acepto los <a class="text-decoration-none" href="/content/term_cond.php">Terminos y Condiciones</a>.</label>
+                </div>
+                <div class="col-4"></div>
+            </div>
             <br>
             <div class="container-fluid h-100">
                 <div class="row justify-content-center">

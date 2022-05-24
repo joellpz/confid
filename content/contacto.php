@@ -80,7 +80,7 @@
                         <div class="row">
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="TerminosCondiciones" required>
-                                <label class="form-check-label" for="TerminosCondiciones">He leido y acepto los <a class="text-decoration-none" href="/content/tyc.php">Terminos y Condiciones</a>.</label>
+                                <label class="form-check-label" for="TerminosCondiciones">He leido y acepto los <a class="text-decoration-none"  href="/content/term_cond.php">Terminos y Condiciones</a>.</label>
                             </div>
                         </div>
                         <div class="col text-center">
