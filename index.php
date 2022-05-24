@@ -32,35 +32,38 @@
 
         <!-- Bloque de servicios destacados -->
         <div class="container servicios_destacados">
-        <div class="row align-items-center">
-            <div class="col">
-            <div class="card h-100">
-                <img id='prod' src="/img/productos/servicio1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="card h-100">
+                        <img id='prod' src="/img/productos/44.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="m-2" style="font-weight:bold;">Instalación Local</h4>
+                            <div class="m-2" style="text-align: justify;" >
+                                <p>Implementaci&oacute;n de un sistema simple que cuenta una seleccion variada de nuestros productos, com por ejemplo un decodificador de gama baja y accesorios RFC gratuitos.</p>
+                                <p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos. Ideal para oficinas y locales de peque&ntilde;o tama&ntilde;o o pocas salas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img id='prod' src="/img/productos/43.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="m-2" style="font-weight:bold;">Plan Personalizado</h4>
+                            <p class="m-2" style="text-align: justify;">Si crees que nuestros servicios no se adaptan completamente a tu empresa, local, lugar de trabajo... Cont&aacute;ctanos y estudiaremos espec&iacute;ficamente tu caso para adaptarlo de la manera m&aacute;s personalizada. Nuestros expertos realizar&aacute;n un estudio preliminar de su sistema, evaluar&aacute;n tanto un sistema ya implementado, contando la posibilidad de realizarle modificaciones para mejorar la seguridad o incluso implantar uno nuevo desde cero.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-            <div class="col">
-            <div class="card h-100">
-                <img id='prod' src="/img/productos/servicio2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-            </div>  
-        </div>
         </div>
         <br><br>
 
         <!-- Bloque de introducción al contacto -->
         <div class="row bloque_contacto">
             <div class="col-6 textos text-center" style="padding: 5%;">
-                <h2 class="">¡Contacta con nosotros!</h2>
+                <h2 style="font-weight:bold;">¡Contacta con nosotros!</h2>
                 <p class="m-5">Si tienes cualquier duda sobre nuestros servicios, o si crees que <br>necesitas un sevicio a medida puedes enviarnos un mail <br>haciendo clic en el siguiente botón.</p>
-                <a class="btn btn-primary px-5 py-2" href="contacto.php" role="button">¡Contacta!</a>
+                <a class="btn btn-primary px-5 py-2" href="contacto.php" role="button" style="font-weight:bold;">¡Contacta!</a>
             </div>
         </div>
         <br><br>
