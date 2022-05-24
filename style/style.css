@@ -219,10 +219,12 @@
 
 .btn-primary{
     background-color: var(--first-color);
+    border:#646CDF solid;
 }
 
 .btn-primary:hover{
     background-color:  #535253a9;
+    border:#646CDF solid;
 }
 .borde{
     border: red solid;
