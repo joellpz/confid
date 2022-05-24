@@ -20,15 +20,15 @@ h1{
     margin: 0 auto;
 }
 
-.card-body span{
-    text-align: center;
+.card-body{
+    text-align: justify;
     color:#646CDF; 
     font-weight:bold; 
 }
 
 .card-title{
     text-align:start;
-    font-size: 18px;
+    font-size: 35px;
 }
 
 #prod{
@@ -52,9 +52,13 @@ h1{
 }
 
 .precio{
+    color: #646CDF;
+    font-weight: bold;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 .owl-carousel{

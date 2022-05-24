@@ -29,9 +29,7 @@
     session_start();
     $trabajador = false;
     $cliente = false;
-    require $far.'php/config.php';
-    /*require $far.'php/carrito.php';*/
-    
+    require $far.'php/config.php';   
     
 
     if(isset($_SESSION['user_id'])){

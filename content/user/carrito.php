@@ -9,3 +9,4 @@
         echo $id_prod .' -> '. $car_stock[$key].'<br>';
     }
 ?>
+<!--DESPLEGABLE CON LOS TRANSPORTISTAS-->
