@@ -21,7 +21,7 @@
 
                 <!--Grid column-->
                 <div class="col-md-8 mb-md-0 mb-5 contact">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <form id="contact-form" name="contact-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="Enviado()" method="POST" >
 
                         <!--Grid row-->
                         <div class="row">
@@ -114,5 +114,10 @@
             </div>
         </section>
         <?php include_once $far.'php/comun/footer.php'; ?>
+        <script>
+            function Enviado(){
+                alert("Mensaje Enviado!");
+            }
+        </script>
     </body>
 </html>
