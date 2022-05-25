@@ -15,7 +15,7 @@
 
             while ($row1 = mysqli_fetch_array($resprods)) {  
 
-                $qcateg = 'SELECT * FROM productos WHERE idCategoria = '.$row1['idCategoria'];
+                $qcateg = 'SELECT nombre, idProductos, precioIVA, precioNoIVA FROM productos WHERE idCategoria = '.$row1['idCategoria'];
                 $rescat = mysqli_query($conn, $qcateg);
         ?>
                 <div class="container-fluid my-5">
