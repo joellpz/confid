@@ -8,7 +8,7 @@
     ?>  
     <body classname="snippet-body" class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
-        <section>                        
+        <section style="min-height: 700px">                        
             <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#staticBackdrop"> <i class="fa fa-info"></i> Get information</button>
             <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
                 <div class="modal-dialog">
@@ -49,7 +49,6 @@
                                     <button class="btn btn-primary">Track your order</button>                                
                                 </div>                   
                             </div>
-
 
                         </div>
                     </div>
