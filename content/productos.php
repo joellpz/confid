@@ -15,7 +15,7 @@
 
             while ($row1 = mysqli_fetch_array($resprods)) {  
 
-                $qcateg = 'SELECT * FROM productos WHERE idCategoria = '.$row1['idCategoria'];
+                $qcateg = 'SELECT nombre, idProductos, stock, precioIVA, precioNoIVA FROM productos WHERE idCategoria = '.$row1['idCategoria'];
                 $rescat = mysqli_query($conn, $qcateg);
         ?>
                 <div class="container-fluid my-5">
@@ -39,7 +39,7 @@
                                                 <span style="font-size: 28px; margin-right: 10px;"><?php echo number_format($row2['precioIVA'],2); ?> €</span>
                                                 <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?> € SENSE IVA</span>
                                             </div>   
-                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)"/></span>                                                     
+                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)" <?php if($row2['stock'] == 0) echo "disabled"; ?>/></span>                                                     
                                         </div>                                        
                                     </div>                                    
                                 </div>

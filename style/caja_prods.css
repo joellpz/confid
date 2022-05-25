@@ -46,6 +46,11 @@ h1{
     border-color: #646CDF;
 }
 
+.carrito:disabled{
+    color: red;
+    border-color: red;
+}
+
 .carrito:hover{
     background-color: #646CDF;
     border-color: #535253;
@@ -104,4 +109,27 @@ h1{
 }
 .serv-text{
     text-align: justify;
+}
+
+.caja_carrito{
+    border: 3px solid #646CDF;
+    border-radius: 25px;
+    max-width: 1000px;
+    height: 200px;
+    margin-top: 7%;
+    margin: 0 auto;    
+    background-color: #ffffff;    
+}
+
+.img_prod_car{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.img_prod_car > img{
+    border-radius:20px
+}
+
+.car_element{
+    text-align:center;
 }
