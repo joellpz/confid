@@ -55,8 +55,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        </section> 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
                                 <script type="text/javascript">
                                 var myLink = document.querySelectorAll('a[href="#"]');
                                 myLink.forEach(function(link){
