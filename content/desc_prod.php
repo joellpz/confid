@@ -45,7 +45,8 @@
         <script src="/js/add_carrito.js"></script>
         <script>
             function Add(id){
-                var stock = document.getElementById("cantidad").value;
+                var stock = document.getElementById("cantidad").value;  
+                alert("Elemento añadido al Carrito!");                   
                 Añadir_Carrito(id,stock);              
             }
         </script>

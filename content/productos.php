@@ -53,7 +53,8 @@
         
         <script src="/js/add_carrito.js"></script>
         <script>
-            function Add(id){
+            function Add(id){                  
+                alert("Elemento añadido al Carrito!");     
                 Añadir_Carrito(id,1);              
             }
         </script>
