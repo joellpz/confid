@@ -222,10 +222,18 @@
     border:#646CDF solid;
 }
 
-.btn-primary:hover{
+.btn-primary:hover:hover{
     background-color:  #535253a9;
-    border:#646CDF solid;
+    border:#5352537a solid;
 }
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #646CDF;
+    border-color: #646CDF;
+    box-shadow: 0 0 0 0.25rem #646cdf86
+}
+
 .borde{
     border: red solid;
 }
