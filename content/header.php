@@ -13,7 +13,7 @@
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="/content/user/mod_account">Tu cuenta</a>
-                    <a class="dropdown-item" href="/#">Another action</a>
+                    <a class="dropdown-item" href="/content/user/pedidos.php">Pedidos</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/php/signout.php">Cerrar Sesión</a>
                 </div>

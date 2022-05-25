@@ -95,7 +95,6 @@
                     default:
                        $('#recarga').load('/index.php');
                 }
-                console.log(id);
             }
             </script>
     </body>

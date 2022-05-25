@@ -116,7 +116,7 @@
         <?php include_once $far.'php/comun/footer.php'; ?>
         <script>
             function Enviado(){
-                alert("Mensaje Enviado!");
+                alert("¡Mensaje Enviado!");
             }
         </script>
     </body>
