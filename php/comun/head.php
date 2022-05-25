@@ -10,6 +10,7 @@
 
     <link rel="shortcut icon" href="/img/logo/icon-logo-CONFID.png" sizes="64x64"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel ="stylesheet" href="/style/style.css"/>
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"> 
     <script src="/js/header_show.js"></script>
