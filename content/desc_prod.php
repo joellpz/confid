@@ -34,7 +34,7 @@
                     <p style="text-align:justify"><?php echo $row2['descripcion'];?></p>
                     <p><b>Stock:</b> <?php echo $row2['stock'];?></p>
                     <label for="cantidad">Cantidad: </label>
-                    <select id="cantidad" name="cantidad" class="form-control" value="1" style="width:20%; text-align:center">
+                    <select id="cantidad" name="cantidad" class="form-control" style="width:20%; text-align:center">
                         <?php for($i=1; $i<=$row2['stock']; $i++) echo "<option>".$i."</option>" ?>
                     </select>
                     <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)"/></span>
