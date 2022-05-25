@@ -39,7 +39,7 @@
                                                 <span style="font-size: 28px; margin-right: 10px;"><?php echo number_format($row2['precioIVA'],2); ?> €</span>
                                                 <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?> € SENSE IVA</span>
                                             </div>   
-                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)"/></span>                                                     
+                                            <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)" <?php if($row2['stock'] == 0) echo "disabled"; ?>/></span>                                                     
                                         </div>                                        
                                     </div>                                    
                                 </div>
