@@ -5,38 +5,39 @@
         /* $file= "C. Panel"; */ // Panel de Administador SOLO
         $far="../../";//Distancia para llegar a la general.
         include $far.'php/comun/head.php';//CAMBIAR RUTA SEGUN UBI
+        $id = $_SESSION['user_id'];
     ?>  
     <body classname="snippet-body" class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
         <section style="min-height: 700px">
         <table border= "1" style="width: 80%;">
-            <thead>
+            <thead style="color: white">
                 <tr style="background-color: #646CDF;">
                     <th>Nº Pedido</th>
+                    <th>Fecha</th>
                     <th>Precio Total</th>
-                    <th>idUsuario</th>
-                    <th>Nombre</th>
                     <th>Nº Pedido Externo</th>
+                    <th><i class="fa fa-info"></i></th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $consulta = "SELECT * FROM pedidos, clientes WHERE clientes.idUsuario = pedidos.idUsuario";
+                    $consulta = "SELECT * FROM pedidos WHERE idUsuario = $id";
                     $res = mysqli_query($conn, $consulta);  
                     
                     while ($row = mysqli_fetch_array($res)) {
                         echo '<tr>';
                         echo '<td>' . $row['idPedido'] . '</td>';
+                        echo '<td>' . $row['fecha'] . '</td>';
                         echo '<td>' . $row['precioTotal'] . '</td>';
-                        echo '<td>' . $row['idUsuario'] . '</td>';
-                        echo '<td>' . $row['alias'] . '</td>';
                         echo '<td>' . $row['pedidoExterno'] . '</td>';
+                        echo '<td> <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#staticBackdrop"> <i class="fa fa-info"></i> Get information</button> </td>';
                         echo '</tr>';
                     }
                 ?>
             </tbody>
         </table>                        
-            <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#staticBackdrop"> <i class="fa fa-info"></i> Get information</button>
+            
             <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
                 <div class="modal-dialog">
                     <div class="modal-content">
