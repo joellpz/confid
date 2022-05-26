@@ -29,7 +29,7 @@
                     while ($row = mysqli_fetch_array($res)) {
                         echo '<tr>';
                         echo '<td>' . $row['idPedido'] . '</td>';
-                        echo '<td>' . $row['precioTotal'] . '</td>';
+                        echo '<td>' . $row['precioPedido'] . '</td>';
                         echo '<td>' . $row['idUsuario'] . '</td>';
                         echo '<td>' . $row['alias'] . '</td>';
                         echo '<td>' . $row['pedidoExterno'] . '</td>';

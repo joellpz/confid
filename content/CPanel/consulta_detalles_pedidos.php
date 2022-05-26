@@ -23,7 +23,7 @@
             <tbody>
                 <?php
 
-                    $consulta = "SELECT clientes.idUsuario, Alias, CIF, SUM(pedidos.precioTotal) as Total
+                    $consulta = "SELECT clientes.idUsuario, Alias, CIF, SUM(pedidos.precioPedidos) as Total
                     FROM clientes, pedidos, detallespedidos 
                     WHERE clientes.idUsuario like pedidos.idUsuario
                     AND pedidos.idPedido like detallespedidos.idPedido 
@@ -36,7 +36,7 @@
                         echo '<td>' . $row['idUsuario'] . '</td>';
                         echo '<td>' . $row['Alias'] . '</td>';
                         echo '<td>' . $row['CIF'] . '</td>';
-                        echo '<td>' . $row['Total'] . '</td>';
+                        echo '<td>' . $row[4] . '</td>';
                         echo '</tr>';
 
 
