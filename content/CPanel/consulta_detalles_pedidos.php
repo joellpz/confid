@@ -14,7 +14,7 @@
         <table border= "1" style="width: 80%;">
             <thead>
                 <tr style="background-color: #646CDF;">
-                    <th>Código Usuario</th>
+                    <th>Identificador Usuario</th>
                     <th>Nombre del Cliente</th>
                     <th>CIF</th>
                     <th>Facturación Anual</th>

@@ -15,7 +15,10 @@
             <thead>
                 <tr style="background-color: #646CDF;">
                     <th>Nº Cliente</th>
+                    <th>Login</th>
                     <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Alias</th>
                     <th>CIF</th>
                     <th>Dirección</th>
                     <th>Autonomo</th>
@@ -23,16 +26,24 @@
             </thead>
             <tbody>
                 <?php
-                    $consulta = "SELECT * FROM clientes";
+                    $consulta = "SELECT * FROM clientes,usuarios WHERE clientes.idUsuario = usuarios.idUsuario";
                     $res = mysqli_query($conn, $consulta);
 
                     while ($row = mysqli_fetch_array($res)) {
                         echo '<tr>';
                         echo '<td>' . $row['idUsuario'] . '</td>';
+                        echo '<td>' . $row['usuario'] . '</td>';
+                        echo '<td>' . $row['nombre'] . '</td>';
+                        echo '<td>' . $row['email'] . '</td>';
                         echo '<td>' . $row['alias'] . '</td>';
                         echo '<td>' . $row['CIF'] . '</td>';
                         echo '<td>' . $row['direccion'] . '</td>';
-                        echo '<td>' . $row['autonomo'] . '</td>';
+                        if ($row['autonomo'] == 1){
+                            echo '<td>Sí</td>';
+                        }else{
+                            echo '<td>No</td>';
+                        }
+                        
                         echo '</tr>';
                     }
                 ?>
