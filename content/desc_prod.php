@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <?php 
-        $file="inicio";
+        $file=basename(__FILE__, ".php");
         $far="../";
         include $far.'php/comun/head.php';
     ?>

@@ -3,7 +3,7 @@
 <html>
     <?php
         $file=basename(__FILE__, '.php');
-        $far="../../";
+        $far="../";
         include $far.'php/comun/head.php';
     ?>
 
