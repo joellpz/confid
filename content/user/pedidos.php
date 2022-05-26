@@ -22,55 +22,62 @@
             </thead>
             <tbody>
                 <?php
-                    $consulta = "SELECT * FROM pedidos WHERE idUsuario = $id";
-                    $res = mysqli_query($conn, $consulta);  
+                    $consulta_ped = "SELECT * FROM pedidos WHERE idUsuario = $id";
+                    $res_ped = mysqli_query($conn, $consulta_ped);  
                     
-                    while ($row = mysqli_fetch_array($res)) {
+                    
+                    while ($row_ped = mysqli_fetch_array($res_ped)) {
                         echo '<tr>';
-                        echo '<td>' . $row['idPedido'] . '</td>';
-                        echo '<td>' . $row['fecha'] . '</td>';
-                        echo '<td>' . $row['precioTotal'] . '</td>';
-                        echo '<td>' . $row['pedidoExterno'] . '</td>';
-                        echo '<td> <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#staticBackdrop"> <i class="fa fa-info"></i> Get information</button> </td>';
+                        echo '<td>' . $row_ped['idPedido'] . '</td>';
+                        echo '<td>' . $row_ped['fecha'] . '</td>';
+                        echo '<td>' . $row_ped['precioPedido'] . '</td>';
+                        echo '<td>' . $row_ped['pedidoExterno'] . '</td>';
+                        echo '<td> <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#ped' . $row_ped['idPedido'] . '"> <i class="fa fa-info"></i> Get information</button> </td>';
                         echo '</tr>';
-                    }
-                ?>
-            </tbody>
-        </table>                        
-            
-            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div>
-                            
-                            <div class="px-4 py-5">
-                                <h5 class="text-uppercase">Jonathan Adler</h5>
-                                <h4 class="mt-5 theme-color mb-5">Thanks for your order</h4>
 
-                                <span class="theme-color">Payment Summary</span>
-                                <div class="mb-3">
-                                    <hr class="new1">
+                        $consulta_detped = "SELECT * FROM detallespedidos, productos WHERE idProducto = idProductos AND idPedido =". $row_ped['idPedido']."";
+                        $res_detped = mysqli_query($conn, $consulta_detped);
+                        
+                        ?>
+                        <div class="modal fade" id="ped<?php echo $row_ped['idPedido'] ?>" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div>
+                                        
+                                        <div class="px-4 py-5">
+                                            <h5 class="text-uppercase">Pedido Numero: <?php echo $row_ped['idPedido'] ?></h5>
+                                            <h4 class="mt-5 theme-color mb-5">Gracias por realizar al compra.</h4>
+                                            <span class="theme-color">Resumen del pedido</span>
+                                            <div class="mb-3">
+                                                <hr class="new1">
+                                            </div>
+
+                                            
+                                            <?php
+                                            while($row_detped = mysqli_fetch_array($res_detped)){
+                                                echo '<div class="d-flex justify-content-between">';
+                                                echo '<span class="font-weight-bold">'. $row_detped['nombre'].'(Cantidad:'. $row_detped['cantidad'].')</span>';
+                                                echo '<span class="text-muted">'. $row_detped['precioTotal'].' €</span>';
+                                                echo '</div>';
+                                            }
+                                        ?>
+                                <br>
+                                <div class="d-flex justify-content-between">
+                                    <small>Envio</small>
+                                    <small><?php echo round($row_ped['precioPedido']*0.1, 2)?> €<small>
                                 </div>
+                                
+                                
 
                                 <div class="d-flex justify-content-between">
-                                    <span class="font-weight-bold">Ether Chair(Qty:1)</span>
-                                    <span class="text-muted">$1750.00</span>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <small>Shipping</small>
-                                    <small>$175.00</small>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <small>Tax</small>
-                                    <small>$200.00</small>
+                                    <small>IVA (21%)</small>
+                                    <small><?php echo round($row_ped['precioPedido']*0.21, 2)?> €</small>
                                 </div>
                                 
                                 <div class="d-flex justify-content-between mt-3">
                                     <span class="font-weight-bold">Total</span>
-                                    <span class="font-weight-bold theme-color">$2125.00</span>
+                                    <span class="font-weight-bold theme-color"><?php echo $row_ped['precioPedido']?> €</span>
                                 </div>  
 
                                 <div class="text-center mt-5">
@@ -82,6 +89,18 @@
                     </div>
                 </div>
             </div>
+                    <?php
+                        }
+                    
+                ?>
+            </tbody>
+        </table>                        
+        <!-- DETALLES PEDIDOS -->    
+                    <?php ?>
+
+            
+                                   
+                                    
         </section> 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
                                 <script type="text/javascript">

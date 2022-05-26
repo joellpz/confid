@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 22-05-2022 a las 21:22:42
+-- Tiempo de generación: 26-05-2022 a las 19:53:27
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `direccion` varchar(45) NOT NULL,
   `autonomo` tinyint(1) NOT NULL,
   PRIMARY KEY (`idUsuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `clientes`
@@ -82,14 +82,21 @@ DROP TABLE IF EXISTS `detallespedidos`;
 CREATE TABLE IF NOT EXISTS `detallespedidos` (
   `idPedido` int(11) NOT NULL AUTO_INCREMENT,
   `idProducto` int(11) NOT NULL,
-  `fecha` date NOT NULL,
-  `precioTotal` float DEFAULT NULL,
+  `precioTotal` float DEFAULT '0',
   `idTransporte` int(11) DEFAULT NULL,
-  ` cantidad` int(5) DEFAULT NULL,
-  PRIMARY KEY (`idPedido`,`fecha`,`idProducto`),
+  `cantidad` int(5) DEFAULT NULL,
+  PRIMARY KEY (`idPedido`,`idProducto`),
   KEY `fk_detalles_pedidos_Productos1_idx` (`idProducto`),
   KEY `fk_detallesPedidos_transporte1_idx` (`idTransporte`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `detallespedidos`
+--
+
+INSERT INTO `detallespedidos` (`idPedido`, `idProducto`, `precioTotal`, `idTransporte`, `cantidad`) VALUES
+(1, 9, 9.68, 3, 2),
+(1, 42, 48.9, NULL, 2);
 
 -- --------------------------------------------------------
 
@@ -100,12 +107,21 @@ CREATE TABLE IF NOT EXISTS `detallespedidos` (
 DROP TABLE IF EXISTS `pedidos`;
 CREATE TABLE IF NOT EXISTS `pedidos` (
   `idPedido` int(11) NOT NULL AUTO_INCREMENT,
-  `precioTotal` float DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `precioPedido` float DEFAULT NULL,
   `idUsuario` int(11) NOT NULL,
   `pedidoExterno` int(50) DEFAULT NULL,
   PRIMARY KEY (`idPedido`),
   KEY `fk_pedidos_usuarios1_idx` (`idUsuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `pedidos`
+--
+
+INSERT INTO `pedidos` (`idPedido`, `fecha`, `precioPedido`, `idUsuario`, `pedidoExterno`) VALUES
+(1, '2022-05-26', 52.25, 2, NULL),
+(2, '2022-05-25', 78.5, 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -174,7 +190,7 @@ INSERT INTO `productos` (`idProductos`, `nombre`, `descripcion`, `stock`, `preci
 (42, 'Enterprise Pro', '<p>Servicio de monitoreo de un sistema ya implementado espec&iacute;fico para empresas de un mayor tama&ntilde;o. Nos encargamos de monitorear, revisar y mantener los dispositivos y vigilar la seguridad de los mismos.</p>\r\n<p><br />Caracter&iacute;sticas del servicio:</p>\r\n<ul>\r\n<li>Estudio preliminar del sistema. (Gratuito)</li>\r\n<li>Reestudio del sistema ante actualizaciones de elementos o Software. (Gratuito)</li>\r\n<li>Revisi&oacute;n f&iacute;sica rutinaria de los elementos. (Semanalmente)</li>\r\n<li>Revisi&oacute;n l&oacute;gica de los elementos de manera remota. (Dos d&iacute;as por semana)</li>\r\n<li>Aplicaci&oacute;n web para consultas de todo tipo de informaci&oacute;n recogida por su sistema.</li>\r\n<li>Vista en tiempo real de las c&aacute;maras a trav&eacute;s de nuestra aplicaci&oacute;n web. (L&iacute;mite de 12 c&aacute;maras)</li>\r\n<li>Almacenamiento extra en la nube para mantener copias de seguridad m&aacute;s longevas.</li>\r\n<li>Manejo de log&iacute;stica de logs del sistema.</li>\r\n</ul>', 0, 0, 0, 8),
 (43, 'Personalizable', '<p style=\"text-align: justify;\">Si crees que nuestros servicios no se adaptan completamente a tu empresa, local, lugar de trabajo... Cont&aacute;ctanos y estudiaremos espec&iacute;ficamente tu caso para adaptarlo de la manera m&aacute;s personalizada. Nuestros expertos realizar&aacute;n un estudio preliminar de su sistema, evaluar&aacute;n tanto un sistema ya implementado, contando la posibilidad de realizarle modificaciones para mejorar la seguridad o incluso implantar uno nuevo desde cero.</p>', 0, 0, 0, 8),
 (44, 'Local', '<p>Implementaci&oacute;n de un sistema simple que cuenta con hasta cinco c&aacute;maras, dos sistemas de control de acceso a elecci&oacute;n entre nuestros productos, un decodificador de gama baja y accesorios RFC gratuitos si fuesen necesarios para su sistema.</p>\r\n<p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos aplicando nuestro servicio <a href=\"#42\">Enterprise Pro</a>. Ideal para oficinas y locales de peque&ntilde;o tama&ntilde;o o pocas salas.</p>', 0, 0, 0, 9),
-(45, 'Office', '<p>Implementaci&oacute;n de un sistema avanzado que cuenta con hasta doce c&aacute;maras, cinco sistemas de control de acceso a elecci&oacute;n entre nuestros productos, accesorios RFC gratuitos si fuesen necesarios para su sistema y un decodificador de gama media, necesario para tener un equipo central desde el que poder controlar los dispositivos tanto dentro como fuera de la oficina.</p>\r\n<p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos aplicando nuestro servicio <a href=\"#42\">Enterprise Pro</a>. Ideal para oficinas y locales de mayor tama&ntilde;o y salas.</p>', 0, 0, 0, 9),
+(45, 'Office', '<p>Implementaci&oacute;n de un sistema avanzado que cuenta con hasta doce c&aacute;maras, cinco sistemas de control de acceso a elecci&oacute;n entre nuestros productos, accesorios RFC gratuitos si fuesen necesarios para su sistema y un decodificador de gama media, necesario para tener un equipo central desde el que poder controlar los dispositivos tanto dentro como fuera de la oficina.</p>\n<p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos aplicando nuestro servicio <a href=\"#42\">Enterprise Pro</a>. Ideal para oficinas y locales de mayor tama&ntilde;o y salas.</p>', 0, 0, 0, 9),
 (46, 'SpaceShip', '<p>Implementaci&oacute;n de un sistema profesional que cuenta con un m&iacute;nimo de veinte c&aacute;maras, ocho sistemas de control de acceso a elecci&oacute;n entre nuestros productos, accesorios RFC gratuitos y hasta tres decodificadores de gama alta, necesarios para tener diversos equipos centrales desde los que poder controlar los dispositivos tanto dentro como fuera de la oficina.</p>\r\n<p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos aplicando nuestro servicio <a href=\"#42\">Enterprise Pro</a>. Ideal para grandes naves industriales y oficinas de gran tama&ntilde;o.</p>', 0, 0, 0, 9);
 
 -- --------------------------------------------------------
@@ -238,7 +254,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `nombre` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
   PRIMARY KEY (`idUsuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `usuarios`
