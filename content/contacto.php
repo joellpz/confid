@@ -97,15 +97,15 @@
                 <!--Grid column-->
                 <div class="col-md-3 text-center">
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <li><i class="bx bx-map-alt mt-4 align-middle" style="font-size: 1.80rem;"></i>
                             <p>Carrer Marina, 150, 08911 Badalona</p>
                         </li>
 
-                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <li><i class="bx bxs-phone mt-4" style="font-size: 1.80rem;"></i>
                             <p>Tel: 93.589.56.87</p>
                         </li>
 
-                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <li><i class="bx bx-envelope mt-4" style="font-size: 1.80rem;"></i>
                             <p>info@confid.com</p>
                         </li>
                     </ul>

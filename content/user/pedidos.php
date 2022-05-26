@@ -32,7 +32,7 @@
                         echo '<td>' . $row_ped['fecha'] . '</td>';
                         echo '<td>' . $row_ped['precioPedido'] . '</td>';
                         echo '<td>' . $row_ped['pedidoExterno'] . '</td>';
-                        echo '<td> <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#ped' . $row_ped['idPedido'] . '"> <i class="fa fa-info"></i> Get information</button> </td>';
+                        echo '<td> <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#ped' . $row_ped['idPedido'] . '"> <i class="bx bx-info-circle fot_icon align-middle" ></i> Get information</button> </td>';
                         echo '</tr>';
 
                         $consulta_detped = "SELECT * FROM detallespedidos, productos WHERE idProducto = idProductos AND idPedido =". $row_ped['idPedido']."";
@@ -42,9 +42,7 @@
                         <div class="modal fade" id="ped<?php echo $row_ped['idPedido'] ?>" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div>
-                                        
+                                    <div class="modal-body">                                        
                                         <div class="px-4 py-5">
                                             <h5 class="text-uppercase">Pedido Numero: <?php echo $row_ped['idPedido'] ?></h5>
                                             <h4 class="mt-5 theme-color mb-5">Gracias por realizar al compra.</h4>
@@ -81,7 +79,7 @@
                                 </div>  
 
                                 <div class="text-center mt-5">
-                                    <button class="btn btn-primary">Track your order</button>                                
+                                    <button class="btn btn-primary" data-dismiss="modal">Volver a Pedidos</button>                                
                                 </div>                   
                             </div>
 

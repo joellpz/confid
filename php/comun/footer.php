@@ -87,9 +87,9 @@
             <h6 class="text-uppercase fw-bold">Contacto</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto color-azul opacity-100" style="width: 60px; height: 2px"/>
 
-            <p><i class="bx bxs-home mr-3 fot_icon"></i>  Barcelona, 08917, ESP</p>
-            <p><i class='bx bxs-envelope fot_icon'></i>  info@confid.es</p>
-            <p><i class='bx bxs-phone fot_icon'></i>  +34 93 345 67 89</p>
+            <p><i class="bx bxs-home mr-3 fot_icon align-middle"></i>  Barcelona, 08917, ESP</p>
+            <p><i class='bx bxs-envelope fot_icon align-middle'></i>  info@confid.es</p>
+            <p><i class='bx bxs-phone fot_icon align-middle'></i>  +34 93 345 67 89</p>
           </div>
           <!-- Grid column -->
         </div>
