@@ -18,7 +18,7 @@
             <div>    
             <h1>Clientes</h1>
                 <table border= "1" style="width:100%;margin:auto;">
-                    <thead>
+                    <thead style="color: white">
                         <tr style="background-color: #646CDF;">
                             <th>ID Usuario</th>
                             <th>Usuario</th>
