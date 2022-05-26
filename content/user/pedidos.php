@@ -22,7 +22,7 @@
             </thead>
             <tbody>
                 <?php
-                    $consulta_ped = "SELECT * FROM pedidos WHERE idUsuario = $id";
+                    $consulta_ped = "SELECT * FROM pedidos WHERE idUsuario = $id ORDER BY idPedido DESC ";
                     $res_ped = mysqli_query($conn, $consulta_ped);  
                     
                     
