@@ -145,7 +145,7 @@
             <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
                 <div class="container p-2 border-bottom">
                     <a class="navbar-brand me-2" href="/index.php">
-                        <img src="/img/logo/LogoMenu-CONFID.png" width="150" alt="CONFID Logo" loading="lazy"/>
+                        <img src="/img/logo/LogoMenu-CONFID.png" width="175" alt="CONFID Logo" loading="lazy"/>
                     </a>
                     <div class="flex-row navbar-nav ms-auto justify-content-end">
                         <ul class="flex-row nav nav-pills ms-auto justify-content-end">
