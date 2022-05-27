@@ -5,4 +5,3 @@ function Añadir_Carrito(id,cant){
         stock: cant
     });               
 }
-
