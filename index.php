@@ -9,8 +9,8 @@
         <?php include_once $far.'content/header.php';?>
         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"> <!-- Las imagenes deberian tener el mismo tamaño o proporción. Tener en cuenta al escoger las imagenes el color del carousel-->
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/portadas/portada1.jpg" class="d-block w-100" alt=""> 
+                <div class="carousel-item active ">
+                    <img src="/img/portadas/portada1-clear.jpg" class="d-block w-100" alt=""> 
                 </div>
                 <div class="carousel-item">
                     <img src="/img/portadas/portada2.jpg" class="d-block w-100" alt="">

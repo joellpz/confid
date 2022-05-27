@@ -260,3 +260,7 @@ input[type=number]::-webkit-inner-spin-button,
     font-size: 18px;
     max-height: 400px;
 }
+
+.carousel{
+    max-height: 10px;
+}
