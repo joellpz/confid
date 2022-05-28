@@ -133,3 +133,11 @@ h1{
 .car_element{
     text-align:center;
 }
+
+#añadido{
+    width: 20%;
+    height: 50%;
+    border: #535253 solid 2px;
+    border-radius: 25px;
+    box-shadow: #535253;
+}

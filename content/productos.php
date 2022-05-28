@@ -9,6 +9,7 @@
 
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
+        <div id="añadido" style="display:none;">¡Producto añadido al carrito!</div>
         <?php 
             $qprods = "SELECT * FROM categorias WHERE idCategoria != 8 AND idCategoria != 9";
             $resprods = mysqli_query($conn, $qprods);            
@@ -54,12 +55,16 @@
                     </div>
                 </div>
         <?php } ?>
+        
         <?php include_once $far.'php/comun/footer.php'; ?>
         
         <script src="/js/add_carrito.js"></script>
         <script>
-            function Add(id){                  
-                alert("Elemento añadido al Carrito!");     
+            function Mensaje(){
+                document.getElementById("añadido").style.display="";
+            }
+            function Add(id){      
+                Mensaje();               
                 Añadir_Carrito(id,1);              
             }
         </script>

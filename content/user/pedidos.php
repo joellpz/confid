@@ -30,7 +30,7 @@
                         echo '<tr>';
                         echo '<td>' . $row_ped['idPedido'] . '</td>';
                         echo '<td>' . $row_ped['fecha'] . '</td>';
-                        echo '<td>' . $row_ped['precioPedido'] . '</td>';
+                        echo '<td>' . number_format($row_ped['precioPedido'], 2) . '</td>';
                         echo '<td>' . $row_ped['pedidoExterno'] . '</td>';
                         echo '<td> <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#ped' . $row_ped['idPedido'] . '"> <i class="bx bx-info-circle fot_icon align-middle" ></i> Get information</button> </td>';
                         echo '</tr>';
@@ -73,7 +73,7 @@
                                             
                                             <div class="d-flex justify-content-between mt-3">
                                                 <span class="font-weight-bold">Total</span>
-                                                <span class="font-weight-bold theme-color"><?php echo $row_ped['precioPedido']?> €</span>
+                                                <span class="font-weight-bold theme-color"><?php echo number_format($row_ped['precioPedido'], 2);?> €</span>
                                             </div>  
 
                                             <div class="text-center mt-5">
