@@ -41,6 +41,9 @@
                         $cant = $_SESSION['carrito_stock'][$key];
                         $precioPorProd = $pProd[0] * $cant;
 
+                        $uProd = "UPDATE productos SET stock = stock - $cant WHERE idProductos = ".$id_prod;
+                        mysqli_query($conn, $uProd);
+
                         //INSERT EN DETALLES PEDIDOS CON TODO                
                         $idetped = "INSERT INTO detallespedidos VALUES('$id_ped', '$id_prod', '$precioPorProd', '$trans', '$cant')";        
                         mysqli_query($conn, $idetped); 
@@ -48,9 +51,14 @@
                         $precioPedido += $precioPorProd;
                     }
 
+                    $precioPedido *= 1.1;
                     //ULTIMO INSERT A PEDIDOS CON LA SUMA DE PRECIOS DE TODOS LOS PRODUCTOS DEL PEDIDO
-                    $iPedPrec = "UPDATE pedidos SET precioPedido = '$precioPedido' WHERE idPedido = $id_ped";
-                    mysqli_query($conn, $iPedPrec);
+                    $uPedPrec = "UPDATE pedidos SET precioPedido = '$precioPedido' WHERE idPedido = $id_ped";
+                    mysqli_query($conn, $uPedPrec);
+
+                    unset($_SESSION['carrito_prod']);
+                    unset($_SESSION['carrito_stock']);
+                    flush();
                 }
             ?>
 
@@ -81,7 +89,7 @@
                                 <br>
                                 <div class="d-flex justify-content-between">
                                     <small>Envio</small>
-                                    <small><?php echo round($precioPedido*0.1, 2);?> €<small>
+                                    <small><?php echo round($precioPedido/1.1*0.1, 2);?> €<small>
                                 </div>
 
                                 <div class="d-flex justify-content-between">
@@ -91,7 +99,7 @@
                                 
                                 <div class="d-flex justify-content-between mt-3">
                                     <span class="font-weight-bold">Total</span>
-                                    <span class="font-weight-bold theme-color"><?php echo $precioPedido; ?> €</span>
+                                    <span class="font-weight-bold theme-color"><?php echo number_format($precioPedido*1.21, 2); ?> €</span>
                                 </div>  
 
                                 <div class="text-center mt-5">

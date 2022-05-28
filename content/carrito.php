@@ -54,7 +54,7 @@
                             </div>          
                             <div class="col-2">            
                                 <p class="card-title serv-title">
-                                    Quantitat:
+                                    Preu Total<br>Amb IVA:
                                 </p>             
                                 <p class="card-title serv-title car_element"><b><?php echo number_format($row['precioIVA']*$_SESSION['carrito_stock'][$key],2);?> €</b></p>                                                                        
                             </div>
