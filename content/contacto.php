@@ -10,21 +10,21 @@
         <section class="m-4">
 
             <!--Section heading-->
-            <div class="m-4" style="min-width: 450px">
-                <h2 class="col h1-responsive px-3 titulo">Contacta con ConfID</h2>
-                <hr class="col-4 opacity-100 mt-0 borde_title"/>
-            
+            <div class="m-4 ms-auto">
+                <div class="col-11 ms-auto">
+                    <h2 class="col-md h1-responsive px-3 titulo">Contacta con ConfID</h2>
+                    <hr class="col-4 opacity-100 mt-0 borde_title"/>
+                </div>
             <!--Section description-->
                 <?php if(isset($_GET['serv'])){ ?>
-                    <p class="mx-auto mb-5">Contáctanos para confirmar una cita y personalizar al máximo nuestros servicios. ¡Responderemos lo antes posible!</p>
+                    <p class="text-center mb-5">Contáctanos para confirmar una cita y personalizar al máximo nuestros servicios. ¡Responderemos lo antes posible!</p>
                 <?php }else{ ?>
-                    <p class="mx-auto mb-5">¿Tienes alguna pregunta? Porfavor, Contacta directamente con nosotros. Nuestro equipo de profesionales estará encantado de atenderte.</p>
+                    <p class="col-md text-center mb-5">¿Tienes alguna pregunta? Porfavor, Contacta directamente con nosotros. Nuestro equipo de profesionales estará encantado de atenderte.</p>
                 <?php } ?>
             </div>
-            <div class="row">
-            
+            <div class="row mx-auto mb-5">
                 <!--Grid column-->
-                <div class="col-md-8 mb-md-0 mb-5 contact">
+                <div class="col-md-6 mb-md-0 ms-auto">
                     <form id="contact-form" name="contact-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="Enviado()" method="POST" >
 
                         <!--Grid row-->
@@ -99,7 +99,7 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center mx-auto">
                     <ul class="list-unstyled mb-0">
                         <li><i class="bx bx-map-alt mt-4 align-middle" style="font-size: 1.80rem;"></i>
                             <p>Carrer Marina, 150, 08911 Badalona</p>

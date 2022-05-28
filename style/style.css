@@ -241,6 +241,7 @@
 .borde_title{
     border-bottom: 5px solid #646CDF;
     border-radius: 15px;
+    min-width: 300px;
 }
 
 .fot_icon{
@@ -257,6 +258,7 @@ input[type=number]::-webkit-inner-spin-button,
 
 .contact{
     margin-left: 5%;
+    
 }
 
 .bloque_contacto{
