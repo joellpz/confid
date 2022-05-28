@@ -60,33 +60,31 @@
                                                 echo '</div>';
                                             }
                                         ?>
-                                <br>
-                                <div class="d-flex justify-content-between">
-                                    <small>Envio</small>
-                                    <small><?php echo round($row_ped['precioPedido']*0.1, 2)?> €<small>
-                                </div>
-                                
-                                
+                                            <br>
+                                            <div class="d-flex justify-content-between">
+                                                <small>Envio</small>
+                                                <small><?php echo round($row_ped['precioPedido']*0.1, 2)?> €<small>
+                                            </div>
 
-                                <div class="d-flex justify-content-between">
-                                    <small>IVA (21%)</small>
-                                    <small><?php echo round($row_ped['precioPedido']*0.21, 2)?> €</small>
-                                </div>
-                                
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="font-weight-bold">Total</span>
-                                    <span class="font-weight-bold theme-color"><?php echo $row_ped['precioPedido']?> €</span>
-                                </div>  
+                                            <div class="d-flex justify-content-between">
+                                                <small>IVA (21%)</small>
+                                                <small><?php echo round($row_ped['precioPedido']*0.21, 2)?> €</small>
+                                            </div>
+                                            
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <span class="font-weight-bold">Total</span>
+                                                <span class="font-weight-bold theme-color"><?php echo $row_ped['precioPedido']?> €</span>
+                                            </div>  
 
-                                <div class="text-center mt-5">
-                                    <button class="btn btn-primary" data-dismiss="modal">Volver a Pedidos</button>                                
-                                </div>                   
+                                            <div class="text-center mt-5">
+                                                <button class="btn btn-primary" data-dismiss="modal">Volver a Pedidos</button>                                
+                                            </div>                   
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
-                    </div>
-                </div>
-            </div>
                     <?php
                         }
                     

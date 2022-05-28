@@ -23,35 +23,20 @@
             <tbody>
                 <?php
 
-                    $consulta = "SELECT clientes.idUsuario, Alias, CIF, SUM(pedidos.precioPedidos) as Total
+                    $consulta = "SELECT clientes.idUsuario, Alias, CIF, SUM(pedidos.precioPedido) as Total
                     FROM clientes, pedidos, detallespedidos 
                     WHERE clientes.idUsuario like pedidos.idUsuario
                     AND pedidos.idPedido like detallespedidos.idPedido 
                     GROUP BY clientes.idUsuario";
 
-                    $res = mysqli_query($conn, $consulta);    
-
+                    $res = mysqli_query($conn, $consulta);
                     while ($row = mysqli_fetch_array($res)) {
                         echo '<tr>';
                         echo '<td>' . $row['idUsuario'] . '</td>';
                         echo '<td>' . $row['Alias'] . '</td>';
                         echo '<td>' . $row['CIF'] . '</td>';
-                        echo '<td>' . $row[4] . '</td>';
+                        echo '<td>' . number_format($row['Total'], 2) . ' €</td>';
                         echo '</tr>';
-
-
-                    /*$consulta = "SELECT * FROM detallespedidos";
-                    $res = mysqli_query($conn, $consulta);
-
-                    while ($row = mysqli_fetch_array($res)) {
-                        echo '<tr>';
-                        echo '<td>' . $row['idPedido'] . '</td>';
-                        echo '<td>' . $row['idProducto'] . '</td>';
-                        echo '<td>' . $row['fecha'] . '</td>';
-                        echo '<td>' . $row['precioTotal'] . '</td>';
-                        echo '<td>' . $row['idTransporte'] . '</td>';
-                        echo '<td>' . $row['cantidad'] . '</td>';
-                        echo '</tr>';*/
                     }
                 ?>
             </tbody>

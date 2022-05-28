@@ -90,7 +90,6 @@
         <script>
             function Pedido(){
                 if('<?php echo isset($_SESSION['user_id']) ;?>' != ''){
-                    alert("hola");
                     document.getElementById("pedido").submit();
                 }else{
                     alert("¡Debes tener una cuenta para efectuar un pedido!");

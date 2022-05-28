@@ -19,7 +19,12 @@
                 $rescat = mysqli_query($conn, $qcateg);
         ?>
                 <div class="container-fluid my-5">
-                    <h1 class="text-center fw-bold display-1 mb-5"><?php echo $row1['nombre']; ?></h1>
+                    <div class="m-4 ms-auto">
+                        <div class="col-11 ms-auto">
+                            <h2 class="col-md h1-responsive px-3 titulo"><?php echo $row1['nombre']; ?></h2>
+                            <hr class="col-4 opacity-100 mt-0 borde_title"/>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-12 m-auto">
                             <div class="owl-carousel owl-theme">
