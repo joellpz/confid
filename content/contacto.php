@@ -7,18 +7,22 @@
     ?>  
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?> <!-- CAMBIAR RUTA SEGUN UBI Insertar headers segun login -->
-        <section class="mb-4">
+        <section class="m-4">
 
             <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contacta con ConfID</h2>
+            <div class="m-4" style="min-width: 450px">
+                <h2 class="col h1-responsive px-3 titulo">Contacta con ConfID</h2>
+                <hr class="col-4 opacity-100 mt-0 borde_title"/>
+            
             <!--Section description-->
-            <?php if(isset($_GET['serv'])){ ?>
-                <p class="text-center w-responsive mx-auto mb-5">Contáctanos para confirmar una cita y personalizar al máximo nuestros servicios. ¡Responderemos lo antes posible!</p>
-            <?php }else{ ?>
-                <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna pregunta? Porfavor, Contacta directamente con nosotros. Nuestro equipo de profesionales estará encantado de atenderte.</p>
-            <?php } ?>
+                <?php if(isset($_GET['serv'])){ ?>
+                    <p class="mx-auto mb-5">Contáctanos para confirmar una cita y personalizar al máximo nuestros servicios. ¡Responderemos lo antes posible!</p>
+                <?php }else{ ?>
+                    <p class="mx-auto mb-5">¿Tienes alguna pregunta? Porfavor, Contacta directamente con nosotros. Nuestro equipo de profesionales estará encantado de atenderte.</p>
+                <?php } ?>
+            </div>
             <div class="row">
-
+            
                 <!--Grid column-->
                 <div class="col-md-8 mb-md-0 mb-5 contact">
                     <form id="contact-form" name="contact-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="Enviado()" method="POST" >
@@ -78,7 +82,7 @@
                         </div>
                         <!--Grid row-->
                         <div class="row">
-                            <div class="mb-3 form-check">
+                            <div class="m-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="TerminosCondiciones" required>
                                 <label class="form-check-label" for="TerminosCondiciones">He leido y acepto los <a class="text-decoration-none"  href="/content/term_cond.php">Terminos y Condiciones</a>.</label>
                             </div>
@@ -113,6 +117,9 @@
                 <!--Grid column-->
             </div>
         </section>
+        <div id="map-container-google-1" class="z-depth-1-half map-container" >
+            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.367172743641!2d2.24502365149851!3d41.45295107915634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bb0c66730639%3A0x351e767696bdb218!2sColegio%20Cultural!5e0!3m2!1ses!2ses!4v1653667715473!5m2!1ses!2ses" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <?php include_once $far.'php/comun/footer.php'; ?>
         <script>
             function Enviado(){

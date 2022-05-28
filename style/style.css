@@ -238,6 +238,11 @@
     border: red solid;
 }
 
+.borde_title{
+    border-bottom: 5px solid #646CDF;
+    border-radius: 15px;
+}
+
 .fot_icon{
     font-size: 1.20rem;
 }
