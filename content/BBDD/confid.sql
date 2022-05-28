@@ -80,7 +80,7 @@ INSERT INTO `clientes` (`idUsuario`, `alias`, `CIF`, `direccion`, `autonomo`) VA
 
 DROP TABLE IF EXISTS `detallespedidos`;
 CREATE TABLE IF NOT EXISTS `detallespedidos` (
-  `idPedido` int(11) NOT NULL AUTO_INCREMENT,
+  `idPedido` int(11) NOT NULL,
   `idProducto` int(11) NOT NULL,
   `precioTotal` float DEFAULT '0',
   `idTransporte` int(11) DEFAULT NULL,

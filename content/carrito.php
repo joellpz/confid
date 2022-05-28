@@ -73,11 +73,11 @@
                                 Transporte:
                                 <select id="transporte" name="transporte" class="form-control car_element">
                                     <?php 
-                                        $qtrans = "SELECT nombre FROM transporte";
+                                        $qtrans = "SELECT * FROM transporte";
                                         $restrans = mysqli_query($conn, $qtrans);            
                             
                                         while ($row2 = mysqli_fetch_array($restrans)) { 
-                                            echo "<option>".$row2['nombre']."</option>"; 
+                                            echo "<option value='".$row2['idTransporte']."'>".$row2['nombre']."</option>"; 
                                         }
                                     ?>
                                 </select>
