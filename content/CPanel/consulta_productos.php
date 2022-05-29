@@ -24,6 +24,7 @@
                 </tr>
             </thead>
             <tbody>
+                <div class="col-6">
                 <?php
                     $consulta = "SELECT idProductos, productos.nombre, descripcion, stock, precioIVA, precioNoIVA, categorias.nombre
                     FROM productos, categorias
@@ -42,6 +43,11 @@
                         echo '</tr>';
                     }
                 ?>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <a class="btn btn-primary px-5 py-2" href="addproduct.php" role="button" style="font-weight:bold;">Añadir Productos</a>                </div>
+                <div class="col-2"></div>
             </tbody>
         </table>
         <br>   
