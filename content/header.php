@@ -154,11 +154,7 @@
                         <img src="/img/logo/LogoMenu-CONFID.png" style="max-width: 175px" alt="CONFID Logo" loading="lazy"/>
                     </a>
                     <div class="flex-row navbar-nav ms-auto justify-content-end">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="bx bx-menu"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <ul class="flex-row nav nav-pills ms-auto justify-content-end collapse">
+                        <ul class="flex-row nav nav-pills ms-auto justify-content-end">
                             <li class="nav-item px-2" role="presentation">
                                 <a class="nav-link" href="/index.php">Inicio</a>
                             </li>
@@ -175,7 +171,6 @@
                                 <a class="nav-link" href="/content/contacto.php">Contacto</a>
                             </li>
                         </ul>
-</div>
                     </div>
                 </div>
             </nav>
