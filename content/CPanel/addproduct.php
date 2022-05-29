@@ -17,27 +17,27 @@
             <div class="row justify-content-center py-2">
                 <div class="col-4">
                     <label for="signup_user" class="form-label">Nombre Producto*</label>
-                    <input type="number" maxlength="5" class="form-control" id="signup_user" name="signup_user" required>
+                    <input type="number" maxlength="5" class="form-control" id="name_product" name="signup_user" required>
                 </div>
                 <div class="col-4">
                     <label for="signup_ss" class="form-label">Descripción*</label>
-                    <input type="text" class="form-control" id="signup_ss" name="signup_ss" required>
+                    <input type="text" class="form-control" id="signup_ss" name="desc_product" required>
                 </div>
             </div>    
             <div class="row justify-content-center py-2">
                 <div class="col-4">
                     <label for="signup_name" class="form-label">Stock*</label>
-                    <input type="text" class="form-control" id="signup_name" name="signup_name" required>
+                    <input type="text" class="form-control" id="signup_name" name="stock" required>
                 </div>
                 <div class="col-4">
                     <label for="signup_surname" class="form-label">Precio I.V.A.*</label>
-                    <input type="text" class="form-control" id="signup_surname" name="signup_surname" required>
+                    <input type="text" class="form-control" id="signup_surname" name="precio_iva" required>
                 </div>
             </div>
             <div class="row justify-content-center py-2">
                 <div class="col-8">
                     <label for="signup_email" class="form-label">Categoria*</label>
-                    <input type="email" class="form-control" id="signup_email" name="signup_email" aria-describedby="emailHelp" required>
+                    <input type="email" class="form-control" id="signup_email" name="precio_no_iva" aria-describedby="emailHelp" required>
                 </div>
             </div>
             <div class="container-fluid p-2">
