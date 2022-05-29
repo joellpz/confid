@@ -30,7 +30,7 @@
                         echo '<tr>';
                         echo '<td>' . $row_ped['idPedido'] . '</td>';
                         echo '<td>' . $row_ped['fecha'] . '</td>';
-                        echo '<td>' . $row_ped['precioPedido'] . '</td>';
+                        echo '<td>' . number_format($row_ped['precioPedido'], 2) . '</td>';
                         echo '<td>' . $row_ped['pedidoExterno'] . '</td>';
                         echo '<td> <button type="button" class="btn btn-primary launch" data-toggle="modal" data-target="#ped' . $row_ped['idPedido'] . '"> <i class="bx bx-info-circle fot_icon align-middle" ></i> Get information</button> </td>';
                         echo '</tr>';
@@ -45,7 +45,7 @@
                                     <div class="modal-body">                                        
                                         <div class="px-4 py-5">
                                             <h5 class="text-uppercase">Pedido Numero: <?php echo $row_ped['idPedido'] ?></h5>
-                                            <h4 class="mt-5 theme-color mb-5">Gracias por realizar al compra.</h4>
+                                            <h4 class="mt-5 theme-color mb-5">Gracias por realizar la compra.</h4>
                                             <span class="theme-color">Resumen del pedido</span>
                                             <div class="mb-3">
                                                 <hr class="new1">
@@ -60,33 +60,31 @@
                                                 echo '</div>';
                                             }
                                         ?>
-                                <br>
-                                <div class="d-flex justify-content-between">
-                                    <small>Envio</small>
-                                    <small><?php echo round($row_ped['precioPedido']*0.1, 2)?> €<small>
-                                </div>
-                                
-                                
+                                            <br>
+                                            <div class="d-flex justify-content-between">
+                                                <small>Envio</small>
+                                                <small><?php echo round($row_ped['precioPedido']*0.1, 2)?> €<small>
+                                            </div>
 
-                                <div class="d-flex justify-content-between">
-                                    <small>IVA (21%)</small>
-                                    <small><?php echo round($row_ped['precioPedido']*0.21, 2)?> €</small>
-                                </div>
-                                
-                                <div class="d-flex justify-content-between mt-3">
-                                    <span class="font-weight-bold">Total</span>
-                                    <span class="font-weight-bold theme-color"><?php echo $row_ped['precioPedido']?> €</span>
-                                </div>  
+                                            <div class="d-flex justify-content-between">
+                                                <small>IVA (21%)</small>
+                                                <small><?php echo round($row_ped['precioPedido']*0.21, 2)?> €</small>
+                                            </div>
+                                            
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <span class="font-weight-bold">Total</span>
+                                                <span class="font-weight-bold theme-color"><?php echo number_format($row_ped['precioPedido'], 2);?> €</span>
+                                            </div>  
 
-                                <div class="text-center mt-5">
-                                    <button class="btn btn-primary" data-dismiss="modal">Volver a Pedidos</button>                                
-                                </div>                   
+                                            <div class="text-center mt-5">
+                                                <button class="btn btn-primary" data-dismiss="modal">Volver a Pedidos</button>                                
+                                            </div>                   
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
-                    </div>
-                </div>
-            </div>
                     <?php
                         }
                     

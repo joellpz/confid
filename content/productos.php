@@ -9,6 +9,7 @@
 
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
+        <div id="añadido" style="display:none;">¡Producto añadido al carrito!</div>
         <?php 
             $qprods = "SELECT * FROM categorias WHERE idCategoria != 8 AND idCategoria != 9";
             $resprods = mysqli_query($conn, $qprods);            
@@ -19,7 +20,12 @@
                 $rescat = mysqli_query($conn, $qcateg);
         ?>
                 <div class="container-fluid my-5">
-                    <h1 class="text-center fw-bold display-1 mb-5"><?php echo $row1['nombre']; ?></h1>
+                    <div class="m-4 ms-auto">
+                        <div class="col-11 ms-auto">
+                            <h2 class="col-md h1-responsive px-3 titulo"><?php echo $row1['nombre']; ?></h2>
+                            <hr class="col-4 opacity-100 mt-0 borde_title"/>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-12 m-auto">
                             <div class="owl-carousel owl-theme">
@@ -49,12 +55,16 @@
                     </div>
                 </div>
         <?php } ?>
+        
         <?php include_once $far.'php/comun/footer.php'; ?>
         
         <script src="/js/add_carrito.js"></script>
         <script>
-            function Add(id){                  
-                alert("Elemento añadido al Carrito!");     
+            function Mensaje(){
+                document.getElementById("añadido").style.display="";
+            }
+            function Add(id){      
+                Mensaje();               
                 Añadir_Carrito(id,1);              
             }
         </script>

@@ -54,9 +54,9 @@
                             </div>          
                             <div class="col-2">            
                                 <p class="card-title serv-title">
-                                    Quantitat:
+                                    Preu Unitat<br>Amb IVA:
                                 </p>             
-                                <p class="card-title serv-title car_element"><b><?php echo number_format($row['precioIVA']*$_SESSION['carrito_stock'][$key],2);?> €</b></p>                                                                        
+                                <p class="card-title serv-title car_element"><b><?php echo number_format($row['precioIVA'],2);?> €</b></p>                                                                        
                             </div>
                         </div><br>                   
                     </div>                       
@@ -68,7 +68,6 @@
                         <h1>EL CARRITO ESTÁ VACÍO<h1>
                 <?php } ?> 
                         <div class="col-4">
-                            <p>Prueba</p>
                             <p class="card-title serv-title">
                                 Transporte:
                                 <select id="transporte" name="transporte" class="form-control car_element">
@@ -90,7 +89,6 @@
         <script>
             function Pedido(){
                 if('<?php echo isset($_SESSION['user_id']) ;?>' != ''){
-                    alert("hola");
                     document.getElementById("pedido").submit();
                 }else{
                     alert("¡Debes tener una cuenta para efectuar un pedido!");
