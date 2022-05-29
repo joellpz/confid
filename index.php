@@ -61,6 +61,9 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center">
+                <a class="btn carrito btn-outline-primary m-4 px-5 py-2 w-75" href="/content/servicios.php" role="button" style="font-weight:bold;">Ver Nuestros Servicios</a>
+            </div>
         </div>
         <br><br>
 
@@ -111,6 +114,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center">
+                <a class="btn carrito btn-outline-primary m-4 px-5 py-2 w-75" href="/content/productos.php" role="button" style="font-weight:bold;">Ver Nuestros Productos</a>
             </div>
         </div>
         <?php include_once $far.'php/comun/footer.php'; ?>
