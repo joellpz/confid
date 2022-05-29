@@ -154,7 +154,7 @@
                         <img src="/img/logo/LogoMenu-CONFID.png" style="max-width: 175px" alt="CONFID Logo" loading="lazy"/>
                     </a>
                     <div class="flex-row navbar-nav ms-auto justify-content-end">
-                        <ul class="flex-row nav nav-pills ms-auto justify-content-end collapse">
+                        <ul class="flex-row nav nav-pills ms-auto justify-content-end">
                             <li class="nav-item px-2" role="presentation">
                                 <a class="nav-link" href="/index.php">Inicio</a>
                             </li>
