@@ -1,5 +1,10 @@
 <head>
     <link rel ="stylesheet" href="/style/style.css"/> 
+    
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<script src="/docs/assets/js/docs.min.js"></script>
+
 </head>
 <header>
     <?php 
@@ -141,14 +146,19 @@
     
 </header>
 <?php if ($file!="Control Panel"){ ?>
+    
         <div class="navegacion">
             <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
                 <div class="container p-2 border-bottom">
                     <a class="navbar-brand me-2" href="/index.php">
-                        <img src="/img/logo/LogoMenu-CONFID.png" width="175" alt="CONFID Logo" loading="lazy"/>
+                        <img src="/img/logo/LogoMenu-CONFID.png" style="max-width: 175px" alt="CONFID Logo" loading="lazy"/>
                     </a>
                     <div class="flex-row navbar-nav ms-auto justify-content-end">
-                        <ul class="flex-row nav nav-pills ms-auto justify-content-end">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bx bx-menu"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="flex-row nav nav-pills ms-auto justify-content-end collapse">
                             <li class="nav-item px-2" role="presentation">
                                 <a class="nav-link" href="/index.php">Inicio</a>
                             </li>
@@ -165,8 +175,10 @@
                                 <a class="nav-link" href="/content/contacto.php">Contacto</a>
                             </li>
                         </ul>
+</div>
                     </div>
-                </div>  
+                </div>
             </nav>
         </div>
+        
 <?php } ?>

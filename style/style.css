@@ -184,6 +184,7 @@
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px)
     }
+    
 }
 /*
 ---------------------            |
@@ -198,7 +199,7 @@
 }
 
 .link, .link:hover{
-    width: 125px;
+    height: 24px;
     text-decoration: none;
     color: var(--white-color);
 }
@@ -214,7 +215,7 @@
 }
 
 .in-se{
-  width: 500px;
+  max-width: 500px;
 }
 
 .btn-primary{
