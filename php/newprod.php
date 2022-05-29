@@ -9,8 +9,12 @@
         $precio_iva = $_POST['precio_iva'];
         $precio_no_iva = $_POST['precio_no_iva'];
         $categoria = $_POST['categoria'];
-       
                     
+      
+        $consulta_producto = "INSERT INTO productos VALUES (NULL,'$name_product', '$desc_product', '$stock', '$precio_iva', '$precio_no_iva', '$categoria')";
+        mysqli_query($conn,$consulta_producto);
+        
+             
         header('Location: ../content/cpanel.php?cons=prod');
 
     }
