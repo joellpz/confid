@@ -47,19 +47,21 @@
                 </tr>
                 <tr>
                     <td><label for="email">Categoria:</label></td>
-                    <select class="form-control" id="categoria" name="categoria">
-                        <option value="1">Cámaras</option>
-                        <option value="2">Control de Accesos</option>
-                        <option value="3">Accesorios RFC</option>
-                        <option value="4">Decodificadores</option>
-                        <option value="5">Paneles Númericos</option>
-                        <option value="6">Soportes y Carcasas</option>
-                        <option value="7">Detectores Volumétricos</option>
-                    </select>
+                    <td>
+                        <select id="categoria" name="categoria">
+                            <option value="1">Cámaras</option>
+                            <option value="2">Control de Accesos</option>
+                            <option value="3">Accesorios RFC</option>
+                            <option value="4">Decodificadores</option>
+                            <option value="5">Paneles Númericos</option>
+                            <option value="6">Soportes y Carcasas</option>
+                            <option value="7">Detectores Volumétricos</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <td style="text-align: center; font-size: 20px;" colspan="2">
-                        <input type="submit" class="btn btn-primary" name="enviar" value="Modificar"/>
+                        <input type="submit" class="m-3 btn btn-primary" name="enviar" value="Modificar"/>
                     </td>
                 </tr>
             </table>
