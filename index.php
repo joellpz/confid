@@ -76,7 +76,7 @@
                         <img id='prod' src="/img/productos/8.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">PA-2781</h5>
-                            <p class="card-text">Cñamara interior con rotación horizontal (240 gramos)</p>
+                            <p class="card-text">Cámara interior con rotación horizontal (240 gramos)</p>
                         </div>
                     </div>
                 </div>
