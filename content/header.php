@@ -172,7 +172,6 @@
                                 <a class="nav-link" href="/content/contacto.php">Contacto</a>
                             </li>
                         </ul>
-</div>
                     </div>
                 </div>
             </nav>
