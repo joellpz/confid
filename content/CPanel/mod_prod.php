@@ -20,11 +20,24 @@
                 $cons_prod = "SELECT * FROM productos WHERE idProductos = $id";
                 $result= mysqli_query ($conn, $cons_prod);
                 $row=mysqli_fetch_array($result);                                          
-            }         
+            }
+
+            if(isset($_POST['enviar'])){
+                $id = $_POST['idProductos'];
+                $nombre = $_POST["nombre"];
+                $stock = $_POST["stock"];
+                $precioIVA = $_POST["precioIVA"];
+                $precioNoIVA = $_POST["precioNoIVA"];
+                $categoria = $_POST["categoria"];
+                $update_prod = "UPDATE productos 
+                SET nombre='$nombre', stock='$stock'
+                WHERE idProductos = $id";
+                mysqli_query($conn, $update_prod) or die('Consulta perico: '. mysqli_error());
+            }  
             
             include_once $far.'content/header.php'; ?>
         
-        <form method="post" action="/php/consultas/mod_info.php?id=<?php echo $id ?>">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <table class="tabliqui">
                 <thead style="background-color: #646CDF;">
                     <th colspan="2">Modificar Producto Nº<?php echo $row['idProductos']?></th>
@@ -57,6 +70,11 @@
                             <option value="6">Soportes y Carcasas</option>
                             <option value="7">Detectores Volumétricos</option>
                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                     <input id="idProductos" name="idProductos" type="hidden" value="<?php echo $row['idProductos']?>">
                     </td>
                 </tr>
                 <tr>
