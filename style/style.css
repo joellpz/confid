@@ -268,3 +268,13 @@ input[type=number]::-webkit-inner-spin-button,
     font-size: 18px;
     max-height: 400px;
 }
+
+.carrito{
+    color: #646CDF;
+    border-color: #646CDF;
+}
+
+.carrito:hover{
+    background-color: #646CDF;
+    border-color: #535253;
+}
