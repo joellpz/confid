@@ -32,6 +32,12 @@
 
         <!-- Bloque de servicios destacados -->
         <div class="container servicios_destacados">
+            <div class="m-auto">
+                <div>
+                    <h2 class="col-md h1-responsive titulo">Nuestros Servicios</h2>
+                    <hr class="col-4 opacity-100 mt-0 borde_title"/>
+                </div>
+            </div>
             <div class="row align-items-center">
                 <div class="col">
                     <div class="card h-100">
@@ -59,17 +65,24 @@
         <br><br>
 
         <!-- Bloque de introducción al contacto -->
-        <div class="row bloque_contacto">
-            <div class="col-6 textos text-center" style="padding: 5%;">
+        <div class="row bloque_contacto w-100 m-auto">
+            <div class="col-7 justify-content-start text-center" style="padding: 5%;">
                 <h2 style="font-weight:bold;">¡Contacta con nosotros!</h2>
-                <p class="m-5">Si tienes cualquier duda sobre nuestros servicios, o si crees que <br>necesitas un sevicio a medida puedes enviarnos un mail <br>haciendo clic en el siguiente botón.</p>
+                <p class="m-3 text-center mx-auto" style="width: 85%">Si tienes cualquier duda sobre nuestros servicios, o si crees que necesitas un sevicio a medida puedes enviarnos un mail haciendo clic en el siguiente botón.</p>
                 <a class="btn btn-primary px-5 py-2" href="contacto.php" role="button" style="font-weight:bold;">¡Contacta!</a>
             </div>
+            
         </div>
         <br><br>
         
         <!-- Bloque de productos destacados -->       
         <div class="container productos_destacados">
+            <div class="m-auto">
+                <div>
+                    <h2 class="col-md h1-responsive titulo">Productos Destacados</h2>
+                    <hr class="col-4 opacity-100 mt-0 borde_title"/>
+                </div>
+            </div>
             <div class="row align-items-center">
                 <div class="col">
                     <div class="card h-100">
