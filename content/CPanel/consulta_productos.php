@@ -10,7 +10,10 @@
         <link rel ="stylesheet" href="/style/style.css"/> 
     </head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
-        <h2>Consulta y Gestión de Productos</h2>
+        <div class="row mb-2">
+            <h2 class="col-8">Consulta y Gestión de Productos</h2>
+            <a class="col-4 justify-content-end btn btn-primary px-5 py-2 " href="/content/CPanel/addproduct.php" role="button" style="font-weight:bold;">Añadir Productos</a> 
+        </div>
         <table border= "1" style="width: 80%;">
             <thead style="color: white">
                 <tr style="background-color: #646CDF;">
@@ -46,7 +49,7 @@
                 </div>
                 <div class="row-2"></div>
                 <div class="row-2">
-                    <a class="btn btn-primary px-5 py-2" href="/content/CPanel/addproduct.php" role="button" style="font-weight:bold;">Añadir Productos</a>                </div>
+                                   </div>
                 <div class="row-2"></div>
             </tbody>
         </table>
