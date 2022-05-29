@@ -42,9 +42,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     
 </head>
 
@@ -58,30 +56,20 @@
         <div class="navegacion">
             <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
                 <div class="container p-2 border-bottom">
-                    <a class="navbar-brand me-2" href="/index.php">
-                        <img src="/img/logo/LogoMenu-CONFID.png" width="175" alt="CONFID Logo" loading="lazy"/>
+                    <a class="navbar-brand" href="/index.php">
+                        <img src="/img/logo/LogoMenu-CONFID.png" width="150" alt="CONFID Logo" loading="lazy"/>
                     </a>
-                    <div class="flex-row navbar-nav ms-auto justify-content-end">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="bx bx-menu"></i>
-                        </button>
-                        <ul class="flex-row nav nav-pills ms-auto justify-content-end collapse navbar-collapse" id="navbarNav">
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/index.php">Inicio</a>
-                            </li>
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/content/somos.php">Quienes Somos</a>
-                            </li> 
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/content/productos.php">Productos</a>
-                            </li>
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/content/servicios.php">Servicios</a>
-                            </li>
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/content/contacto.php">Contacto</a>
-                            </li>
-                        </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bx bx-menu"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link mx-2" href="/index.php">Inicio</a>
+                            <a class="nav-link mx-2" href="/content/somos.php">Quienes Somos</a>
+                            <a class="nav-link mx-2" href="/content/productos.php">Productos</a>
+                            <a class="nav-link mx-2" href="/content/servicios.php">Servicios</a>
+                            <a class="nav-link mx-2" href="/content/contacto.php">Contacto</a>
+                        </div>
                     </div>
                 </div>
             </nav>

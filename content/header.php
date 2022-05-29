@@ -146,34 +146,26 @@
     
 </header>
 <?php if ($file!="Control Panel"){ ?>
-    
-        <div class="navegacion">
-            <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
-                <div class="container p-2 border-bottom">
-                    <a class="navbar-brand me-2" href="/index.php">
-                        <img src="/img/logo/LogoMenu-CONFID.png" style="max-width: 175px" alt="CONFID Logo" loading="lazy"/>
-                    </a>
-                    <div class="flex-row navbar-nav ms-auto justify-content-end">
-                        <ul class="flex-row nav nav-pills ms-auto justify-content-end">
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/index.php">Inicio</a>
-                            </li>
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/content/somos.php">Quienes Somos</a>
-                            </li> 
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/content/productos.php">Productos</a>
-                            </li>
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/content/servicios.php">Servicios</a>
-                            </li>
-                            <li class="nav-item px-2" role="presentation">
-                                <a class="nav-link" href="/content/contacto.php">Contacto</a>
-                            </li>
-                        </ul>
+    <div class="navegacion">
+        <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
+            <div class="container p-2 border-bottom">
+                <a class="navbar-brand" href="/index.php">
+                    <img src="/img/logo/LogoMenu-CONFID.png" width="150" alt="CONFID Logo" loading="lazy"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link mx-2" href="/index.php">Inicio</a>
+                        <a class="nav-link mx-2" href="/content/somos.php">Quienes Somos</a>
+                        <a class="nav-link mx-2" href="/content/productos.php">Productos</a>
+                        <a class="nav-link mx-2" href="/content/servicios.php">Servicios</a>
+                        <a class="nav-link mx-2" href="/content/contacto.php">Contacto</a>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </div>
         
 <?php } ?>
