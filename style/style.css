@@ -278,3 +278,15 @@ input[type=number]::-webkit-inner-spin-button,
     background-color: #646CDF;
     border-color: #535253;
 }
+
+.tabla_cp{
+    text-align: center;
+    width: 90%;
+    margin: 3%;
+}
+
+
+.tabla_cp td, .tabla_cp th{
+    border:black solid 1px;
+    padding: 15px;
+}

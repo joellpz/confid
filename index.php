@@ -4,7 +4,8 @@
         $file="Inicio";
         $far="";
         include $far.'php/comun/head.php';
-    ?>      
+    ?>
+    <link rel="stylesheet" href="/style/caja_prods.css"/>
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php';?>
         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"> <!-- Las imagenes deberian tener el mismo tamaño o proporción. Tener en cuenta al escoger las imagenes el color del carousel-->
@@ -41,12 +42,12 @@
             <div class="row align-items-center">
                 <div class="col">
                     <div class="card h-100">
-                        <img id='prod' src="/img/productos/44.png" class="card-img-top" alt="...">
+                        <img id='prod' src="/img/productos/46.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h4 class="m-2" style="font-weight:bold;">Instalación Local</h4>
+                            <h4 class="m-2" style="font-weight:bold;">SpaceShip</h4>
                             <div class="m-2" style="text-align: justify;" >
-                                <p>Implementaci&oacute;n de un sistema simple que cuenta una seleccion variada de nuestros productos, como por ejemplo un decodificador de gama baja y accesorios RFC gratuitos.</p>
-                                <p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos. Ideal para oficinas y locales de peque&ntilde;o tama&ntilde;o o pocas salas.</p>
+                            <p>Implementaci&oacute;n de un sistema profesional que cuenta con un m&iacute;nimo de veinte c&aacute;maras, ocho sistemas de control de acceso a elecci&oacute;n entre nuestros productos, accesorios RFC gratuitos y hasta tres decodificadores de gama alta, necesarios para tener diversos equipos centrales desde los que poder controlar los dispositivos tanto dentro como fuera de la oficina.</p>
+                            <p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos aplicando nuestro servicio <a href="#42">Enterprise Pro</a>. Ideal para grandes naves industriales y oficinas de gran tama&ntilde;o.</p>
                             </div>
                         </div>
                     </div>
@@ -80,38 +81,33 @@
         
         <!-- Bloque de productos destacados -->       
         <div class="container productos_destacados">
-            <div class="m-auto">
-                <div>
-                    <h2 class="col-md h1-responsive titulo">Productos Destacados</h2>
-                    <hr class="col-4 opacity-100 mt-0 borde_title"/>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="card h-100">
-                        <img id='prod' src="/img/productos/8.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PA-2781</h5>
-                            <p class="card-text">Cámara interior con rotación horizontal (240 gramos)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img id='prod' src="/img/productos/14.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nivian NV</h5>
-                            <p class="card-text">Cámara IP 1/2.7" Progressive CMOS 5 Megapixel (259 gramos)</p>
-                        </div>
-                    </div>
-                </div>  
-                <div class="col">
-                    <div class="card h-100">
-                        <img id='prod' src="/img/productos/16.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Anviz camera 6.4</h5>
-                            <p class="card-text">Cámara interior con rotación horizontal (180 gramos)</p>
-                        </div>
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="owl-carousel owl-theme">
+                    <?php 
+                        $array=array(2,5,11,16,19,23,27,31,35,38);
+                        for($i=0; $i<count($array); $i++){
+                            $qprods = 'SELECT * FROM productos WHERE idProductos = '.$array[$i];
+                            $resprods = mysqli_query($conn, $qprods);
+                            while ($row2 = mysqli_fetch_array($resprods)) { ?>
+                            <div class="item mb-3">                                    
+                                <div class="card border-0 shadow">  
+                                    <a class="" href="/content/desc_prod.php?id='<?php echo $row2['idProductos']; ?>'" >                                      
+                                        <img id="prod" src="/img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div style="color:black;" class="card-title text-center">
+                                            <h4><b><?php echo $row2['nombre']; ?></b></h4>
+                                        </div>
+                                        <div class="precio">
+                                            <span style="font-size: 28px; margin-right: 10px;"><?php echo number_format($row2['precioIVA'],2); ?> €</span>
+                                            <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?> € SENSE IVA</span>
+                                        </div>   
+                                        <span class="boton"><input class="carrito btn btn-outline-primary" type="button" value="Ver Productos" href="/content/productos.php"/></span>
+                                    </div>
+                                </div>
+                            </div>
+                    <?php }} ?>
                     </div>
                 </div>
             </div>
@@ -120,5 +116,28 @@
             </div>
         </div>
         <?php include_once $far.'php/comun/footer.php'; ?>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                loop: true,
+                margin: 15,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    900: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            })
+        </script>
     </body>
 </html>

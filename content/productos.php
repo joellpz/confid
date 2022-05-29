@@ -62,6 +62,10 @@
         <script>
             function Mensaje(){
                 document.getElementById("añadido").style.display="";
+                setTimeout(function(){
+                    document.getElementById("añadido").style.display="none";
+                }, 2500);
+                
             }
             function Add(id){      
                 Mensaje();               

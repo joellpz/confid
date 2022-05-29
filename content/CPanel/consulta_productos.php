@@ -8,6 +8,12 @@
 <html>
     <head>
         <link rel ="stylesheet" href="/style/style.css"/> 
+        <style>
+            a, a:hover{
+                text-decoration:none;
+                color: black;
+            }
+        </style>
     </head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <div class="row mb-2">
@@ -18,7 +24,7 @@
                 <input type="number" id="idprod" name="idprod"></input>
             </form>
         </div>
-        <table border= "1" style="width: 80%;">
+        <table class="tabla_cp" border= "1">
             <thead style="color: white">
                 <tr style="background-color: #646CDF;">
                     <th>Referencia</th>

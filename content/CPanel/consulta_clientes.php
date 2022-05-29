@@ -11,7 +11,7 @@
     </head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <h2>Clientes</h2>
-        <table border= "2" style="width: 80%;">
+        <table class="tabla_cp" border= "1">
             <thead style="color: white">
                 <tr style="background-color: #646CDF;">
                     <th>Nº Cliente</th>

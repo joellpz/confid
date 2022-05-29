@@ -10,7 +10,7 @@
     <body classname="snippet-body" class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
         <section style="min-height: 700px">
-        <table border= "1" style="width: 80%;">
+        <table class="tabla_cp" border= "1">
             <thead style="color: white">
                 <tr style="background-color: #646CDF;">
                     <th>Nº Pedido</th>
