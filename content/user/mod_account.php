@@ -13,9 +13,9 @@
 
         $consulta = "SELECT * FROM usuarios, clientes WHERE clientes.idUsuario = usuarios.idUsuario AND usuarios.idUsuario = $id";
         $result= mysqli_query ($conn, $consulta);
-        $row=mysqli_fetch_array($result);      
+        $row=mysqli_fetch_array($result);
     ?>  
-    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>' <?php ?>>
+    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php';  ?>
         <style>
             .btn{
@@ -67,11 +67,11 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <label for="passwd" class="form-label">Contraseña*</label>
-                    <input type="password" class="form-control" id="passwd" name="passwd" value="<?php echo md5($row['passwd']) ?>" required>
+                    <input type="password" class="form-control" id="passwd" name="passwd" required>
                 </div>
                 <div class="col-4">
                     <label for="pass_rep" class="form-label">Repetir Contraseña*</label>
-                    <input type="password" class="form-control" id="pass_rep" name="pass_rep" value="<?php echo md5($row['passwd']) ?>" required>
+                    <input type="password" class="form-control" id="pass_rep" name="pass_rep" required>
                 </div>
             </div>
             <br>

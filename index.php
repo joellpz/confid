@@ -81,6 +81,12 @@
         
         <!-- Bloque de productos destacados -->       
         <div class="container productos_destacados">
+            <div class="m-auto m-2">
+                <div>
+                    <h2 class="col-md h1-responsive titulo">Productos Destacados</h2>
+                    <hr class="col-4 opacity-100 mt-0 borde_title"/>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12 m-auto">
                     <div class="owl-carousel owl-theme">
