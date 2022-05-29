@@ -24,7 +24,7 @@
                 </tr>
             </thead>
             <tbody>
-                <div class="col-6">
+                <div class="row-6">
                 <?php
                     $consulta = "SELECT idProductos, productos.nombre, descripcion, stock, precioIVA, precioNoIVA, categorias.nombre
                     FROM productos, categorias
@@ -44,10 +44,10 @@
                     }
                 ?>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-2">
-                    <a class="btn btn-primary px-5 py-2" href="addproduct.php" role="button" style="font-weight:bold;">Añadir Productos</a>                </div>
-                <div class="col-2"></div>
+                <div class="row-2"></div>
+                <div class="row-2">
+                    <a class="btn btn-primary px-5 py-2" href="/content/CPanel/addproduct.php" role="button" style="font-weight:bold;">Añadir Productos</a>                </div>
+                <div class="row-2"></div>
             </tbody>
         </table>
         <br>   
