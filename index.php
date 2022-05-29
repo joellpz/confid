@@ -75,8 +75,8 @@
                     <div class="card h-100">
                         <img id='prod' src="/img/productos/8.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">PA-2781</h5>
+                            <p class="card-text">Cñamara interior con rotación horizontal (240 gramos)</p>
                         </div>
                     </div>
                 </div>
@@ -84,8 +84,8 @@
                     <div class="card h-100">
                         <img id='prod' src="/img/productos/14.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Nivian NV</h5>
+                            <p class="card-text">Cámara IP 1/2.7" Progressive CMOS 5 Megapixel (259 gramos)</p>
                         </div>
                     </div>
                 </div>  
@@ -93,8 +93,8 @@
                     <div class="card h-100">
                         <img id='prod' src="/img/productos/16.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Anviz camera 6.4</h5>
+                            <p class="card-text">Cámara interior con rotación horizontal (180 gramos)</p>
                         </div>
                     </div>
                 </div>
