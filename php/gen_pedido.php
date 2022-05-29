@@ -68,7 +68,7 @@
                         <div class="modal-body">                                        
                             <div class="px-4 py-5">
                                 <h5 class="text-uppercase">Pedido Numero: <?php echo $id_ped ?></h5>
-                                <h4 class="mt-5 theme-color mb-5">Gracias por realizar la compra.</h4>
+                                <h4 class="mt-5 theme-color mb-5">¡Compra realizada correctamente!</h4>
                                 <h3 class="mt-5 theme-color mb-5">Gracias por confiar en nosotros para su seguridad.</h3>
                                 <span class="theme-color">Resumen del pedido</span>
                                 <div class="mb-3">
