@@ -15,19 +15,12 @@
     </style>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
     <?php
-            if(isset($_GET['id'])){
-                $id = $_GET['id'];
-                $cons_es_trabajador = "SELECT idUsuario FROM trabajadores WHERE idUsuario = $id"; 
-                $es_trabajador = mysqli_query($conn, $cons_es_trabajador);
-                $row_es_trab = mysqli_fetch_array($es_trabajador);
-                if(!$row_es_trab){
-                    header("Location:".$far."content/user/mod_account.php?id=$id");
-                }
-            }
-
-            $consulta = "SELECT * FROM productos WHERE idProductos = $id";
-            $result= mysqli_query ($conn, $consulta);
-            $row=mysqli_fetch_array($result);
+            if(isset($_POST['idprod'])){
+                $id = $_POST['idprod'];
+                $cons_prod = "SELECT * FROM productos WHERE idProductos = $id";
+                $result= mysqli_query ($conn, $cons_prod);
+                $row=mysqli_fetch_array($result);                                          
+            }         
             
             include_once $far.'content/header.php'; ?>
         
