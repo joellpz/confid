@@ -39,7 +39,7 @@
                         <div class="card-body">
                             <h4 class="m-2" style="font-weight:bold;">Instalación Local</h4>
                             <div class="m-2" style="text-align: justify;" >
-                                <p>Implementaci&oacute;n de un sistema simple que cuenta una seleccion variada de nuestros productos, com por ejemplo un decodificador de gama baja y accesorios RFC gratuitos.</p>
+                                <p>Implementaci&oacute;n de un sistema simple que cuenta una seleccion variada de nuestros productos, como por ejemplo un decodificador de gama baja y accesorios RFC gratuitos.</p>
                                 <p>Una vez implementado nos haremos cargo de monitorear, revisar y mantener los dispositivos. Ideal para oficinas y locales de peque&ntilde;o tama&ntilde;o o pocas salas.</p>
                             </div>
                         </div>
