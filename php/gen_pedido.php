@@ -82,7 +82,7 @@
 
                                 while($row_detped = mysqli_fetch_array($res_detped)){
                                     echo '<div class="d-flex justify-content-between">';
-                                    echo '<span class="font-weight-bold">'. $row_detped['nombre'].'(Cantidad:'. $row_detped['cantidad'].')</span>';
+                                    echo '<span class="font-weight-bold">'. $row_detped['nombre'].' (Cantidad:'. $row_detped['cantidad'].')</span>';
                                     echo '<span class="text-muted">'. $row_detped['precioTotal'].' €</span>';
                                     echo '</div>';
                                 }
@@ -104,7 +104,7 @@
                                 </div>  
 
                                 <div class="text-center mt-5">
-                                    <button class="btn btn-primary" data-dismiss="modal">Volver a Pedidos</button>                                
+                                    <a class="btn btn-primary" data-dismiss="modal" href="/content/productos.php">Ver más Productos</a>                                
                                 </div>                   
                             </div>
                         </div>

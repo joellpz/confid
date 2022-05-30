@@ -7,10 +7,11 @@
     ?>      
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
-        <section class="mb-12">
+        <section class="m-5">
 
             <!--Título-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">¿Quienes Somos?</h2>
+            <h2 class="col-md h1-responsive px-3 titulo">¿Quienes Somos?</h2>
+            <hr class="col-4 opacity-100 mt-0 borde_title"/>
             <!--Subtítulo-->
             <h4 class="text-center w-responsive mx-auto mb-5">Analizamos, Instalamos y Mejoramos</h4>
 
@@ -21,7 +22,7 @@
                         <!--Grid row-->
                         <div class="row">
                             <!--Texto 1-->
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-12 text-justify">
                                 <p>ConfID se trata de una empresa fundada en el año 2020 cuyo objetivo principal es reinventar el 
                                     concepto de la seguridad, el acceso y la vigilancia de localizaciones, tanto públicas como privadas.
                                     Aquello que nos diferencia de nuestros competidores es el trato con el cliente, desde ConfID hemos 
@@ -32,14 +33,14 @@
                         </div>
                         <div class="row">
                             <!--Grid column-->
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-12 text-justify">
                                 <h2 class="h1-responsive font-weight-bold text-center my-4">Al otro lado, siempre estamos nosotros</h2>
                             </div>
                         </div>
                         <!--Grid row-->
                         <div class="row">
                             <!--Texto 2-->
-                            <div class="col-md-12">
+                            <div class="col-md-12 text-justify">
                             <p>  Contamos con expertos preparados para responder las 24 horas y 
                                 protocolos de actuación basados en alerta directa a la policía.
                             </p>
@@ -47,14 +48,14 @@
                         </div>
                         <div class="row">
                             <!--Grid column-->
-                            <div class="col-md-12 text-center">
+                            <div class="col-md-12 text-justify">
                                 <h2 class="h1-responsive font-weight-bold text-center my-4">Ofrecer un servicio de vigilacia y control a medida y con un enfoque realista</h2>
                             </div>
                         </div>
                         <!--Grid row-->
                         <div class="row">
                             <!--Texto 3-->
-                            <div class="col-md-12">
+                            <div class="col-md-12 text-justify">
                             <p>Desde ConfID tenemos siempre en cuenta la opinion de nuestros clientes y agradecemos su compromiso con nosotros
                                 haciendonos crecer año tras año en más de un 12% de media anual. Por todo ello hemos decidido llenar este año 2022
                                 de descuentos y recompensas muy interesantes por la contratación de nuestros servicios.

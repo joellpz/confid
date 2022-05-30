@@ -33,17 +33,17 @@
             <?php while ($row2 = mysqli_fetch_array($rescat)) { ?>
 
                                 <div class="item mb-3">                                    
-                                    <div class="card border-0 shadow">  
+                                    <div class="card border-0 shadow cards">  
                                         <a class="" href="/content/desc_prod.php?id='<?php echo $row2['idProductos']; ?>'" >                                      
                                             <img id="prod" src="/img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
                                         </a>
-                                        <div class="card-body">
-                                            <div style="color:black;" class="card-title text-center">
+                                        <div class="card-body cardsb">
+                                            <div style="color:black;" class="card-title text-center cardst">
                                                 <h4><b><?php echo $row2['nombre']; ?></b></h4>
                                             </div>
                                             <div class="precio">
                                                 <span style="font-size: 28px; margin-right: 10px;"><?php echo number_format($row2['precioIVA'],2); ?> €</span>
-                                                <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?> € SENSE IVA</span>
+                                                <span style="font-size: 12px;"><?php echo number_format($row2['precioNoIVA'],2); ?> € SIN IVA</span>
                                             </div>   
                                             <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)" <?php if($row2['stock'] == 0) echo "disabled"; ?>/></span>                                                     
                                         </div>                                        
