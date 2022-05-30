@@ -53,6 +53,9 @@
                     </select>
                 </div>
             </div>
+            <div>
+            <label class="m-3" for="imagen">Imagen:</label> <input id="imagen" name="imagen" size="30" type="file"> 
+            </div>
             <div class="container-fluid p-2">
                 <div class="row p-2">
                     <div class="col text-center">
