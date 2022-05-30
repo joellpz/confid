@@ -77,7 +77,7 @@
               <a href="/content/contacto.php" class="text-white">Contáctanos</a>
             </p>
             <p>
-              <a href="/content/term_cond.php" class="text-white" target="_blank">Términos y Condiciones</a>
+              <a target="_blank" href="/content/term_cond.php" class="text-white" target="_blank">Términos y Condiciones</a>
             </p>
           </div>
 
