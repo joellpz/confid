@@ -82,11 +82,15 @@ ul{
             .cart_item_title{
             font-size: 14px;
             font-weight: 400;
-            color: rgba(0,0,0,0.5)}
+            color: rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
             
             .cart_item_text{
             font-size: 18px;
-            margin-top: 35px}
+            margin-top: 35px;
+            text-align: center;}
             
             .cart_item_text span{
             display: inline-block;

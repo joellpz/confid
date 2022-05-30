@@ -82,7 +82,7 @@
 
                                 while($row_detped = mysqli_fetch_array($res_detped)){
                                     echo '<div class="d-flex justify-content-between">';
-                                    echo '<span class="font-weight-bold">'. $row_detped['nombre'].'(Cantidad:'. $row_detped['cantidad'].')</span>';
+                                    echo '<span class="font-weight-bold">'. $row_detped['nombre'].' (Cantidad:'. $row_detped['cantidad'].')</span>';
                                     echo '<span class="text-muted">'. $row_detped['precioTotal'].' €</span>';
                                     echo '</div>';
                                 }

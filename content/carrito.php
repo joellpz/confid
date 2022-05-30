@@ -49,9 +49,10 @@
                                                     <div class="cart_item_color cart_info_col">
                                                         <div class="cart_item_title">Cantidad</div>
                                                         <div class="cart_item_text">
-                                                            <select id="cantidad" name="cantidad" class="form-control car_element">
-                                                                <?php for($i=1; $i<=$row['stock']; $i++) if($i == $_SESSION['carrito_stock'][$key])echo "<option selected>".$i."</option>"; else echo "<option>".$i."</option>"; ?>
-                                                            </select>
+                                                        <?php echo $_SESSION['carrito_stock'][$key];?>
+                                                            <!--<select id="cantidad" name="cantidad" class="form-control car_element">
+                                                                <?php/* for($i=1; $i<=$row['stock']; $i++) if($i == $_SESSION['carrito_stock'][$key])echo "<option selected>".$i."</option>"; else echo "<option>".$i."</option>"; */?>
+                                                            </select>-->
                                                         </div>
                                                     </div>
                                                     <div class="cart_item_quantity cart_info_col">
