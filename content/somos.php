@@ -7,7 +7,7 @@
     ?>      
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
-        <section class="mb-12">
+        <section class="m-5">
 
             <!--Título-->
             <h2 class="col-md h1-responsive px-3 titulo">¿Quienes Somos?</h2>
