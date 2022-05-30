@@ -16,13 +16,14 @@
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
     <?php
             if(isset($_POST['idCategoria'])){
+
                 $id = $_POST['idCategoria'];
                 $cons_prod = "SELECT * FROM categorias WHERE idCategoria = $id";
                 $result= mysqli_query ($conn, $cons_prod);
-                $row=mysqli_fetch_array($result);                                          
-            }
+                $row=mysqli_fetch_array($result);
 
-            if(isset($_POST['enviar'])){
+            }else if(isset($_POST['enviar'])){
+
                 $id = $_POST['idCategoria'];
                 $nombre = $_POST["nombre"];
                 
@@ -30,7 +31,9 @@
                 SET nombre='$nombre' WHERE idCategoria = $id";
                 mysqli_query($conn, $update_cat) or die('Consulta perico: '. mysqli_error());
                 echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
-            }  
+            }else{
+                echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
+            }
             
             include_once $far.'content/header.php'; ?>
         

@@ -16,13 +16,14 @@
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
     <?php
             if(isset($_POST['idprod'])){
+
                 $id = $_POST['idprod'];
                 $cons_prod = "SELECT * FROM productos WHERE idProductos = $id";
                 $result= mysqli_query ($conn, $cons_prod);
-                $row=mysqli_fetch_array($result);                                          
-            }
+                $row=mysqli_fetch_array($result);
 
-            if(isset($_POST['enviar'])){
+            }else if(isset($_POST['enviar'])){
+
                 $id = $_POST['idProductos'];
                 $nombre = $_POST["nombre"];
                 $stock = $_POST["stock"];
@@ -36,7 +37,10 @@
                 echo $update_prod;
                 mysqli_query($conn, $update_prod) or die('Consulta perico: '. mysqli_error());
                 echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
-            }  
+                
+            }else{
+                echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
+            }
             
             include_once $far.'content/header.php'; ?>
         
@@ -64,15 +68,16 @@
                 <tr>
                     <td><label for="email">Categoria:</label></td>
                     <td>
-                        <select id="categoria" name="categoria">
-                            <option value="1">Cámaras</option>
-                            <option value="2">Control de Accesos</option>
-                            <option value="3">Accesorios RFC</option>
-                            <option value="4">Decodificadores</option>
-                            <option value="5">Paneles Númericos</option>
-                            <option value="6">Soportes y Carcasas</option>
-                            <option value="7">Detectores Volumétricos</option>
-                        </select>
+                    <select id="categoria" name="categoria" class="form-control col-1">
+                    <?php 
+                        $qcat = "SELECT * FROM categorias";
+                        $rescat = mysqli_query($conn, $qcat);            
+            
+                        while ($row2 = mysqli_fetch_array($rescat)) { 
+                            echo "<option value='".$row2['idCategoria']."'>".$row2['nombre']."</option>"; 
+                        }
+                    ?>
+                </select>
                     </td>
                 </tr>
                 <tr>
