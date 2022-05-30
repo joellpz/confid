@@ -26,10 +26,9 @@
                 $id = $_POST['idCategoria'];
                 $nombre = $_POST["nombre"];
                 
-                $update_prod = "UPDATE productos 
-                SET nombre='$nombre', stock='$stock'
-                WHERE idProductos = $id";
-                mysqli_query($conn, $update_prod) or die('Consulta perico: '. mysqli_error());
+                $update_cat = "UPDATE categorias 
+                SET nombre='$nombre' idCategoria = $id";
+                mysqli_query($conn, $update_cat) or die('Consulta perico: '. mysqli_error());
             }  
             
             include_once $far.'content/header.php'; ?>

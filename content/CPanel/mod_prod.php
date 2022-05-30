@@ -30,7 +30,7 @@
                 $precioNoIVA = $_POST["precioNoIVA"];
                 $categoria = $_POST["categoria"];
                 $update_prod = "UPDATE productos 
-                SET nombre='$nombre', stock='$stock'
+                SET nombre='$nombre', stock='$stock', precioIVA='$precioIVA',precioNoIVA='$precioNoIVA',categoria='$categoria'
                 WHERE idProductos = $id";
                 mysqli_query($conn, $update_prod) or die('Consulta perico: '. mysqli_error());
             }  
