@@ -48,7 +48,9 @@
                             while ($row2 = mysqli_fetch_array($resprods)) { ?>
                                 <div class="item mb-3">
                                     <div class="card h-100 serv">
-                                        <img id='prod' src="/img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
+                                        <a href="/content/servicios.php#<?php echo $row2['idProductos'];?>">
+                                            <img id='prod' src="/img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
+                                        </a>
                                         <div class="card-body servb">
                                             <h4 class="m-2" style="font-weight:bold;"><?php echo $row2['nombre']; ?></h4>
                                             <div class="m-2" style="text-align: justify;"> 

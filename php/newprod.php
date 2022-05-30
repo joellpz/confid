@@ -1,8 +1,8 @@
 <?php
     include('config.php');
     session_start();
-    var_dump($_POST);
-    if( isset($_POST)){
+
+    if(isset($_POST)){
         $name_product = $_POST['name_product'];
         $desc_product = $_POST['desc_product'];
         $stock = $_POST['stock'];
@@ -10,7 +10,7 @@
         $precio_no_iva = $_POST['precio_no_iva'];
         $categoria = $_POST['categoria'];
         // Recibo los datos de la imagen
-        $nombre_img = $_FILES['imagen']['name'];
+        /*$nombre_img = $_FILES['imagen']['name'];
         $tipo = $_FILES['imagen']['type'];
         $tamano = $_FILES['imagen']['size'];
 
@@ -35,7 +35,7 @@
         {
         //si existe la variable pero se pasa del tamaño permitido
         if($nombre_img == !NULL) echo "La imagen es demasiado grande "; 
-        }
+        }*/
                     
         $consulta_producto = "INSERT INTO productos VALUES (NULL,'$name_product', '$desc_product', '$stock', '$precio_iva', '$precio_no_iva', '$categoria')";
         mysqli_query($conn,$consulta_producto);

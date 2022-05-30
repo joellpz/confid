@@ -15,7 +15,7 @@
             <!--Subtítulo-->
             <h4 class="text-center w-responsive mx-auto mb-5">Analizamos, Instalamos y Mejoramos</h4>
 
-            <div class="row">
+            <div class="row somos">
 
                 <!--Grid column-->
                 <div class="col-md-12 mb-md-0 mb-5 text-center">                  
@@ -184,7 +184,7 @@
                                             <img id ="poli" src="/img/quienes_somos/caras/ceo.jpg" class="card-img-top"  alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Germán Palomares</h5>
-                                            <p class="card-text">Dirección General</p>
+                                            <p class="card-text" style="width:90%">Dirección General</p>
                                             </div>
                                         </div>
                                         </div>
@@ -193,7 +193,7 @@
                                             <img id='app' src="/img/quienes_somos/caras/inter.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Daisy Xiang Meng</h5>
-                                            <p class="card-text">Dir. Ventas Internacional</p>
+                                            <p class="card-text" style="width:90%">Dir. Ventas Internacional</p>
                                             </div>
                                         </div>
                                         </div>
@@ -202,7 +202,7 @@
                                             <img id='vig' src="/img/quienes_somos/caras/rrhh.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">T. J. Jackson Jr.</h5>
-                                            <p class="card-text">Dir. Recursos Humanos</p>
+                                            <p class="card-text" style="width:90%">Dir. Recursos Humanos</p>
                                             </div>
                                         </div>
                                         </div>
@@ -211,7 +211,7 @@
                                             <img id='vig' src="/img/quienes_somos/caras/sac.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Hannah Montana</h5>
-                                            <p class="card-text">Dirección S.A.C.</p>
+                                            <p class="card-text" style="width:90%">Dirección S.A.C.</p>
                                             </div>
                                         </div>
                                         </div>  
@@ -225,7 +225,7 @@
                                             <img id ="poli" src="/img/quienes_somos/caras/tech.jpg" class="card-img-top"  alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Jason Smith</h5>
-                                            <p class="card-text">Dirección Tecnológica</p>
+                                            <p class="card-text" style="width:90%">Dirección Tecnológica</p>
                                             </div>
                                         </div>
                                         </div>
@@ -234,7 +234,7 @@
                                             <img id='app' src="/img/quienes_somos/caras/finan.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Michael Sappin</h5>
-                                            <p class="card-text">Dirección Financiera</p>
+                                            <p class="card-text" style="width:90%">Dirección Financiera</p>
                                             </div>
                                         </div>
                                         </div>
@@ -243,7 +243,7 @@
                                             <img id='vig' src="/img/quienes_somos/caras/ventas.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Leo Margets</h5>
-                                            <p class="card-text">Dirección de Ventas</p>
+                                            <p class="card-text" style="width:90%">Dirección de Ventas</p>
                                             </div>
                                         </div>
                                         </div>
@@ -252,7 +252,7 @@
                                             <img id='vig' src="/img/quienes_somos/caras/desarrollo.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                             <h5 class="card-title">Antonio Parrales</h5>
-                                            <p class="card-text">Dirección de Desarrollo</p>
+                                            <p class="card-text" style="width:90%">Dirección de Desarrollo</p>
                                             </div>
                                         </div>
                                         </div>  

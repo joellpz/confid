@@ -34,8 +34,15 @@
 
                                 <div class="item mb-3">                                    
                                     <div class="card border-0 shadow cards">  
-                                        <a class="" href="/content/desc_prod.php?id='<?php echo $row2['idProductos']; ?>'" >                                      
-                                            <img id="prod" src="/img/productos/<?php echo $row2['idProductos']; ?>.png" class="card-img-top" alt="...">
+                                        <a class="" href="/content/desc_prod.php?id='<?php echo $row2['idProductos']; ?>'" > 
+                                            <?php 
+                                                if(file_exists("../img/productos/".$row2['idProductos'].".png")){
+                                                    $img = "/img/productos/".$row2['idProductos'].".png";
+                                                }else{
+                                                    $img = "/img/nophoto.png";
+                                                }
+                                            ?>                                     
+                                            <img id="prod" src="<?php echo $img; ?>" class="card-img-top" alt="...">
                                         </a>
                                         <div class="card-body cardsb">
                                             <div style="color:black;" class="card-title text-center cardst">

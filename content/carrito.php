@@ -40,7 +40,16 @@
                                             $row = mysqli_fetch_array($rescat);
                                     ?>
                                             <li class="cart_item clearfix">
-                                                <div class="cart_item_image"><img src="/img/productos/<?php echo $row['idProductos'];?>.png"></div>
+                                                <div class="cart_item_image">
+                                                    <?php 
+                                                        if(file_exists("../img/productos/".$row['idProductos'].".png")){
+                                                            $img = "/img/productos/".$row['idProductos'].".png";
+                                                        }else{
+                                                            $img = "/img/nophoto.png";
+                                                        }
+                                                    ?>                                     
+                                                    <img src="<?php echo $img; ?>">
+                                                </div>
                                                 <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
                                                     <div class="cart_item_name cart_info_col" style="width:15%;">
                                                         <div class="cart_item_title">Nombre</div>
