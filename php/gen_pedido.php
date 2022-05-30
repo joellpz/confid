@@ -58,7 +58,6 @@
 
                     unset($_SESSION['carrito_prod']);
                     unset($_SESSION['carrito_stock']);
-                    unset($_POST);
                 }
             ?>
 
