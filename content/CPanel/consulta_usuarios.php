@@ -16,7 +16,7 @@
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <div>    
             <div>    
-            <h1>Clientes</h1>
+            <h1>Usuarios</h1>
                 <table class="tabla_cp" border= "1">
                     <thead style="color: white">
                         <tr style="background-color: #646CDF;">
