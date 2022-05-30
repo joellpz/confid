@@ -17,16 +17,35 @@
     </head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <h2 class="col-6">Consulta y Gestión de Productos</h2>
-        <div class="row mb-2">
-            <a class="col-2 justify-content-end btn btn-primary px-5 py-2 mx-1" href="/content/CPanel/addproduct.php" role="button" style="font-weight:bold;">Añadir Producto</a> 
-            <a class="col-2 justify-content-end btn btn-primary px-5 py-2 mx-1" href="/content/CPanel/addcat.php" role="button" style="font-weight:bold;">Añadir Categoria</a> 
-            <form method="post" action="/content/CPanel/mod_prod.php">
-                <input class="col-2 justify-content-end btn btn-primary px-5 py-2 m-1 " type="submit" value="Modificar Producto" style="font-weight:bold;"></input>
-                <input type="number" id="idprod" name="idprod"></input>
+        <div class="row m-auto">
+            <a class="col-2 justify-content-end btn btn-primary px-5 py-2 m-1" href="/content/CPanel/addproduct.php" role="button" style="font-weight:bold;">Añadir Producto</a> 
+            <form method="post" action="/content/CPanel/mod_prod.php" class="col d-flex">
+                <input class="col justify-content-end btn btn-primary py-2 m-1" type="submit" value="Modificar Producto" style="font-weight:bold;"></input>
+                <select id="idprod" name="idprod" class="form-control col">
+                    <?php 
+                        $qprod = "SELECT * FROM productos";
+                        $resprod = mysqli_query($conn, $qprod);            
+            
+                        while ($row2 = mysqli_fetch_array($resprod)) { 
+                            echo "<option value='".$row2['idProductos']."'>".$row2['idProductos'].". ".$row2['nombre']."</option>"; 
+                        }
+                    ?>
+                </select>
             </form>
-            <form method="post" action="/content/CPanel/mod_prod.php">
-                <input class="col-2 justify-content-end btn btn-primary px-5 py-2 m-1 " type="submit" value="Modificar Categoria" style="font-weight:bold;"></input>
-                <input type="number" id="idCategoria" name="idCategoria"></input>
+
+            <a class="col-2 justify-content-end btn btn-primary px-5 py-2 m-1" href="/content/CPanel/addcat.php" role="button" style="font-weight:bold;">Añadir Categoria</a> 
+            <form method="post" action="/content/CPanel/mod_cat.php" class="col d-flex">
+                <input class="col justify-content-end btn btn-primary py-2 m-1" type="submit" value="Modificar Categoria" style="font-weight:bold;"></input>
+                <select id="idCategoria" name="idCategoria" class="form-control col">
+                    <?php 
+                        $qcat = "SELECT * FROM categorias";
+                        $rescat = mysqli_query($conn, $qcat);            
+            
+                        while ($row2 = mysqli_fetch_array($rescat)) { 
+                            echo "<option value='".$row2['idCategoria']."'>".$row2['nombre']."</option>"; 
+                        }
+                    ?>
+                </select>
             </form>
         </div>
         <table class="tabla_cp" border= "1">
