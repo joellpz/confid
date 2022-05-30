@@ -89,7 +89,7 @@
                             ?>
                                 <br>
                                 <div class="d-flex justify-content-between">
-                                    <small>Envio</small>
+                                    <small>Portes</small>
                                     <small><?php echo round($precioPedido/1.1*0.1, 2);?> €<small>
                                 </div>
 
