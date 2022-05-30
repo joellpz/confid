@@ -59,6 +59,8 @@
                     unset($_SESSION['carrito_prod']);
                     unset($_SESSION['carrito_stock']);
                     flush();
+                }else{
+                    echo '<script>location.href = "../index.php"</script>';
                 }
             ?>
 
