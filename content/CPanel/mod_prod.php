@@ -69,15 +69,15 @@
                     <td><label for="email">Categoria:</label></td>
                     <td>
                     <select id="categoria" name="categoria" class="form-control col-1">
-                    <?php 
-                        $qcat = "SELECT * FROM categorias";
-                        $rescat = mysqli_query($conn, $qcat);            
-            
-                        while ($row2 = mysqli_fetch_array($rescat)) { 
-                            echo "<option value='".$row2['idCategoria']."'>".$row2['nombre']."</option>"; 
-                        }
-                    ?>
-                </select>
+                        <?php 
+                            $qcat = "SELECT * FROM categorias";
+                            $rescat = mysqli_query($conn, $qcat);            
+                
+                            while ($row2 = mysqli_fetch_array($rescat)) { 
+                                echo "<option value='".$row2['idCategoria']."'>".$row2['nombre']."</option>"; 
+                            }
+                        ?>
+                    </select>
                     </td>
                 </tr>
                 <tr>
