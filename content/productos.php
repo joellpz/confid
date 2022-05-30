@@ -9,7 +9,7 @@
 
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
-        <div id="añadido" style="display:none;">¡Producto añadido al carrito!</div>
+        <div id="añadido" style="display:none;">¡Producto añadido al carrito!<br><a class="carrito btn btn-outline-primary mt-2" type="button" href="/content/carrito.php">Ver Carrito</a></div>
         <?php 
             $qprods = "SELECT * FROM categorias WHERE idCategoria != 8 AND idCategoria != 9";
             $resprods = mysqli_query($conn, $qprods);            
