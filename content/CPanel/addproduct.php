@@ -32,11 +32,11 @@
                 </div>
                 <div class="col-3">
                     <label for="precio_iva" class="form-label">Precio I.V.A.*</label>
-                    <input type="number" maxlength="5" class="form-control" id="precio_iva" name="precio_iva" required>
+                    <input type="number" step="any" maxlength="5" class="form-control" id="precio_iva" name="precio_iva" required>
                 </div>
                 <div class="col-3">
                     <label for="precio_no_iva" class="form-label">Precio Sin I.V.A.*</label>
-                    <input type="number" maxlength="5" class="form-control" id="precio_no_iva" name="precio_no_iva" required>
+                    <input type="number" step="any" maxlength="5" class="form-control" id="precio_no_iva" name="precio_no_iva" required>
                 </div>
             </div>
             <div class="row justify-content-center py-2">
