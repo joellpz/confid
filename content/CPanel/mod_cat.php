@@ -29,6 +29,7 @@
                 $update_cat = "UPDATE categorias 
                 SET nombre='$nombre' WHERE idCategoria = $id";
                 mysqli_query($conn, $update_cat) or die('Consulta perico: '. mysqli_error());
+                echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }  
             
             include_once $far.'content/header.php'; ?>
