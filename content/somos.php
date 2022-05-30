@@ -10,7 +10,7 @@
         <section class="m-5">
 
             <!--Título-->
-            <h2 class="col-md h1-responsive px-3 titulo">¿Quienes Somos?</h2>
+            <h2 class="col-md h1-responsive px-3 titulo">¿Quiénes Somos?</h2>
             <hr class="col-4 opacity-100 mt-0 borde_title"/>
             <!--Subtítulo-->
             <h4 class="text-center w-responsive mx-auto mb-5">Analizamos, Instalamos y Mejoramos</h4>

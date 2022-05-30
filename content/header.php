@@ -12,7 +12,7 @@
     ?>
         <div class="flex-row navbar-nav ms-auto justify-content-end top-container">
             <div class="dropdown">
-                <a class=" link px-3 d-flex align-items-center dropdown-toggle" href="/#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
+                <a class="link px-3 d-flex align-items-center dropdown-toggle" href="/#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
                     <i class='bx bx-user px-1'></i> 
                     <span class="d-none d-md-inline-block"><?php echo $_SESSION['user_name']; ?></span> 
                 </a>
@@ -90,44 +90,49 @@
     <?php 
         } else { 
     ?>
-        <div class="flex-row navbar-nav ms-auto justify-content-end top-container">
-            <div class="dropdown">
-                <a class=" link px-3 d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
-                    <i class='bx bx-user px-1'></i> 
-                    <span class="d-none d-md-inline-block">Usuario</span> 
-                </a>
-                <div class="dropdown-menu in-se">
-                    <form  action="return false" onsubmit="return false" method="POST" class="px-4">
-                        <div class="d-flex">
-                        <!-- Email input -->
-                            <div class="form-outline mx-2">
-                                <label class="form-label" for="login_email">Email:</label>
-                                <input type="text" name="login_email" id="login_email" class="form-control" />
-                            </div>
-                        
-                            <!-- Password input -->
-                            <div class="form-outline mx-2 mb-4">
-                                <label class="form-label" for="login_pass">Contraseña:</label>
-                                <input type="password" name="login_pass" id="login_pass" class="form-control" />
-                            </div>
-                        </div>
-                        <div id="resultado" style="text-align: center; background-color: rgba(255, 71, 71, 0.555);"></div>
-                        <div class="dropdown-divider"></div>
-                        <div class="d-flex">
-                            <a class="dropdown-item col mx-2" href="/content/registro.php">Eres nuevo? Regístrate!</a>
-                            <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block" onclick="Validar(document.getElementById('login_email').value, document.getElementById('login_pass').value, document.getElementById('path').value);"/>
-                        </div>
-                        <input type="hidden" id="path" name="path" value="<?php echo $file;?>"/>
-                    </form>
-                </div>
-            </div>
-        
-            <a class=" link px-3 d-flex align-items-center" href="<?php echo $far?>content/carrito.php">
-                <i class="bx bx-cart-alt px-1"></i>
-                <span class="d-none d-md-inline-block">Carrito</span>
-            </a>
+        <div>
+            
         </div>
-
+            
+            <div class="navbar-nav flex-row justify-content-end ms-auto top-container">
+            <h6 class="me-auto ms-5 my-auto">Esto forma parte de un Proyecto Educativo.</h6>
+                <div class="dropdown">
+                    <a class=" link px-3 d-flex align-items-center dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  
+                        <i class='bx bx-user px-1'></i> 
+                        <span class="d-none d-md-inline-block">Usuario</span> 
+                    </a>
+                    <div class="dropdown-menu in-se">
+                        <form  action="return false" onsubmit="return false" method="POST" class="px-4">
+                            <div class="d-flex">
+                            <!-- Email input -->
+                                <div class="form-outline mx-2">
+                                    <label class="form-label" for="login_email">Email:</label>
+                                    <input type="text" name="login_email" id="login_email" class="form-control" />
+                                </div>
+                            
+                                <!-- Password input -->
+                                <div class="form-outline mx-2 mb-4">
+                                    <label class="form-label" for="login_pass">Contraseña:</label>
+                                    <input type="password" name="login_pass" id="login_pass" class="form-control" />
+                                </div>
+                            </div>
+                            <div id="resultado" style="text-align: center; background-color: rgba(255, 71, 71, 0.555);"></div>
+                            <div class="dropdown-divider"></div>
+                            <div class="d-flex">
+                                <a class="dropdown-item col mx-2 my-auto" href="/content/registro.php">Eres nuevo? Regístrate!</a>
+                                <input type="submit" name="login" value="Iniciar Sesión" class="col mx-2 btn btn-primary btn-block" onclick="Validar(document.getElementById('login_email').value, document.getElementById('login_pass').value, document.getElementById('path').value);"/>
+                            </div>
+                            <input type="hidden" id="path" name="path" value="<?php echo $file;?>"/>
+                        </form>
+                    </div>
+                </div>
+            
+                <a class=" link px-3 d-flex align-items-center" href="<?php echo $far?>content/carrito.php">
+                    <i class="bx bx-cart-alt px-1"></i>
+                    <span class="d-none d-md-inline-block">Carrito</span>
+                </a>
+            </div>
+        </div>
         <script>
         function Validar(login_email, login_pass, path)
         {
@@ -158,7 +163,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link mx-2" href="/index.php">Inicio</a>
-                        <a class="nav-link mx-2" href="/content/somos.php">Quienes Somos</a>
+                        <a class="nav-link mx-2" href="/content/somos.php">Quiénes Somos</a>
                         <a class="nav-link mx-2" href="/content/productos.php">Productos</a>
                         <a class="nav-link mx-2" href="/content/servicios.php">Servicios</a>
                         <a class="nav-link mx-2" href="/content/contacto.php">Contacto</a>
