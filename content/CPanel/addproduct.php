@@ -32,29 +32,30 @@
                 </div>
                 <div class="col-3">
                     <label for="precio_iva" class="form-label">Precio I.V.A.*</label>
-                    <input type="number" maxlength="5" class="form-control" id="precio_iva" name="precio_iva" required>
+                    <input type="number" step="any" maxlength="5" class="form-control" id="precio_iva" name="precio_iva" required>
                 </div>
                 <div class="col-3">
-                    <label for="precio_no_iva" class="form-label">Precio I.V.A.*</label>
-                    <input type="number" maxlength="5" class="form-control" id="precio_no_iva" name="precio_no_iva" required>
+                    <label for="precio_no_iva" class="form-label">Precio Sin I.V.A.*</label>
+                    <input type="number" step="any" maxlength="5" class="form-control" id="precio_no_iva" name="precio_no_iva" required>
                 </div>
             </div>
             <div class="row justify-content-center py-2">
                 <div class="col-8">
                     <label for="categoria" class="form-label">Categoria*</label>
-                    <select class="form-control" id="categoria" name="categoria">
-                        <option value="1">Cámaras</option>
-                        <option value="2">Control de Accesos</option>
-                        <option value="3">Accesorios RFC</option>
-                        <option value="4">Decodificadores</option>
-                        <option value="5">Paneles Númericos</option>
-                        <option value="6">Soportes y Carcasas</option>
-                        <option value="7">Detectores Volumétricos</option>
+                    <select id="categoria" name="categoria" class="form-control col-1">
+                        <?php 
+                            $qcat = "SELECT * FROM categorias";
+                            $rescat = mysqli_query($conn, $qcat);
+                
+                            while ($row2 = mysqli_fetch_array($rescat)) { 
+                                echo "<option value='".$row2['idCategoria']."'>".$row2['nombre']."</option>"; 
+                            }
+                        ?>
                     </select>
                 </div>
             </div>
             <div>
-            <label class="m-3" for="imagen">Imagen:</label> <input id="imagen" name="imagen" size="30" type="file"> 
+                <label class="m-3" for="imagen">Imagen:</label> <input id="imagen" name="imagen" size="30" type="file">
             </div>
             <div class="container-fluid p-2">
                 <div class="row p-2">

@@ -95,7 +95,7 @@
                 }else if(event.which == '8'){
                     a.value = a.value.substring(0, a.value.length - 1);
                 }else{
-                    a.value = a.value + event.keyCode;
+                    a.value = a.value + event.key;
                 }                
             }                       
 

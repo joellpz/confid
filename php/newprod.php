@@ -2,6 +2,7 @@
     include('config.php');
     session_start();
     var_dump($_POST);
+    var_dump($_FILES);
     if( isset($_POST)){
         $name_product = $_POST['name_product'];
         $desc_product = $_POST['desc_product'];
@@ -42,5 +43,7 @@
         
         header('Location: ../content/cpanel.php?cons=prod');
 
+    }else{
+        echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
     }
 ?>

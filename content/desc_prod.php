@@ -19,7 +19,7 @@
             $rescat = mysqli_query($conn, $qcateg);
             $row2 = mysqli_fetch_array($rescat)
         ?>
-
+        <div id="añadido" style="display:none;">¡Producto añadido al carrito!<br><a class="carrito btn btn-outline-primary mt-2" type="button" href="/content/carrito.php">Ver Carrito</a></div>
         <div class="container">
             <div class="row descripcion">
                 <div class="col-6 img_prod">
@@ -87,10 +87,17 @@
         <script src="/js/add_carrito.js"></script>
         <script src="/js/owl-carousel.js"></script>
         <script>
+            function Mensaje(){
+                document.getElementById("añadido").style.display="";
+                setTimeout(function(){
+                    document.getElementById("añadido").style.display="none";
+                }, 4000);
+                
+            }
             function Add(id){
-                var stock = document.getElementById("cantidad").value;  
-                alert("Elemento añadido al Carrito!");                   
-                Añadir_Carrito(id,stock);              
+                var stock = document.getElementById("cantidad").value;                
+                Añadir_Carrito(id,stock); 
+                Mensaje();             
             }
         </script>
         <?php include_once $far.'php/comun/footer.php'; ?>        
