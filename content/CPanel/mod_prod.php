@@ -29,9 +29,11 @@
                 $precioIVA = $_POST["precioIVA"];
                 $precioNoIVA = $_POST["precioNoIVA"];
                 $categoria = $_POST["categoria"];
+                var_dump($_POST);
                 $update_prod = "UPDATE productos 
-                SET nombre='$nombre', stock='$stock', precioIVA='$precioIVA',precioNoIVA='$precioNoIVA',categoria='$categoria'
+                SET nombre='$nombre', stock='$stock', precioIVA='$precioIVA', precioNoIVA='$precioNoIVA', idCategoria='$categoria'
                 WHERE idProductos = $id";
+                echo $update_prod;
                 mysqli_query($conn, $update_prod) or die('Consulta perico: '. mysqli_error());
                 echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }  
