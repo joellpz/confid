@@ -73,23 +73,21 @@
                                 <div class="mb-3">
                                     <hr class="new1">
                                 </div>
-
-                                
                                 <?php
-                                $consulta_detped = "SELECT * FROM detallespedidos, productos WHERE idProducto = idProductos AND idPedido = $id_ped";
-                                $res_detped = mysqli_query($conn, $consulta_detped);
+                                    $consulta_detped = "SELECT * FROM detallespedidos, productos WHERE idProducto = idProductos AND idPedido = $id_ped";
+                                    $res_detped = mysqli_query($conn, $consulta_detped);
 
-                                while($row_detped = mysqli_fetch_array($res_detped)){
-                                    echo '<div class="d-flex justify-content-between">';
-                                    echo '<span class="font-weight-bold">'. $row_detped['nombre'].' (Cantidad:'. $row_detped['cantidad'].')</span>';
-                                    echo '<span class="text-muted">'. $row_detped['precioTotal'].' €</span>';
-                                    echo '</div>';
-                                }
-                            ?>
+                                    while($row_detped = mysqli_fetch_array($res_detped)){
+                                        echo '<div class="d-flex justify-content-between">';
+                                        echo '<span class="font-weight-bold">'. $row_detped['nombre'].' (Cantidad:'. $row_detped['cantidad'].')</span>';
+                                        echo '<span class="text-muted">'. $row_detped['precioTotal'].' €</span>';
+                                        echo '</div>';
+                                    }
+                                ?>
                                 <br>
                                 <div class="d-flex justify-content-between">
                                     <small>Portes</small>
-                                    <small><?php echo round($precioPedido/1.1*0.1, 2);?> €<small>
+                                    <small><?php echo round($precioPedido/1.1*0.1, 2);?> €</small>
                                 </div>
 
                                 <div class="d-flex justify-content-between">

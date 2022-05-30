@@ -55,7 +55,7 @@ $('.prod-index').owlCarousel({
         995: {
             items: 3
         },
-        1200: {
+        1300: {
             items: 4
         }
     }
