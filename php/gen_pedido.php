@@ -9,7 +9,7 @@
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
     
         <?php
-            if(isset($_POST['transporte'])){
+            if(isset($_POST['transporte']) && isset($_SESSION['carrito_prod'])){
                 include_once $far.'content/header.php';
 
                 $date = date("Y-m-d"); //Fecha creacion de pedido
@@ -58,10 +58,7 @@
 
                     unset($_SESSION['carrito_prod']);
                     unset($_SESSION['carrito_stock']);
-                    $_POST = array();
-                    flush();
-                }else{
-                    echo '<script>location.href = "../index.php"</script>';
+                    unset($_POST);
                 }
             ?>
 
