@@ -104,7 +104,7 @@
                                 </div>  
 
                                 <div class="text-center mt-5">
-                                    <button class="btn btn-primary" data-dismiss="modal">Volver a Pedidos</button>                                
+                                    <a class="btn btn-primary" data-dismiss="modal" href="/content/productos.php">Ver más Productos</a>                                
                                 </div>                   
                             </div>
                         </div>
