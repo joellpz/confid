@@ -17,13 +17,13 @@
         <form action="/php/newcat.php" method="post" class="m-4" enctype="multipart/formdata">
             <div class="row justify-content-center py-2">
                 <div class="col-4">
-                    <label for="name_categoria" class="form-label">Nombre Categoria*</label>
+                    <label for="name_cat" class="form-label">Nombre Categoria*</label>
                     <input type="text" class="form-control" id="name_categoria" name="name_categoria" required>
                 </div>
                 <div class="container-fluid p-2">
                 <div class="row p-2">
                     <div class="col text-center">
-                        <input type="submit" class="btn btn-primary p-2" name="name_categoria" value="Introducir Categoría"/>
+                        <input type="submit" class="btn btn-primary p-2" name="add_categoria" value="Introducir Categoría"/>
                         <a href="index.php"><button type="button" class="btn btn-primary p-2">Volver a Inicio</button></a>
                     </div>
                 </div>
