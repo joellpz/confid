@@ -32,7 +32,7 @@
                                 <span class="nav_name">Clientes</span>
                             </a>
                                 
-                            <a href="#" class="nav_link" id="ped" onclick="tabla_cpanel(this)"> 
+                            <a href="/content/CPanel/consulta_pedidos.php" class="nav_link" id="ped"> 
                                 <i class='bx bx-clipboard bx-flip-horizontal nav_icon'></i>
                                 <span class="nav_name">Consulta Pedidos</span>
 

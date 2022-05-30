@@ -10,6 +10,7 @@
         <link rel ="stylesheet" href="/style/style.css"/> 
     </head>
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
+    <?php include_once $far.'content/header.php'; ?>
         <h2>Consulta y Gestión de Pedidos</h2>
         <table class="tabla_cp" border= "1">
             <thead style="color: white">
@@ -19,6 +20,7 @@
                     <th>idUsuario</th>
                     <th>Nombre</th>
                     <th>Nº Pedido Externo</th>
+                    <th>Información</th>
                 </tr>
             </thead>
             <tbody>
@@ -40,8 +42,6 @@
                     $res_detped = mysqli_query($conn, $consulta_detped);
                     
                 ?>
-            
-                <br>
                 <div class="modal fade" id="ped<?php echo $row['idPedido'] ?>" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
                         <div class="modal-content">

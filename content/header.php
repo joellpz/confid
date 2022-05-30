@@ -54,7 +54,7 @@
                                 <i class='bx bxs-contact nav_icon' ></i> 
                                 <span class="nav_name">Clientes</span> 
                             </a> 
-                            <a href="/content/cpanel.php?cons=ped" class="nav_link"> 
+                            <a href="/content/CPanel/consulta_pedidos.php" class="nav_link"> 
                                 <i class='bx bx-clipboard bx-flip-horizontal nav_icon'></i>
                                 <span class="nav_name">Consulta Pedidos</span>
 
