@@ -18,10 +18,15 @@
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
         <div class="row mb-2">
             <h2 class="col-6">Consulta y Gestión de Productos</h2>
-            <a class="col-2 justify-content-end btn btn-primary px-5 py-2 " href="/content/CPanel/addproduct.php" role="button" style="font-weight:bold;">Añadir</a> 
+            <a class="col-2 justify-content-end btn btn-primary px-5 py-2 mx-1" href="/content/CPanel/addproduct.php" role="button" style="font-weight:bold;">Añadir Producto</a> 
+            <a class="col-2 justify-content-end btn btn-primary px-5 py-2 mx-1" href="/content/CPanel/addcat.php" role="button" style="font-weight:bold;">Añadir Categoria</a> 
             <form method="post" action="/content/CPanel/mod_prod.php">
-                <input class="col-2 justify-content-end btn btn-primary px-5 py-2 mx-1 " type="submit" value="Modificar" style="font-weight:bold;"></input>
+                <input class="col-2 justify-content-end btn btn-primary px-5 py-2 m-1 " type="submit" value="Modificar Producto" style="font-weight:bold;"></input>
                 <input type="number" id="idprod" name="idprod"></input>
+            </form>
+            <form method="post" action="/content/CPanel/mod_prod.php">
+                <input class="col-2 justify-content-end btn btn-primary px-5 py-2 m-1 " type="submit" value="Modificar Categoria" style="font-weight:bold;"></input>
+                <input type="number" id="idCategoria" name="idCategoria"></input>
             </form>
         </div>
         <table class="tabla_cp" border= "1">
