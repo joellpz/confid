@@ -45,13 +45,13 @@
                                     <div class="modal-body">                                        
                                         <div class="px-4 py-5">
                                             <h5 class="text-uppercase">Pedido Numero: <?php echo $row_ped['idPedido'] ?></h5>
-                                            <h4 class="mt-5 theme-color mb-5">Gracias por confiar en nosotros para su seguridad.</h4>
+                                            <h4 class="mt-5 theme-color mb-5">¡Compra realizada correctamente!</h4>
+                                            <h3 class="mt-5 theme-color mb-5">Gracias por confiar en nosotros para su seguridad.</h3>
                                             <span class="theme-color">Resumen del pedido</span>
                                             <div class="mb-3">
                                                 <hr class="new1">
                                             </div>
 
-                                            
                                             <?php
                                             while($row_detped = mysqli_fetch_array($res_detped)){
                                                 echo '<div class="d-flex justify-content-between">';
@@ -62,7 +62,7 @@
                                         ?>
                                             <br>
                                             <div class="d-flex justify-content-between">
-                                                <small>Envio</small>
+                                                <small>Portes</small>
                                                 <small><?php echo round($row_ped['precioPedido']*0.1, 2)?> €<small>
                                             </div>
 
