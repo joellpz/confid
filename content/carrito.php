@@ -102,7 +102,11 @@
                                     </div>                                     
                                 </form>
                         <?php }else{ ?>
-                            <h1 style="text-align:center">Lo sentimos, por el momento tu carrito está vacío...<h1>
+                            <div class="text-center">
+                                <h1>Lo sentimos, por el momento tu carrito está vacío...<h1>
+                                    <br><br>
+                                <a href="/content/productos.php" class="carrito btn btn-outline-primary col-6 m-5">Ver Productos</a>
+                            </div>
                         <?php } ?>
                             </div>
                         </div>
