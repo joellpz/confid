@@ -88,7 +88,7 @@
             </div>
             <div class="row">
                 <div class="col-12 m-auto">
-                    <div class="prod owl-carousel owl-theme">
+                    <div class="prod-index owl-carousel owl-theme">
                     <?php 
                         $array=array(2,5,11,16,17,26,29,31,35,38);
                         for($i=0; $i<count($array); $i++){

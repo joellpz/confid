@@ -42,7 +42,7 @@
                                             <li class="cart_item clearfix">
                                                 <div class="cart_item_image"><img src="/img/productos/<?php echo $row['idProductos'];?>.png"></div>
                                                 <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
-                                                    <div class="cart_item_name cart_info_col" style="width:15%">
+                                                    <div class="cart_item_name cart_info_col" style="width:15%;">
                                                         <div class="cart_item_title">Nombre</div>
                                                         <div class="cart_item_text"><?php echo $row['nombre'];?></div>
                                                     </div>
@@ -78,14 +78,13 @@
                                 </div>
                                 <div class="order_total">
                                     <div class="order_total_content text-md-right">
-                                        <div class="order_total_title">Total del Carrito:</div>
-                                        <div class="order_total_amount"><?php echo Number_format($sum,2);?> € (IVA)</div>
+                                        <div class="order_total_title">Total del Carrito:&nbsp&nbsp&nbsp&nbsp<b style="color:black;font-size:20px"><?php echo Number_format($sum,2);?> € (IVA)</b></div>
                                     </div>
                                 </div><br>
                                 <form id="pedido" name="pedido" action="/php/gen_pedido.php" method="POST">
                                     <span style="display:inline">
                                         <h3>Transporte:<h3>
-                                        <select id="transporte" name="transporte" class="form-control car_element" style="width:20%;">
+                                        <select id="transporte" name="transporte" class="form-control car_element" style="width:20%;min-width:200px;">
                                             <?php 
                                                 $qtrans = "SELECT * FROM transporte";
                                                 $restrans = mysqli_query($conn, $qtrans);            
