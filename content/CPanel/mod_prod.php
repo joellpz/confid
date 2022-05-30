@@ -33,6 +33,7 @@
                 SET nombre='$nombre', stock='$stock', precioIVA='$precioIVA',precioNoIVA='$precioNoIVA',categoria='$categoria'
                 WHERE idProductos = $id";
                 mysqli_query($conn, $update_prod) or die('Consulta perico: '. mysqli_error());
+                echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }  
             
             include_once $far.'content/header.php'; ?>
@@ -52,11 +53,11 @@
                 </tr>
                 <tr>
                     <td><label for="precioIVA">Precio con I.V.A.:</label></td>
-                    <td><input type="number" id="precioIVA" name="precioIVA" value="<?php echo $row['precioIVA']?>" required/></td>
+                    <td><input step="any" type="number" id="precioIVA" name="precioIVA" value="<?php echo $row['precioIVA']?>" required/></td>
                 </tr>
                 <tr>
                     <td><label for="precioNoIVA">Precio Sin I.V.A.:</label></td>
-                    <td><input type="number" id="precioNoIVA" name="precioNoIVA" value="<?php echo $row['precioNoIVA']?>" required/></td>
+                    <td><input step="any" type="number" id="precioNoIVA" name="precioNoIVA" value="<?php echo $row['precioNoIVA']?>" required/></td>
                 </tr>
                 <tr>
                     <td><label for="email">Categoria:</label></td>
