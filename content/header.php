@@ -23,7 +23,7 @@
                     <a class="dropdown-item" href="/php/signout.php">Cerrar Sesión</a>
                 </div>
             </div>
-            <a class=" link px-3 d-flex align-items-center" href="<?php echo $far?>content/carrito.php">
+            <a class=" link px-3 d-flex align-items-center" href="<?php echo $far?>content/page_carrito.php">
                 <i class="bx bx-cart-alt px-1"></i>
                 <span class="d-none d-md-inline-block">Carrito</span>
             </a>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
             
-                <a class=" link px-3 d-flex align-items-center" href="<?php echo $far?>content/carrito.php">
+                <a class=" link px-3 d-flex align-items-center" href="<?php echo $far?>content/page_carrito.php">
                     <i class="bx bx-cart-alt px-1"></i>
                     <span class="d-none d-md-inline-block">Carrito</span>
                 </a>

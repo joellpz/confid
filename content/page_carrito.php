@@ -130,10 +130,7 @@
         </section>
         <script>
             function DelProd(){
-                $.post("/php/carrito.php",
-                {
-                    ident: id
-                });                
+                $.post("/php/carrito.php");                
             }
             function Pedido(){
                 if('<?php echo isset($_SESSION['user_id']) ;?>' != ''){
