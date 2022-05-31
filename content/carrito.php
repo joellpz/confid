@@ -14,7 +14,7 @@
     <style>
         
     </style>
-    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
+    <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd' onload='Sinacceso()";}?>'>
         <section style="min-height:700px">     
             <?php
                 include_once $far.'content/header.php';
@@ -131,6 +131,10 @@
                     alert("¡Debes tener una cuenta para efectuar un pedido!");
                 }
             }
+            function Sinacceso(){
+                        alert("¡Los trabajadores no pueden realizar compras!");
+                        location.href = "../index.php";
+                    }
         </script>
         <?php include_once $far.'php/comun/footer.php'; ?>        
     </body>
