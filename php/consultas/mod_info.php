@@ -2,7 +2,6 @@
     $file='Modificar info';
     $far="../../";//Distancia para llegar a la general.
     include $far.'php/comun/head.php';
-    var_dump($_POST);
     if($trabajador){
         $id = $_GET['id'];
     }else{
@@ -15,7 +14,6 @@
         $passwd = md5($_POST["passwd"]);
         $nombre = $_POST["nombre"];
         $email = $_POST["email"];
-        var_dump($_POST);
         $update = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
         mysqli_query($conn, $update) or die('Consulta fallida: ');
 
