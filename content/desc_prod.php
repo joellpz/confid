@@ -4,6 +4,9 @@
         $file=basename(__FILE__, ".php");
         $far="../";
         include $far.'php/comun/head.php';
+        if (!isset($_GET['id'])){
+            header('Location: /index.php');
+        }
     ?>
     <link rel="stylesheet" href="../style/caja_prods.css"/>
     <style>
@@ -14,7 +17,6 @@
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>        
         <?php 
             include_once 'header.php'; 
-
             $qcateg = 'SELECT * FROM productos WHERE idProductos = '.$_GET['id'];
             $rescat = mysqli_query($conn, $qcateg);
             $row2 = mysqli_fetch_array($rescat)

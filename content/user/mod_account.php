@@ -8,7 +8,11 @@
         if($trabajador){
             $id = $_GET['id'];
         }else{
-            $id = $_SESSION['user_id'];
+            if(isset($_SESSION['user_id'])){
+                $id = $_SESSION['user_id'];
+            }else{
+                header('Location: /index.php');
+            }
         }
 
         $consulta = "SELECT * FROM usuarios, clientes WHERE clientes.idUsuario = usuarios.idUsuario AND usuarios.idUsuario = $id";

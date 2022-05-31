@@ -5,7 +5,11 @@
         /* $file= "C. Panel"; */ // Panel de Administador SOLO
         $far="../../";//Distancia para llegar a la general.
         include $far.'php/comun/head.php';//CAMBIAR RUTA SEGUN UBI
-        $id = $_SESSION['user_id'];
+        if(isset($_SESSION['user_id'])){
+            $id = $_SESSION['user_id'];
+        }else{
+            header('Location: /index.php');
+        }
     ?>  
     <body classname="snippet-body" class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
