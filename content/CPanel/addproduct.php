@@ -14,7 +14,7 @@
     <body <?php if($trabajador){echo "class='admin_body' id='body-pd'";}?>>
     <?php include_once $far.'content/header.php';?>
         <h2>Introducir Nuevo Producto</h2>
-        <form action="/php/newprod.php" method="post" class="m-4" enctype="multipart/formdata">
+        <form action="/php/newprod.php" method="post" class="m-4" enctype="multipart/form-data">
             <div class="row justify-content-center py-2">
                 <div class="col-4">
                     <label for="name_product" class="form-label">Nombre Producto*</label>
@@ -65,6 +65,6 @@
                     </div>
                 </div>
             </div>
-        </form>        
+        </form>      
     </body>
 </html>

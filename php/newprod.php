@@ -9,6 +9,13 @@
         $precio_iva = $_POST['precio_iva'];
         $precio_no_iva = $_POST['precio_no_iva'];
         $categoria = $_POST['categoria'];
+        $path = "../img/productos/hola.png"; 
+        
+        if(move_uploaded_file($_FILES['imagen']['tmp_name'], $path)) {
+            echo "El archivo ".  basename( $_FILES['imagen']['name']). " ha sido subido";
+        } else{
+            echo "El archivo no se ha subido correctamente";
+        }
         // Recibo los datos de la imagen
         /*$nombre_img = $_FILES['imagen']['name'];
         $tipo = $_FILES['imagen']['type'];
@@ -40,9 +47,9 @@
         $consulta_producto = "INSERT INTO productos VALUES (NULL,'$name_product', '$desc_product', '$stock', '$precio_iva', '$precio_no_iva', '$categoria')";
         mysqli_query($conn,$consulta_producto);
         
-        header('Location: ../content/cpanel.php?cons=prod');
+        //header('Location: ../content/cpanel.php?cons=prod');
 
     }else{
-        header('Location: ../content/cpanel.php?cons=prod');
+        //header('Location: ../content/cpanel.php?cons=prod');
     }
 ?>
