@@ -51,7 +51,7 @@
         }
     }
 
-    if($file=="Control Panel" && $cliente){
+    if($file=="Control Panel" && !$trabajador){
         header('Location: /index.php');
     }
 ?>

@@ -5,12 +5,21 @@
         /* $file= "C. Panel"; */ // Panel de Administador SOLO
         $far="../";//Distancia para llegar a la general.
         include $far.'php/comun/head.php';//CAMBIAR RUTA SEGUN UBI
-    ?>  
+    ?>
+    <style>
+        p{
+            font-size: 1rem
+        }
+        p > strong{
+            text-decoration: underline;
+            text-indent: 25px;
+        }
+    </style>
     <body class='bg-light <?php if($trabajador){echo " admin_body' id='body-pd";}?>'>
         <?php include_once $far.'content/header.php'; ?>
-        <div>
-            <h2>TÉRMINOS DEL SERVICIO<h2>
-            <h3>GENERALIDADES<h3>
+        <div class="m-5">
+            <h3>TÉRMINOS DEL SERVICIO<h2>
+            <h4>GENERALIDADES<h3>
 
             <div>
 <p style="text-align: justify;">CONFID gestiona este sitio web. En todo el sitio, los t&eacute;rminos "nosotros", "nos" y "nuestro" se refieren en lo sucesivo a CONFID. CONFID ofrece esta p&aacute;gina web, incluida toda la informaci&oacute;n, las herramientas y los servicios que se ponen en este sitio a disposici&oacute;n suya, el usuario, siempre y cuando acepte la totalidad de los t&eacute;rminos, condiciones, pol&iacute;ticas y avisos contemplados aqu&iacute;.</p>

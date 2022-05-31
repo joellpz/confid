@@ -14,18 +14,18 @@
         $usuario = $_POST["usuario"];
         $passwd = md5($_POST["passwd"]);
         $nombre = $_POST["nombre"];
-        $email = $_POST["usuario"];
-        
+        $email = $_POST["email"];
+        var_dump($_POST);
         $update = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
         mysqli_query($conn, $update) or die('Consulta fallida: ');
-    
-        echo '<script>location.href = ' .$far.'content/cpanel.php?cons=users';
 
     }else if (isset($_POST['cuenta'])){
+        echo "TEST";
         $usuario = $_POST["usuario"];
         $passwd = md5($_POST["passwd"]);
         $nombre = $_POST["nombre"];
-        $email = $_POST["email"];     
+        $email = $_POST["usuario"];
+        var_dump($_POST);
         if(isset($_POST['auto'])){
             $autonomo = 1;
             $alias = $_POST['alias'];
@@ -39,14 +39,11 @@
         $update_cli = "UPDATE clientes SET alias='$alias', CIF='$cif', direccion = '$dir', autonomo='$autonomo' WHERE idUsuario = $id";
         mysqli_query($conn, $update_users) or die('Consulta fallida: ');
         mysqli_query($conn, $update_cli) or die('Consulta fallida: ');
-        
-        if($trabajador){
-            echo '<script>location.href = ' .$far.'content/cpanel.php?cons=users';
-        }else{
-            echo '<script>location.href = '.$far.'content/user/mod_account.php</script>';
-        }
+    }
+
+    if($trabajador){
+        header('Location: ../../content/cpanel.php?cons=users');
     }else{
-        echo '<!DOCTYPE html>
-        <html><script>location.href = ../../index.php</script></html>';
+        header('Location: ../../content/user/mod_account.php');
     }
 ?>

@@ -44,6 +44,6 @@
         header('Location: ../content/cpanel.php?cons=prod');
 
     }else{
-        echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
+        header('Location: ../content/cpanel.php?cons=prod');
     }
 ?>
