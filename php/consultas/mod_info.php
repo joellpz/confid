@@ -1,4 +1,5 @@
 <?php
+    $file="";
     $far="../../";//Distancia para llegar a la general.
     include $far.'php/comun/head.php';
     
@@ -18,9 +19,9 @@
         $update = "UPDATE usuarios SET usuario='$usuario', passwd='$passwd', nombre = '$nombre', email='$email' WHERE idUsuario = $id";
         mysqli_query($conn, $update) or die('Consulta fallida: ');
     
-        header("Location:" .$far."content/cpanel.php?cons=users");
+        echo '<script>location.href = ' .$far.'content/cpanel.php?cons=users';
 
-    }elseif (isset($_POST['cuenta'])){
+    }else if (isset($_POST['cuenta'])){
         $usuario = $_POST["usuario"];
         $passwd = md5($_POST["passwd"]);
         $nombre = $_POST["nombre"];
@@ -40,9 +41,12 @@
         mysqli_query($conn, $update_cli) or die('Consulta fallida: ');
         
         if($trabajador){
-            header("Location:" .$far."content/cpanel.php?cons=users");
+            echo '<script>location.href = ' .$far.'content/cpanel.php?cons=users';
         }else{
-            header("Location:".$far."content/user/mod_account.php");
+            echo '<script>location.href = '.$far.'content/user/mod_account.php</script>';
         }
-    }   
+    }else{
+        echo '<!DOCTYPE html>
+        <html><script>location.href = ../../index.php</script></html>';
+    }
 ?>
