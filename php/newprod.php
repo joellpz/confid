@@ -1,7 +1,6 @@
 <?php
     include('config.php');
     session_start();
-
     if(isset($_POST)){
         $name_product = $_POST['name_product'];
         $desc_product = $_POST['desc_product'];
@@ -9,7 +8,13 @@
         $precio_iva = $_POST['precio_iva'];
         $precio_no_iva = $_POST['precio_no_iva'];
         $categoria = $_POST['categoria'];
-        $path = "../img/productos/hola.png"; 
+
+        $last = "SELECT MAX(idProductos) FROM productos";
+        $reslast = mysqli_query($conn, $last); 
+        $id = mysqli_fetch_row($reslast);
+        $id_prod = intval($id[0]);
+
+        $path = "../img/productos/$id_prod.png"; 
         
         if(move_uploaded_file($_FILES['imagen']['tmp_name'], $path)) {
             echo "El archivo ".  basename( $_FILES['imagen']['name']). " ha sido subido";
@@ -47,9 +52,9 @@
         $consulta_producto = "INSERT INTO productos VALUES (NULL,'$name_product', '$desc_product', '$stock', '$precio_iva', '$precio_no_iva', '$categoria')";
         mysqli_query($conn,$consulta_producto);
         
-        //header('Location: ../content/cpanel.php?cons=prod');
+        header('Location: ../content/cpanel.php?cons=prod');
 
     }else{
-        //header('Location: ../content/cpanel.php?cons=prod');
+        header('Location: ../content/cpanel.php?cons=prod');
     }
 ?>

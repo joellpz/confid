@@ -30,11 +30,18 @@
                 $precioIVA = $_POST["precioIVA"];
                 $precioNoIVA = $_POST["precioNoIVA"];
                 $categoria = $_POST["categoria"];
-                var_dump($_POST);
+
+                $path = "../../img/productos/$id.png"; 
+        
+                if(move_uploaded_file($_FILES['imagen']['tmp_name'], $path)) {
+                    echo "El archivo ".  basename( $_FILES['imagen']['name']). " ha sido subido";
+                } else{
+                    echo "El archivo no se ha subido correctamente";
+                }
+
                 $update_prod = "UPDATE productos 
                 SET nombre='$nombre', stock='$stock', precioIVA='$precioIVA', precioNoIVA='$precioNoIVA', idCategoria='$categoria'
                 WHERE idProductos = $id";
-                echo $update_prod;
                 mysqli_query($conn, $update_prod) or die('Consulta perico: '. mysqli_error());
                 echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
                 
@@ -44,7 +51,7 @@
             
             include_once $far.'content/header.php'; ?>
         
-        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
             <table class="tabliqui">
                 <thead style="background-color: #646CDF;">
                     <th colspan="2">Modificar Producto Nº<?php echo $row['idProductos']?></th>
@@ -81,13 +88,18 @@
                     </td>
                 </tr>
                 <tr>
+                    <td colspan='2'>
+                        <label class="m-3" for="imagen" style="text-align:center;">Imagen:</label> <input type="file" id="imagen" accept="image/png" name="imagen" size="30" required>
+                    </td>
+                </tr>                
+                <tr>
                     <td>
                      <input id="idProductos" name="idProductos" type="hidden" value="<?php echo $row['idProductos']?>">
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align: center; font-size: 20px;" colspan="2">
-                        <input type="submit" class="m-3 btn btn-primary" name="enviar" value="Modificar"/>
+                        <span><input type="submit" class="m-3 btn btn-primary" name="enviar" value="Modificar"/></span><span><a class="m-3 btn btn-primary" href="../cpanel.php?cons=prod">Cancelar<a></span>
                     </td>
                 </tr>
             </table>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <?php
@@ -57,13 +56,18 @@
                                                             <div class="cart_item_text"><?php echo $row['nombre'];?></div>
                                                         </div>
                                                         <div class="cart_item_color cart_info_col">
-                                                            <div class="cart_item_title">Cantidad</div>
-                                                            <div class="cart_item_text">
-                                                            <?php echo $_SESSION['carrito_stock'][$key];?>
-                                                                <!--<select id="cantidad" name="cantidad" class="form-control car_element">
-                                                                    <?php/* for($i=1; $i<=$row['stock']; $i++) if($i == $_SESSION['carrito_stock'][$key])echo "<option selected>".$i."</option>"; else echo "<option>".$i."</option>"; */?>
-                                                                </select>-->
-                                                            </div>
+                                                            <div class="cart_item_title">Cantidad</div>                                                            
+                                                                <div class="cart_item_text">
+                                                            <?php if($_SESSION['carrito_stock'][$key] <= $row['stock']){?>
+                                                                    <select id="cantidad<?php echo $id_prod; ?>" name="cantidad" class="form-control car_element <?php echo $row['idProductos']; ?>">
+                                                                    <?php for($i=1; $i<=$row['stock']; $i++) if($i == $_SESSION['carrito_stock'][$key])echo "<option selected>".$i."</option>"; else echo "<option>".$i."</option>";
+                                                                }else{?>                                           
+                                                                    <select id="cantidad" name="cantidad" class="form-control car_element <?php echo $row['idProductos']; ?>">
+                                                                    <?php for($i=1; $i<=$row['stock']; $i++) if($i == $row['stock'])echo "<option selected>".$i."</option>"; else echo "<option>".$i."</option>";
+                                                                }
+                                                            ?>                                                                
+                                                                    </select>
+                                                                </div>
                                                         </div>
                                                         <div class="cart_item_quantity cart_info_col">
                                                             <div class="cart_item_title">Precio(SIN IVA)</div>
@@ -78,7 +82,7 @@
                                                             <div class="cart_item_text"><?php echo number_format($row['precioIVA']*$_SESSION['carrito_stock'][$key],2);?> €</div>
                                                         </div>
                                                         <div class="cart_item_total cart_info_col">
-                                                            <div class="cart_item_text"><a onclick="DelProd(<?php echo $row['idProductos']; ?>)"><i class='bx bxs-shield-x'></i></a></div>
+                                                            <div class="cart_item_text" onclick="DelProd(<?php echo $row['idProductos']; ?>, 0, 1)"><i class='bx bxs-shield-x foot_icon cross' style="font-size:30px;color:#646CDF;"></i></div>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -129,8 +133,18 @@
             </div>            
         </section>
         <script>
-            function DelProd(){
-                $.post("/php/carrito.php");                
+            <?php
+            foreach ($_SESSION['carrito_prod'] as $key => $id_prod) { 
+                echo "$('#cantidad".$id_prod."').on('change', function(){
+                    cant = document.getElementById('cantidad".$id_prod."').value;
+                    id = document.getElementById('cantidad".$id_prod."').className.split(' ');
+                    DelProd(id[2],cant,2);                    
+                });";
+            }
+            ?>
+            function DelProd(id, cant, mode){
+                $.post("/php/carrito.php", { ident: id, stock: cant, m: mode} ); 
+                location.href = "../content/page_carrito.php";      
             }
             function Pedido(){
                 if('<?php echo isset($_SESSION['user_id']) ;?>' != ''){

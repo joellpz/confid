@@ -54,7 +54,7 @@
                     </select>
                 </div>
             </div>
-            <div>
+            <div style="text-align:center;">
                 <label class="m-3" for="imagen">Imagen:</label> <input type="file" id="imagen" accept="image/png" name="imagen" size="30" required>
             </div>
             <div class="container-fluid p-2">

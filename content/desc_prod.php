@@ -21,7 +21,7 @@
             $rescat = mysqli_query($conn, $qcateg);
             $row2 = mysqli_fetch_array($rescat)
         ?>
-        <div id="añadido" style="display:none;">¡Producto añadido al carrito!<br><a class="carrito btn btn-outline-primary mt-2" type="button" href="/content/carrito.php">Ver Carrito</a></div>
+        <div id="añadido" style="display:none;">¡Producto añadido al carrito!<br><a class="carrito btn btn-outline-primary mt-2" type="button" href="/content/page_carrito.php">Ver Carrito</a></div>
         <div class="container">
             <div class="row descripcion">
                 <div class="col-6 img_prod">

@@ -164,3 +164,7 @@ h1{
     color:#646CDF; 
     font-weight:bold; 
 }
+
+.cross:hover{
+    transform:scale(1.3);    
+}
