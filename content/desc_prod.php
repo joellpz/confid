@@ -23,7 +23,14 @@
         <div class="container">
             <div class="row descripcion">
                 <div class="col-6 img_prod">
-                    <img src="/img/productos/<?php echo $row2['idProductos'];?>.png" class="card-img-top" alt="...">    
+                    <?php 
+                        if(file_exists("../img/productos/".$row2['idProductos'].".png")){
+                            $img = "/img/productos/".$row2['idProductos'].".png";
+                        }else{
+                            $img = "/img/nophoto.png";
+                        }
+                    ?>                                     
+                    <img src="<?php echo $img; ?>" class="card-img-top" alt="...">    
                 </div>
                 <div class="col-6" style="padding:5%">
                     <p class="card-title"><b><?php echo $row2['nombre'];?></b></p>
@@ -37,7 +44,7 @@
                     <select id="cantidad" name="cantidad" class="form-control" style="width:20%; text-align:center">
                         <?php for($i=1; $i<=$row2['stock']; $i++) echo "<option>".$i."</option>" ?>
                     </select>
-                    <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)"/></span>
+                    <span class="boton"><input class="carrito btn btn-outline-primary" type="submit" value="Añadir al Carrito" onclick="Add(<?php echo $row2['idProductos']; ?>)" <?php if($row2['stock'] == 0) echo "disabled"; ?>/></span>
                 </div>                    
                 
             </div>

@@ -56,17 +56,17 @@
                                     </div>
 
                                     <?php
-                                    while($row_detped = mysqli_fetch_array($res_detped)){
-                                        echo '<div class="d-flex justify-content-between">';
-                                        echo '<span class="font-weight-bold">'. $row_detped['nombre'].'(Cantidad:'. $row_detped['cantidad'].')</span>';
-                                        echo '<span class="text-muted">'. $row_detped['precioTotal'].' €</span>';
-                                        echo '</div>';
-                                    }
-                                ?>
+                                        while($row_detped = mysqli_fetch_array($res_detped)){
+                                            echo '<div class="d-flex justify-content-between">';
+                                            echo '<span class="font-weight-bold">'. $row_detped['nombre'].'(Cantidad:'. $row_detped['cantidad'].')</span>';
+                                            echo '<span class="text-muted">'. $row_detped['precioTotal'].' €</span>';
+                                            echo '</div>';
+                                        }
+                                    ?>
                                     <br>
                                     <div class="d-flex justify-content-between">
                                         <small>Portes</small>
-                                        <small><?php echo round($row['precioPedido']*0.1, 2)?> €<small>
+                                        <small><?php echo round($row['precioPedido']*0.1, 2)?> €</small>
                                     </div>
 
                                     <div class="d-flex justify-content-between">
@@ -91,8 +91,8 @@
                 <?php
                     }
                 ?>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
             </tbody>
         </table>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

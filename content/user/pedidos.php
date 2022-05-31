@@ -63,7 +63,7 @@
                                             <br>
                                             <div class="d-flex justify-content-between">
                                                 <small>Portes</small>
-                                                <small><?php echo round($row_ped['precioPedido']*0.1, 2)?> €<small>
+                                                <small><?php echo round($row_ped['precioPedido']*0.1, 2)?> €</small>
                                             </div>
 
                                             <div class="d-flex justify-content-between">

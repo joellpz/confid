@@ -55,13 +55,13 @@
                 </div>
             </div>
             <div>
-                <label class="m-3" for="imagen">Imagen:</label> <input id="imagen" name="imagen" size="30" type="file">
+                <label class="m-3" for="imagen">Imagen:</label> <input type="file" id="imagen" name="imagen" size="30" >
             </div>
             <div class="container-fluid p-2">
                 <div class="row p-2">
                     <div class="col text-center">
                         <input type="submit" class="btn btn-primary p-2" name="add_product" value="Introducir Producto"/>
-                        <a href="index.php"><button type="button" class="btn btn-primary p-2">Volver a Inicio</button></a>
+                        <a href="/index.php"><button type="button" class="btn btn-primary p-2">Volver a Inicio</button></a>
                     </div>
                 </div>
             </div>

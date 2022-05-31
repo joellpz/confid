@@ -26,12 +26,11 @@
         <div class="text-center mx-2">
             <h2>Modificar Información de la Cuenta</h2>
         </div>
-        <form action="/php/consultas/mod_info.php?id=<?php echo $id?>" method="post" id="form">
+        <form action="/php/consultas/mod_info.php?id=<?php echo $id?>" method="post" id="form" name="form">
             <div class="row justify-content-center py-2">
                 <div class="col-6">
                     <label for="usuario" class="form-label">Email*</label>
                     <input type="email" class="form-control" id="usuario" name="usuario" value="<?php echo $row['email'] ?>" required>
-                    <input type="hidden" class="form-control" id="email" name="email">
                     <div id="emailHelp" class="form-text">No compartiremos tu email con nadie más.</div>
                 </div>  
                 <div class="col-2" style="display: flex;flex-wrap: nowrap;justify-content: center;align-items: center; margin-top: 0.3%">
@@ -86,7 +85,7 @@
             <div class="container-fluid h-100">
                 <div class="row justify-content-center">
                     <div class="col-2 text-center">
-                        <input type="submit" class="btn btn-primary" name="cuenta" value="Modificar"/>
+                        <input type="submit" id="submit" class="btn btn-primary" name="cuenta" value="Modificar"/>
                     </div>
                     <div class="col-2 text-center">                       
                         <a href="/index.php"><button type="button" class="btn btn-primary">Volver a Inicio</button></a>

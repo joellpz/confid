@@ -1,8 +1,8 @@
 <?php
-    $file="";
+    $file='Modificar info';
     $far="../../";//Distancia para llegar a la general.
     include $far.'php/comun/head.php';
-    
+    var_dump($_POST);
     if($trabajador){
         $id = $_GET['id'];
     }else{
@@ -24,10 +24,9 @@
         $usuario = $_POST["usuario"];
         $passwd = md5($_POST["passwd"]);
         $nombre = $_POST["nombre"];
-        $email = $_POST["usuario"];
-        var_dump($_POST);
+        $email = $_POST["usuario"];     
         if(isset($_POST['auto'])){
-            $autonomo = 1;
+            $autonomo = 1;            
             $alias = $_POST['alias'];
         }else{
             $autonomo = 0;
