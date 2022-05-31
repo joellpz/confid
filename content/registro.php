@@ -90,7 +90,7 @@
             const a = document.getElementById('signup_alias');
             n.addEventListener("keydown", write);
             function write(){
-                if(event.which == '114' || event.which == '116' || event.which == '19' || event.which == '145' || event.which == '34' || event.which == '33' || event.which == '36' || event.which == '45' || event.which == '93' || event.which == '91' || event.which == '144' || event.which == '16' || event.which == '20' || event.which == '13'  || event.which == '1718' || event.which == '17' || event.which == '18' || event.which == '9' || event.which == '46' || event.which == '35'){
+                if(|| event.which == '37' || event.which == '38' || event.which == '39' || event.which == '40'  event.which == '114' || event.which == '116' || event.which == '19' || event.which == '145' || event.which == '34' || event.which == '33' || event.which == '36' || event.which == '45' || event.which == '93' || event.which == '91' || event.which == '144' || event.which == '16' || event.which == '20' || event.which == '13'  || event.which == '1718' || event.which == '17' || event.which == '18' || event.which == '9' || event.which == '46' || event.which == '35'){
                     
                 }else if(event.which == '8'){
                     a.value = a.value.substring(0, a.value.length - 1);
