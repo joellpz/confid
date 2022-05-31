@@ -1,5 +1,5 @@
 <?php
-    $file="Control Panel";
+    $file="Control Panel Pedidos";
     $far="../../";
     include $far.'php/comun/head.php';
 ?>

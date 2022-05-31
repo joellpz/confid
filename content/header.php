@@ -46,7 +46,7 @@
                             <span class="nav_logo-name">C O N F I D</span> 
                         </a>
                         <div class="nav_list"> 
-                            <a href="/index.php" class="nav_link active"> 
+                            <a href="/index.php" class="nav_link <?php if($file!="Control Panel Pedidos" && $file!="Control Panel" ){ echo "active";}?>"> 
                                 <i class='bx bx-grid-alt nav_icon nav_icon'></i> 
                                 <span class="nav_name">Página Principal</span> 
                             </a> 
@@ -54,7 +54,7 @@
                                 <i class='bx bxs-contact nav_icon' ></i> 
                                 <span class="nav_name">Clientes</span> 
                             </a> 
-                            <a href="/content/CPanel/consulta_pedidos.php" class="nav_link"> 
+                            <a href="/content/CPanel/consulta_pedidos.php" class="nav_link <?php if($file=="Control Panel Pedidos"){ echo "active";}?>"> 
                                 <i class='bx bx-clipboard bx-flip-horizontal nav_icon'></i>
                                 <span class="nav_name">Consulta Pedidos</span>
 
@@ -150,7 +150,7 @@
     <?php }?>
     
 </header>
-<?php if ($file!="Control Panel"){ ?>
+<?php if ($file!="Control Panel" && $file!="Control Panel Pedidos"){ ?>
     <div class="navegacion">
         <nav class="navbar nav nav-pills  navbar-expand-lg navbar-light bg-light ">
             <div class="container p-2 border-bottom">
