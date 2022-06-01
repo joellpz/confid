@@ -22,9 +22,7 @@
                 $result= mysqli_query ($conn, $cons_prod);
                 $row=mysqli_fetch_array($result);
 
-            }
-            
-            if(isset($_POST['enviar'])){
+            }else if(isset($_POST['enviar'])){
 
                 $id = $_POST['idCategoria'];
                 $nombre = $_POST["nombre"];
