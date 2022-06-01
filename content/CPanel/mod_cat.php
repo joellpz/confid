@@ -24,7 +24,7 @@
 
             }else if(isset($_POST['enviar'])){
 
-                $id = $_POST['idCategoria'];
+                $id = $_POST['idCategoria2'];
                 $nombre = $_POST["nombre"];
                 
                 $update_cat = "UPDATE categorias 
@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <td>
-                     <input id="idCategoria" name="idCategoria" type="hidden" value="<?php echo $row['idCategoria']?>">
+                     <input id="idCategoria2" name="idCategoria2" type="hidden" value="<?php echo $row['idCategoria']?>">
                     </td>
                 </tr>
                 <tr>
