@@ -32,7 +32,8 @@
                 mysqli_query($conn, $update_cat) or die('Consulta perico: '. mysqli_error());
                 
             }else{
-                echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
+                echo "No entra";
+                //echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }
             
             include_once $far.'content/header.php'; ?>
