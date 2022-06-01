@@ -144,7 +144,7 @@
             ?>
             function DelProd(id, cant, mode){
                 $.post("/php/carrito.php", { ident: id, stock: cant, m: mode} ); 
-                location.href = "../content/page_carrito.php";      
+                location.href = "../content/page_carrito.php?r";      
             }
             function Pedido(){
                 if('<?php echo isset($_SESSION['user_id']) ;?>' != ''){
