@@ -75,7 +75,7 @@
                 <tr>
                     <td><label for="email">Categoria:</label></td>
                     <td>
-                    <select id="categoria" name="categoria" class="form-control col-1">
+                    <select id="categoria" name="categoria" class="form-control w-50">
                         <?php 
                             $qcat = "SELECT * FROM categorias";
                             $rescat = mysqli_query($conn, $qcat);            
