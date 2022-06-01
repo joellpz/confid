@@ -89,7 +89,7 @@
                 </tr>
                 <tr>
                     <td colspan='2'>
-                        <label class="m-3" for="imagen" style="text-align:center;">Imagen:</label> <input type="file" id="imagen" accept="image/png" name="imagen" size="30" required>
+                        <label class="m-3" for="imagen" style="text-align:center;">Imagen:</label> <input type="file" id="imagen" accept="image/png" name="imagen" size="30">
                     </td>
                 </tr>                
                 <tr>
