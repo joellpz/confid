@@ -34,7 +34,7 @@
                 
             }else{
                 echo "No entra";
-                //echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
+                echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }
             
             include_once $far.'content/header.php'; ?>
