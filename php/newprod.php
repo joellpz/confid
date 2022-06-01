@@ -12,7 +12,7 @@
         $last = "SELECT MAX(idProductos) FROM productos";
         $reslast = mysqli_query($conn, $last); 
         $id = mysqli_fetch_row($reslast);
-        $id_prod = intval($id[0]);
+        $id_prod = intval($id[0])+1;
 
         $path = "../img/productos/$id_prod.png"; 
         
@@ -52,9 +52,8 @@
         $consulta_producto = "INSERT INTO productos VALUES (NULL,'$name_product', '$desc_product', '$stock', '$precio_iva', '$precio_no_iva', '$categoria')";
         mysqli_query($conn,$consulta_producto);
         
-        header('Location: ../content/cpanel.php?cons=prod');
-
+        echo '<script>location.href = "../content/cpanel.php?cons=prod"</script>';
     }else{
-        header('Location: ../content/cpanel.php?cons=prod');
+        echo '<script>location.href = "../index.html"</script>';
     }
 ?>
