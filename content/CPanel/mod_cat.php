@@ -22,18 +22,18 @@
                 $result= mysqli_query ($conn, $cons_prod);
                 $row=mysqli_fetch_array($result);
 
-            }else if(isset($_POST['enviar'])){
+            }
+            
+            if(isset($_POST['enviar'])){
 
-                $id = $_POST['idCategoria2'];
+                $id = $_POST['idCategoria'];
                 $nombre = $_POST["nombre"];
                 
                 $update_cat = "UPDATE categorias 
                 SET nombre='$nombre' WHERE idCategoria = $id";
                 mysqli_query($conn, $update_cat) or die('Consulta perico: '. mysqli_error());
-                echo "Entra"
-                
+                echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }else{
-                echo "No entra";
                 echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }
             
@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <td>
-                     <input id="idCategoria2" name="idCategoria2" type="hidden" value="<?php echo $row['idCategoria']?>">
+                     <input id="idCategoria" name="idCategoria" type="hidden" value="<?php echo $row['idCategoria']?>">
                     </td>
                 </tr>
                 <tr>
