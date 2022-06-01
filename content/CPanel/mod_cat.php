@@ -30,6 +30,7 @@
                 $update_cat = "UPDATE categorias 
                 SET nombre='$nombre' WHERE idCategoria = $id";
                 mysqli_query($conn, $update_cat) or die('Consulta perico: '. mysqli_error());
+                echo "Entra"
                 
             }else{
                 echo "No entra";
