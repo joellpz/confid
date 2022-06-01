@@ -33,7 +33,7 @@
                 echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }else{
                 echo "Hola";
-                echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
+                //echo '<script>location.href = "../cpanel.php?cons=prod"</script>';
             }
             
             include_once $far.'content/header.php'; ?>
